@@ -1,0 +1,3276 @@
+/* ============================================================
+   Юмал Авто — Brand Color Overrides
+   Primary:       #2E7D4F  /  hover #23643F
+   Accent (CTA):  #2E7D4F  /  hover #23643F
+   Background:    #FFFFFF, #F6F7F5
+   Text:          #202624, #66706A
+   Border:        #DDE3DE
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   HEADER: top utility bar — brand dark green background
+   ---------------------------------------------------------- */
+.site_header .site_header__up {
+    background: #2E7D4F !important;
+}
+.site_header .site_header__up a,
+.site_header .site_header__up a:focus,
+.site_header .site_header__up .site_link,
+.site_header .site_header__up .site_link:focus,
+.wrap_header_tel .header_tel,
+.site_header .site_header__up .site_header__up_link {
+    color: #FFFFFF !important;
+}
+.site_header .site_header__up a:hover,
+.site_header .site_header__up .site_link:hover {
+    color: #E6F2EA !important;
+}
+.site_header__up .site_header__up_link_ico:before,
+.wrap_header_tel.site_header__up_link .site_header__up_link_ico:before,
+.site_header .site_header__up .color_ico:before,
+.site_header .site_header__up .site_header__up__ico:before {
+    color: #FFFFFF !important;
+}
+.site_header .site_header__up .header_login_user.site_dopdown_btn .login_user_btn:before {
+    color: #FFFFFF !important;
+}
+/* Dropdown inside blue header bar: white bg */
+.header_login.site_dopdown_btn .dropdown-menu,
+.header_login_user.site_dopdown_btn .dropdown-menu {
+    background: #FFFFFF;
+    border: 1px solid #DDE3DE;
+}
+.site_header .site_header__up .header_login .open button.dropdown-toggle,
+.site_header .site_header__up .header_login_user .open button.dropdown-toggle {
+    color: #E6F2EA !important;
+}
+
+/* Main nav bar: white with subtle shadow on scroll */
+.site_header__down.header_fixed {
+    background: #FFFFFF !important;
+    box-shadow: 0 2px 8px rgba(46,125,79,0.12) !important;
+}
+
+/* ----------------------------------------------------------
+   FOOTER: dark background
+   ---------------------------------------------------------- */
+.wrap_main_footer {
+    background: #202624 !important;
+}
+.wrap_main_footer .main_footer__item .footer_title_soc,
+.wrap_main_footer .main_footer .ul_footer_contact .footer_contact_text,
+.wrap_main_footer .main_footer .main_footer__item .footer_contact_text_tel {
+    color: #F6F7F5 !important;
+}
+.wrap_main_footer .main_footer .ul_footer_contact .link_footer,
+.wrap_main_footer .main_footer .ul_footer_contact .link_footer:focus {
+    color: #D1D5DB !important;
+}
+.wrap_main_footer .main_footer .ul_footer_contact .link_footer:hover {
+    color: #FFFFFF !important;
+}
+.wrap_main_footer .main_footer__copyright {
+    border-color: #3D4A42 !important;
+    color: #8FA898 !important;
+}
+.wrap_main_footer .main_footer__copyright .site_link,
+.wrap_main_footer .main_footer__copyright .site_link:focus {
+    color: #8FA898 !important;
+}
+.wrap_main_footer .main_footer__copyright .site_link:hover {
+    color: #FFFFFF !important;
+}
+.wrap_main_footer .main_footer .main_footer__item.footer__item_four .ul_reset_style {
+    border-color: #3D4A42 !important;
+}
+/* Footer soc icons */
+.wrap_main_footer .ico_footer_soc:before {
+    color: #D1D5DB !important;
+    transition: color 0.2s ease-in-out !important;
+}
+.wrap_main_footer a:hover .ico_footer_soc:before {
+    color: #FFFFFF !important;
+}
+
+/* ----------------------------------------------------------
+   LOGO: sizing & adaptation
+   ---------------------------------------------------------- */
+.link_logo img,
+.footer_logo img,
+.header_login_reg_page .header_login_reg_page__logo img {
+    height: 76px;
+    width: auto;
+    max-width: 300px;
+    object-fit: contain;
+}
+.footer_logo img {
+    height: 64px;
+}
+.link_logo,
+.footer_logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* ----------------------------------------------------------
+   BUTTONS: primary (blue) already handled by option.css
+   Secondary: outlined blue, white fill on hover
+   ---------------------------------------------------------- */
+.btn_site.btn_site_border {
+    background: transparent !important;
+    border: 2px solid #2E7D4F !important;
+    color: #2E7D4F !important;
+}
+.btn_site.btn_site_border:hover {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.btn_site.btn_site_white,
+.btn_site.btn_site_white:focus,
+a.btn_site.btn_site_white,
+a.btn_site.btn_site_white:focus {
+    background: #FFFFFF !important;
+    color: #2E7D4F !important;
+    border: 1px solid #2E7D4F !important;
+}
+.btn_site.btn_site_white:hover,
+a.btn_site.btn_site_white:hover {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.btn_site.btn_site_white.btn_site_arrowl span:before,
+.btn_site.btn_site_white.btn_site_arrowr span:before,
+a.btn_site.btn_site_white span:before {
+    color: #2E7D4F !important;
+}
+.btn_site.btn_site_white:hover span:before,
+a.btn_site.btn_site_white:hover span:before {
+    color: #FFFFFF !important;
+}
+
+/* ----------------------------------------------------------
+   CTA BUTTONS: add to cart, add to basket — accent RED
+   ---------------------------------------------------------- */
+/* Product tile: "В корзину" button */
+.site_view_result .site_view_result__item.tile__view
+    .site_view_result__item__price_btn .site_view_result__item__btn {
+    background: #2E7D4F !important;
+}
+.site_view_result .site_view_result__item.tile__view
+    .site_view_result__item__price_btn .site_view_result__item__btn:hover {
+    background: #23643F !important;
+}
+
+/* Table view cart icon */
+.site_table.view_table-search_img .ico_cart,
+.site_table .ico_cart {
+    background: #2E7D4F !important;
+}
+.site_table.view_table-search_img .ico_cart:hover,
+.site_table .ico_cart:hover {
+    background: #23643F !important;
+}
+
+/* Deferred basket button */
+.deferred_tab .deferred_in_basket {
+    background: #2E7D4F !important;
+}
+.deferred_tab .deferred_in_basket:hover {
+    background: #23643F !important;
+}
+
+/* Recommended add-to-basket */
+.recommended_block .recommended__basket .site_link {
+    background: #2E7D4F !important;
+}
+.recommended_block .recommended__basket .site_link:hover {
+    background: #23643F !important;
+}
+
+/* Order form submit */
+.sale_order_full_table .wrap_red_button input[type="submit"] {
+    background: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+}
+.sale_order_full_table .wrap_red_button input[type="submit"]:hover {
+    background: #23643F !important;
+    border-color: #23643F !important;
+}
+
+/* Mobile search button */
+.btn_site.link_modal_mob_header_search {
+    background: #2E7D4F !important;
+}
+.btn_site.link_modal_mob_header_search:hover {
+    background: #23643F !important;
+}
+
+/* ----------------------------------------------------------
+   ACCENT LINKS (promo/sale context)
+   ---------------------------------------------------------- */
+.site_link_two,
+.site_link_two.site_link_arrowr span:before,
+.site_link_two:focus,
+.site_link_two.site_link_arrowr:focus span:before {
+    color: #2E7D4F !important;
+}
+.site_link_two:hover,
+.site_link_two.site_link_arrowr:hover span:before {
+    color: #23643F !important;
+}
+.site_link.site_link_hover_other:hover {
+    color: #2E7D4F !important;
+}
+
+/* ----------------------------------------------------------
+   NOTIFICATION BADGES: basket count, garage count
+   ---------------------------------------------------------- */
+.basket_number_product {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.garage_number_auto {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+/* ----------------------------------------------------------
+   DATE / TIME accents in news and promos
+   ---------------------------------------------------------- */
+.main_news__item__time .time_day {
+    color: #D9902F !important;
+}
+.news_detail__time .news_detail__time_day {
+    color: #D9902F !important;
+}
+.detail_discounts_sale__title .validity_time {
+    color: #D9902F !important;
+}
+
+/* ----------------------------------------------------------
+   RECOMMENDED BLOCK: urgent/accent titles
+   ---------------------------------------------------------- */
+.recommended_block .recommended_block__title,
+.recommended_block .recommended_block__title .recommended_block__title__ico:before {
+    color: #D9902F !important;
+}
+
+/* ----------------------------------------------------------
+   PRODUCT BADGES / LABELS
+   акция → красный | новинка → синий | хит → янтарный
+   ---------------------------------------------------------- */
+.label_product_tag__item.label_stock {
+    background: #D9902F !important;
+    color: #FFFFFF !important;
+}
+.label_product_tag__item.label_new {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.label_product_tag__item.label_bestseller {
+    background: #B45309 !important;
+    color: #FFFFFF !important;
+}
+
+/* Tile overlay: label sits top-left over the product image */
+.tile_item_wrap_link {
+    position: relative !important;
+}
+.tile_item_wrap_link .yumal-tile-label {
+    position: absolute !important;
+    top: 8px !important;
+    left: 8px !important;
+    z-index: 2 !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    pointer-events: none !important;
+}
+.tile_item_wrap_link .yumal-tile-label .label_product_tag__item {
+    border-radius: 3px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.3px !important;
+    height: 18px !important;
+    padding: 0 8px !important;
+    line-height: 18px !important;
+}
+
+/* Product page label near title */
+.yumal-card-label {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.yumal-card-label .label_product_tag__item {
+    border-radius: 3px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    height: 20px !important;
+    padding: 0 10px !important;
+    line-height: 20px !important;
+}
+
+/* Placeholder image: fit container proportionally */
+.site_view_result__item__img img[src*="заглушкатовара"],
+.site_view_result__item__img img[src*="placeholder"] {
+    object-fit: contain !important;
+    background: #F6F7F5 !important;
+}
+
+/* ----------------------------------------------------------
+   LOCATION / BRANCH ICONS: distinctive red for attention
+   ---------------------------------------------------------- */
+.item_with_adress_popup .adress_popup_first .site_header__up_link_ico:before,
+.site_header__adress_popup.site_header__up_link .site_header__up_link_ico:before {
+    color: #2E7D4F !important;
+}
+.branch_change__title .branch_change_ico:before {
+    color: #2E7D4F !important;
+}
+.breadcrumbs__item.breadcrumbs__item__disabled .breadcrumbs__item__ico:before {
+    color: #2E7D4F !important;
+}
+
+/* ----------------------------------------------------------
+   INPUTS: focus state — primary blue
+   ---------------------------------------------------------- */
+.site_field input:focus,
+.site_field input.active,
+.site_field textarea:focus,
+.site_field textarea.active,
+.wrap_selectpicker_site .open.bootstrap-select > button.dropdown-toggle,
+.wrap_selectpicker_site .bootstrap-select > button.dropdown-toggle:focus {
+    border-color: #2E7D4F !important;
+}
+
+/* ----------------------------------------------------------
+   CHECKBOXES & RADIOS: primary blue
+   ---------------------------------------------------------- */
+.checkbox input[type="checkbox"]:checked + label:before,
+.wrap_selectpicker_site.multi_check .bootstrap-select.show-tick
+    .dropdown-menu .selected span.check-mark {
+    background-color: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+}
+.radio input[type="radio"]:checked + label .radio_btn:before {
+    background-color: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+}
+
+/* ----------------------------------------------------------
+   NAVIGATION: active/hover states
+   ---------------------------------------------------------- */
+.main_menu__item .title_main_menu:focus,
+.main_menu__item .title_main_menu:hover,
+.main_menu__item .title_main_menu:hover .title_main_menu_ico:before,
+.main_menu__item .title_main_menu:focus .title_main_menu_ico:before {
+    color: #2E7D4F !important;
+}
+.site_dopdown_btn.main_menu .dropdown-menu ul.main_menu__collapse_ul li > a:hover {
+    color: #2E7D4F !important;
+}
+
+/* Mobile menu button on scroll */
+@media only screen and (max-width: 767px) {
+    .btn_site.btn_site_two {
+        background: #2E7D4F !important;
+    }
+    .btn_site.btn_site_two:hover {
+        background: #23643F !important;
+    }
+}
+
+/* ----------------------------------------------------------
+   FILTER PRICE SLIDER: primary blue
+   ---------------------------------------------------------- */
+.wrap_filter_forma .ui-widget-header {
+    background: #2E7D4F !important;
+}
+.wrap_filter_forma .ui-slider .ui-slider-handle {
+    background: #2E7D4F !important;
+}
+.for_mob_sidebar_search .bx-filter .bx-ui-slider-pricebar-v,
+.for_mob_sidebar_search .bx-filter .bx-ui-slider-pricebar-vn {
+    background: #2E7D4F !important;
+}
+.for_mob_sidebar_search .bx-filter .bx-ui-slider-handle {
+    background: #2E7D4F !important;
+    border-color: #FFFFFF !important;
+}
+
+/* ----------------------------------------------------------
+   SMS / CODE SEND buttons: outlined primary blue
+   ---------------------------------------------------------- */
+.send_code .send_code_link,
+.resend_code,
+.resend_code:focus {
+    border-color: #2E7D4F !important;
+    color: #2E7D4F !important;
+}
+.send_code .send_code_link:hover,
+.resend_code:hover {
+    border-color: #23643F !important;
+    color: #23643F !important;
+}
+
+/* ----------------------------------------------------------
+   AUTH/LOGIN page: accent colors
+   ---------------------------------------------------------- */
+.login_site .red,
+.registration .red {
+    color: #D9902F !important;
+}
+.login_site .red:hover,
+.registration .red:hover {
+    color: #B57020 !important;
+}
+
+/* ----------------------------------------------------------
+   MY ORDERS: status accent
+   ---------------------------------------------------------- */
+.my_orders_table__info__title span {
+    color: #D9902F !important;
+}
+
+/* ----------------------------------------------------------
+   CATALOG: active category link
+   ---------------------------------------------------------- */
+#categories_collapse .lp_links_block li a.active,
+#categories_collapse .lp_links_block li a.active:hover,
+#categories_collapse_current .lp_links_block li a.active,
+#categories_collapse_current .lp_links_block li a.active:hover {
+    color: #2E7D4F !important;
+}
+
+/* ----------------------------------------------------------
+   MAIN CATEGORIES: "все категории" link (dark bg)
+   ---------------------------------------------------------- */
+.main_categories__content a.main_categories__item.mci__all_link_catalog {
+    background: linear-gradient(135deg, #111816 0%, #1C2522 55%, #253328 100%) !important;
+}
+.main_categories__content a.main_categories__item.mci__all_link_catalog .main_categories__item__title {
+    color: #FFFFFF !important;
+}
+.main_categories__content a.main_categories__item.mci__all_link_catalog,
+.main_categories__content a.main_categories__item.mci__all_link_catalog:hover {
+    border-color: #2E7D4F !important;
+}
+
+/* ----------------------------------------------------------
+   ADVANTAGE BLOCK: accent stripe on cards
+   ---------------------------------------------------------- */
+.advantage_main_item .advantage_main_item__descr .advantage_main_item__descr__item:after {
+    background: #2E7D4F !important;
+}
+
+/* ----------------------------------------------------------
+   CONTACT HELP BLOCK: accent background
+   ---------------------------------------------------------- */
+.contact_page_help {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.contact_page_help__item .contact_page_help_link,
+.contact_page_help__item .contact_page_help_link:focus,
+.contact_page_help__item .contact_page_help_link:hover {
+    background: #FFFFFF !important;
+    color: #2E7D4F !important;
+}
+.contact_page_help_link .help_link_ico:before {
+    color: #2E7D4F !important;
+}
+
+/* ----------------------------------------------------------
+   PAGINATION: active page
+   ---------------------------------------------------------- */
+.pagination_block .pagination_list ul li.active a {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.pagination_block .pagination_list ul .arrow_pag a:hover {
+    background: #2E7D4F !important;
+}
+.pagination_block .arrow_pag a:hover .pag_arrow_ico:before {
+    color: #FFFFFF !important;
+}
+
+/* ----------------------------------------------------------
+   TABS: active tab — primary blue
+   ---------------------------------------------------------- */
+.tabs_site .nav-tabs > li.active > a,
+.tabs_site .nav-tabs > li.active > a:focus,
+.tabs_site .nav-tabs > li.active > a:hover {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.profile_tabs_slider .item.active a,
+.profile_tabs_slider .item.active a:focus,
+.profile_tabs_slider .item.active a:hover,
+.slider_tabs .owl-item .item.active a,
+.slider_tabs .owl-item .item.active a:focus,
+.slider_tabs .owl-item .item.active a:hover {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+/* ----------------------------------------------------------
+   SELECTED/ACTIVE CATALOG SECTION HEADERS
+   ---------------------------------------------------------- */
+.catalog_selected_model__item .catalog_selected_model__col {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.catalog_selected_model__item .catalog_selected_model__col.collapsed {
+    background: #F6F7F5 !important;
+    color: #66706A !important;
+}
+.catalog_selected_model__item .catalog_selected_model__col.collapsed:hover {
+    border-color: #2E7D4F !important;
+}
+
+/* VIN/request title section */
+.wrap_part_baner_title .part_baner_title__request_vin {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.text_title .text_title__item,
+.light_content__col .title_link_collapse {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.light_content__col.hov .text_title .text_title__item,
+.text_title.hov .text_title__item {
+    background: #2E7D4F !important;
+}
+
+/* Catalog TO content title */
+.catalog_to__content_item .catalog_to__content__title {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+/* App filter tabs active */
+.filter_right_block .wrap_app-brand-item .nav-tabs > li.active > a,
+.filter_right_block .wrap_app-brand-item .nav-tabs > li.active > a:focus,
+.filter_right_block .wrap_app-brand-item .nav-tabs > li.active > a:hover {
+    background: #2E7D4F !important;
+    border-color: transparent !important;
+    color: #FFFFFF !important;
+}
+.filter_right_block .wrap_app-brand-item .tab-content .accordion_item:hover,
+.filter_right_block .wrap_app-brand-item .tab-content .accordion_item.selected-panel {
+    border-color: #2E7D4F !important;
+}
+
+/* ----------------------------------------------------------
+   CARD HOVER: blue border instead of pink
+   ---------------------------------------------------------- */
+.main_categories__content a.main_categories__item:hover {
+    border-color: #E6F2EA !important;
+    box-shadow: 0 4px 20px rgba(46,125,79,0.12) !important;
+}
+.selected_model .selected_model__item:hover {
+    box-shadow: 0 4px 20px rgba(46,125,79,0.15) !important;
+}
+.parts_block .right_parts .parts_baner_pad:hover {
+    box-shadow: 0 4px 20px rgba(46,125,79,0.15) !important;
+}
+.not_result_main__block .not_result_main_item:hover {
+    box-shadow: 0 4px 20px rgba(46,125,79,0.15) !important;
+}
+
+/* Card hover blue border */
+.my_profile__user_tab_link:hover {
+    border-color: #E6F2EA !important;
+}
+.items_block_checkbox__item.checked .checkbox__item__card {
+    border-color: #E6F2EA !important;
+}
+.light_content__collapse .light_collapse__item:hover {
+    border-color: #E6F2EA !important;
+}
+.collapse_model__content .selected_model .selected_model__item:hover {
+    border-color: #E6F2EA !important;
+}
+.second_main_page_selected_auto__col:hover {
+    border-color: #E6F2EA !important;
+}
+.bx-soa-pp-company.bx-selected .bx-soa-pp-company-graf-container {
+    border-color: #E6F2EA !important;
+}
+.filter_right_block .wrap_app-brand-item .nav-tabs > li > a:hover {
+    border-color: #E6F2EA !important;
+}
+
+/* ----------------------------------------------------------
+   OWL SLIDER NAVIGATION: arrows on blue
+   ---------------------------------------------------------- */
+.slider_site.owl-carousel .owl-nav > button:hover {
+    background: #2E7D4F !important;
+}
+.slider_site.owl-carousel .owl-nav > button:hover .ico_slider_arrow:before {
+    color: #FFFFFF !important;
+}
+.slider_site .owl-dots .owl-dot.active span {
+    background: #2E7D4F !important;
+}
+
+/* ----------------------------------------------------------
+   HEADER: garaje/basket counter icons override (blue bar)
+   ---------------------------------------------------------- */
+.site_header .site_header__up .wrap_link_header_basket .site_header__up__ico,
+.site_header .site_header__up .wrap_garage .site_header__up__ico {
+    color: #FFFFFF !important;
+}
+
+/* ----------------------------------------------------------
+   INLINE STYLES FIX: owl arrow color in index.html
+   ---------------------------------------------------------- */
+.slider_site.owl-carousel .owl-nav > button .ico_slider_arrow:before {
+    color: #2E7D4F;
+}
+
+/* ----------------------------------------------------------
+   ЛК POPUP DROPDOWN: visible active/inactive states
+   ---------------------------------------------------------- */
+.header_login_user .dropdown-menu {
+    min-width: 180px !important;
+    padding: 4px 0 !important;
+}
+.header_login_user .dropdown-menu .site_personalarea {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.header_login_user .dropdown-menu .site_personalarea .site_personalarea__item a {
+    padding: 10px 16px 10px 45px !important;
+    color: #202624 !important;
+    background: #F6F7F5 !important;
+    text-decoration: none !important;
+    border-bottom: 1px solid #DDE3DE !important;
+    font-weight: 500 !important;
+}
+.header_login_user .dropdown-menu .site_personalarea .site_personalarea__item:last-child a {
+    border-bottom: none !important;
+}
+.header_login_user .dropdown-menu .site_personalarea .site_personalarea__item a:hover {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.header_login_user .dropdown-menu .site_personalarea .personalarea_exit a {
+    color: #D9902F !important;
+    background: #FFF2DA !important;
+}
+.header_login_user .dropdown-menu .site_personalarea .personalarea_exit a:hover {
+    background: #D9902F !important;
+    color: #FFFFFF !important;
+}
+
+/* ----------------------------------------------------------
+   CATALOG BUTTON: red default, blue when open
+   ---------------------------------------------------------- */
+.wrap_main_menu .main_menu_btn {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+    border-color: #2E7D4F !important;
+}
+.wrap_main_menu .main_menu_btn .main_menu_btn_ico:before,
+.wrap_main_menu .main_menu_btn .main_menu_btn__text {
+    color: #FFFFFF !important;
+}
+.wrap_main_menu .dropdown.open > .main_menu_btn,
+.wrap_main_menu .main_menu_btn:hover {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+    border-color: #2E7D4F !important;
+}
+.wrap_main_menu .dropdown.open > .main_menu_btn .main_menu_btn_ico:before,
+.wrap_main_menu .dropdown.open > .main_menu_btn .main_menu_btn__text,
+.wrap_main_menu .main_menu_btn:hover .main_menu_btn_ico:before,
+.wrap_main_menu .main_menu_btn:hover .main_menu_btn__text {
+    color: #FFFFFF !important;
+}
+
+/* ============================================================
+   ЮМАЛ АВТО — Extended Overrides v2
+   ============================================================ */
+
+/* 1. Logo: header larger, footer white */
+.link_logo img {
+    height: 76px !important;
+    max-width: 300px !important;
+}
+.footer_logo img {
+    height: 72px !important;
+    max-width: 280px !important;
+    filter: brightness(0) invert(1) !important;
+}
+
+/* 2. Footer: deep navy gradient */
+.wrap_main_footer {
+    background: #111816 !important;
+}
+.wrap_main_footer .main_footer__item .link_footer,
+.wrap_main_footer .main_footer__item .link_footer:focus,
+.wrap_main_footer .main_footer .main_footer__item ul li a,
+.wrap_main_footer .main_footer .main_footer__item ul li a:focus {
+    color: #A7C4B0 !important;
+}
+.wrap_main_footer .main_footer__item .link_footer:hover,
+.wrap_main_footer .main_footer .main_footer__item ul li a:hover {
+    color: #FFFFFF !important;
+}
+.wrap_main_footer .main_footer__item .footer_title_soc {
+    color: #FFFFFF !important;
+}
+.wrap_main_footer .main_footer .ul_footer_contact .footer_contact_text,
+.wrap_main_footer .main_footer .main_footer__item .footer_contact_text_tel,
+.wrap_main_footer .main_footer .ul_footer_contact .footer_contact_text_email {
+    color: #E6F2EA !important;
+}
+.wrap_main_footer .main_footer .ul_footer_contact .link_footer,
+.wrap_main_footer .main_footer .ul_footer_contact .link_footer:focus {
+    color: #A7C4B0 !important;
+}
+.wrap_main_footer .main_footer .ul_footer_contact .link_footer:hover {
+    color: #FFFFFF !important;
+}
+.wrap_main_footer .main_footer__copyright {
+    border-color: rgba(255,255,255,0.15) !important;
+    color: #8FB8A0 !important;
+}
+.wrap_main_footer .main_footer__copyright span,
+.wrap_main_footer .main_footer__copyright .site_link,
+.wrap_main_footer .main_footer__copyright .site_link:focus {
+    color: #8FB8A0 !important;
+}
+.wrap_main_footer .main_footer__copyright .site_link:hover {
+    color: #FFFFFF !important;
+}
+.wrap_main_footer .main_footer .main_footer__item.footer__item_four .ul_reset_style {
+    border-color: rgba(255,255,255,0.15) !important;
+}
+.wrap_main_footer .ico_footer_soc:before,
+.wrap_main_footer .footer_ico_contact:before {
+    color: #A7C4B0 !important;
+}
+.wrap_main_footer a:hover .ico_footer_soc:before {
+    color: #FFFFFF !important;
+}
+
+/* 3. Hero block: blue gradient without photo */
+.wrap_advantage_main_item {
+    background: linear-gradient(135deg, #111816 0%, #1C2522 55%, #253328 100%) !important;
+}
+.advantage_main_item .advantage_main_item__title,
+.advantage_main_item__title.title_h2 {
+    color: #FFFFFF !important;
+}
+.advantage_main_item__subtitle {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: rgba(255,255,255,0.95) !important;
+    margin: 6px 0 12px !important;
+    line-height: 1.4 !important;
+    display: block !important;
+}
+.advantage_main_item__text_descr {
+    color: rgba(255,255,255,0.85) !important;
+}
+.advantage_main_item__descr__item {
+    color: #FFFFFF !important;
+}
+
+/* 4. Help block: blue gradient without photo */
+.wrap_main_help_block .main_help_block {
+    background: linear-gradient(135deg, #111816 0%, #1C2522 50%, #253328 100%) !important;
+}
+.main_help_block__item__title {
+    color: #FFFFFF !important;
+}
+.main_help_block__item__descr {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+/* 5. Branch popup: readable text on light background */
+.header_adress_popup,
+.wrap_adress_popup_first .adress_popup_first {
+    color: #202624 !important;
+}
+.adress_popup_first__title,
+.other_adress__title,
+.adress_popup_main__body__title.title_h4 {
+    color: #202624 !important;
+    font-weight: 600 !important;
+}
+.adress_popup_first__item_text,
+.adress_popup_main__text {
+    color: #3D4A42 !important;
+}
+.other_adress .radio_text {
+    color: #3D4A42 !important;
+}
+.other_adress .radio_text__title {
+    color: #202624 !important;
+    font-weight: 600 !important;
+}
+
+/* 6. LK dropdown: keep left padding for absolute icon */
+.header_login_user .dropdown-menu .site_personalarea .site_personalarea__item a {
+    padding: 10px 16px 10px 45px !important;
+    white-space: nowrap !important;
+}
+.header_login_user .dropdown-menu {
+    min-width: 200px !important;
+    z-index: 9999 !important;
+}
+
+/* 7. Header: basket balance on all resolutions */
+.site_header__down .site_header__down__item_up {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 16px !important;
+}
+.site_header__down .link_logo {
+    flex: 0 0 auto !important;
+}
+.site_header__down .header_search.serach_selected_head {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+.site_header__down .header_basket_garage_btn {
+    flex: 0 0 auto !important;
+    margin-left: 0 !important;
+}
+
+/* 8. Section headings: red vertical accent stripe */
+.title_h2,
+.title_h3 {
+    position: relative !important;
+    padding-left: 14px !important;
+    border-left: 4px solid #2E7D4F !important;
+}
+.main_help_block__item__title.title_h1 {
+    position: relative !important;
+    padding-left: 14px !important;
+    border-left: 4px solid rgba(255,255,255,0.75) !important;
+}
+/* No stripe on hero title, help title, contacts heading */
+.wrap_advantage_main_item .title_h2 {
+    border-left: none !important;
+    padding-left: 0 !important;
+}
+.main_help_block__item__title.title_h1 {
+    border-left: none !important;
+    padding-left: 0 !important;
+}
+#anchor_popup_map.title_h3 {
+    border-left: none !important;
+    padding-left: 0 !important;
+}
+
+/* ============================================================
+   ЮМАЛ АВТО — Patch v3
+   ============================================================ */
+
+/* 1. Stat items: white card on blue hero — navy text */
+.advantage_main_item .advantage_main_item__descr .advantage_main_item__descr__item {
+    background: #FFFFFF !important;
+    color: #2E7D4F !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    box-shadow: 0 2px 10px rgba(46,125,79,0.22) !important;
+}
+
+/* 2. Red CTA button in help block (not in header) */
+.wrap_main_help_block .btn_site.link_service {
+    background: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.wrap_main_help_block .btn_site.link_service:hover {
+    background: #23643F !important;
+    border-color: #23643F !important;
+    color: #FFFFFF !important;
+}
+.wrap_main_help_block .btn_site.link_service .link_service__ico:before,
+.wrap_main_help_block .btn_site.link_service .color_ico:before {
+    color: #FFFFFF !important;
+}
+
+/* 3. Branch popup: white background so all text is visible */
+.header_adress_popup {
+    background: #FFFFFF !important;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18) !important;
+    border-radius: 6px !important;
+}
+.wrap_adress_popup_first .adress_popup_first {
+    background: #FFFFFF !important;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18) !important;
+}
+.header_adress_popup *:not(.btn_site):not(.site_link_two),
+.wrap_adress_popup_first .adress_popup_first *:not(.btn_site) {
+    color: #202624 !important;
+}
+.header_adress_popup .adress_popup_main__text,
+.adress_popup_first__item_text {
+    color: #3D4A42 !important;
+}
+.header_adress_popup .site_link {
+    color: #2E7D4F !important;
+}
+.header_adress_popup .site_link_two {
+    color: #2E7D4F !important;
+}
+
+/* 4. Header: reduce height — less vertical padding */
+.site_header__up .site_header__up__item {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+.site_header__up .site_header__up_link,
+.site_header__up .wrap_header_tel,
+.site_header__up .for_fixed_header_help {
+    line-height: 1.4 !important;
+}
+.site_header__down .site_header__down__item_up {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    min-height: unset !important;
+}
+
+/* 5. Hero block: breathing room below header */
+.sec_main.advantage_main {
+    margin-top: 14px !important;
+}
+
+/* 6. Basket balance: guarantee proper flex layout */
+.site_header__down .site_header__down__item_up {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    gap: 16px !important;
+}
+.site_header__down .link_logo {
+    flex: 0 0 auto !important;
+    margin-right: 0 !important;
+}
+.site_header__down .header_search.serach_selected_head {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.site_header__down .header_basket_garage_btn {
+    flex: 0 0 auto !important;
+    margin-left: 0 !important;
+}
+.site_header__down .for_fixed__garage_help {
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* 7. LK popup: ensure icon font-family works, no bg images */
+.header_login_user .dropdown-menu .site_personalarea .site_personalarea__item a {
+    background-image: none !important;
+}
+
+/* ============================================================
+   ЮМАЛ АВТО — Patch v4: banners, partner-banner, brand logos
+   ============================================================ */
+
+/* Banner overlay: anchor must be position:relative */
+.slider__stock .item a {
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Badge for banners */
+.yumal-badge {
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-family: 'Lato', Arial, sans-serif;
+}
+.yumal-badge--sale {
+    background: #D9902F;
+    color: #FFFFFF;
+}
+
+/* Partner brand logos in carousel */
+.slider__main_brand .item {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100px !important;
+    padding: 14px 18px !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    border-radius: 10px !important;
+    border: 1px solid #EAEAEA !important;
+}
+.slider__main_brand .item img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 62px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    border-radius: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+/* ----------------------------------------------------------
+   [ДЛЯ БИЗНЕСА] Partner banner block
+   ---------------------------------------------------------- */
+.yumal-partner-banner {
+    background: linear-gradient(135deg, #111816 0%, #1C2522 60%, #253328 100%);
+    padding: 28px 0;
+    margin-bottom: 0;
+}
+.yumal-partner-banner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.yumal-partner-banner__eyebrow {
+    display: inline-block;
+    background: rgba(217,144,47,0.92);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+.yumal-partner-banner__title {
+    color: #FFFFFF;
+    font-size: 1.22rem;
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0;
+}
+.yumal-partner-banner__features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+.yumal-partner-banner__features span {
+    background: rgba(255,255,255,0.11);
+    color: rgba(255,255,255,0.9);
+    font-size: 13px;
+    padding: 4px 13px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.22);
+    white-space: nowrap;
+}
+.yumal-partner-banner__cta {
+    display: inline-block;
+    background: #2E7D4F;
+    color: #FFFFFF !important;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none !important;
+    white-space: nowrap;
+    transition: background 0.2s ease-in-out;
+    flex-shrink: 0;
+}
+.yumal-partner-banner__cta:hover {
+    background: #23643F !important;
+    color: #FFFFFF !important;
+}
+@media (max-width: 767px) {
+    .yumal-partner-banner__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .yumal-partner-banner__cta {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ============================================================
+   ЮМАЛ АВТО — Mobile Header Patch
+   ============================================================ */
+
+/* ≤999px: compact ЛК button — override inline style padding */
+@media only screen and (max-width: 999px) {
+    .header_login_user.site_dopdown_btn .login_user_btn {
+        font-size: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        background: transparent !important;
+        width: 26px !important;
+        min-width: unset !important;
+        height: 26px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .header_login_user.site_dopdown_btn .login_user_btn .color_ico {
+        font-size: 20px !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* ≤767px: full mobile header layout fix */
+@media only screen and (max-width: 767px) {
+    .site_header__down .site_header__down__item_up {
+        width: calc(100% - 30px) !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        gap: 0 !important;
+        justify-content: space-between !important;
+        min-height: 46px !important;
+        align-items: center !important;
+    }
+
+    /* Logo compact */
+    .link_logo img {
+        height: 44px !important;
+        max-width: 160px !important;
+    }
+    .site_header__down .link_logo {
+        flex: 0 0 auto !important;
+        margin-right: 0 !important;
+    }
+
+    /* Search: shrink to just the icon button on mobile */
+    .site_header__down .header_search.serach_selected_head {
+        flex: 0 0 auto !important;
+        min-width: unset !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Top blue bar: tight single row */
+    .site_header__up .site_container {
+        height: 40px !important;
+    }
+
+    /* Phone compact */
+    .wrap_header_tel .header_tel {
+        font-size: 13px !important;
+    }
+
+    /* Burger Menu Icon adjustment */
+    .main_menu_btn_ico:before {
+        font-size: 26px !important; /* make it less bulky */
+    }
+    .wrap_main_menu .main_menu_btn {
+        padding: 4px !important;
+        width: 34px !important;
+        height: 34px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-right: 10px !important;
+    }
+
+    /* Basket is positioned back in the white bar */
+    .header_basket_garage_btn {
+        display: flex !important;
+        align-items: center !important;
+    }
+    .header_basket_garage_btn .link_header_basket {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 32px !important;
+        height: 32px !important;
+        position: relative !important;
+    }
+    /* Hide "Корзина" text, keep only icon */
+    .header_basket_garage_btn .link_header_basket {
+        font-size: 0 !important;
+        color: #FFFFFF !important; /* white for blue mobile header */
+    }
+    /* Icon itself: white, visible size */
+    .header_basket_garage_btn .link_header_basket .site_header__up__ico {
+        font-size: 24px !important;
+        color: #FFFFFF !important;
+    }
+    .header_basket_garage_btn .link_header_basket .site_header__up__ico:before {
+        color: #FFFFFF !important;
+    }
+    /* Badge counter: keep visible above icon */
+    .header_basket_garage_btn .link_header_basket .basket_number_product {
+        font-size: 9px !important;
+        min-width: 16px !important;
+        height: 16px !important;
+        line-height: 16px !important;
+    }
+
+    /* Ensure overflow visible so the basket isn't clipped above site_header__down */
+    .site_header__down,
+    .site_header__down .site_container,
+    .site_header__down .site_header__down__item_up {
+        overflow: visible !important;
+    }
+}
+
+/* ============================================================
+   ЛИЧНЫЙ КАБИНЕТ — Рекламации: иконка в dropdown шапки
+   ============================================================ */
+.header_login_user.site_dopdown_btn .site_personalarea .site_personalarea__item.bg_reclamations a:before {
+    content: "\e905"; /* icon-ion-alert-circle */
+}
+
+/* ============================================================
+   РЕКЛАМАЦИИ — вкладки профиля (scoped, не owl-carousel)
+   ============================================================ */
+.recl-tabs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 12px 0 !important;
+    border-bottom: 1px solid #e8eaed;
+    margin-bottom: 24px !important;
+}
+.recl-tabs li a {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 6px;
+    background: #f0f0f0;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background .15s, color .15s;
+}
+.recl-tabs li a:hover { background: #e6f2ea; color: #2E7D4F; }
+.recl-tabs li.active a { background: #2E7D4F !important; color: #fff !important; }
+
+/* ============================================================
+   ЛК — Блоки «Адреса» и «Финансовые условия»
+   Mobile-first: base = 1 column, расширяется на планшете/десктопе
+   ============================================================ */
+
+/* Карточка-секция */
+.yumal-lk-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    padding: 20px 16px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .yumal-lk-section { padding: 24px 28px; }
+}
+
+/* Шапка секции: заголовок + кнопка */
+.yumal-lk-section__header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+    .yumal-lk-section__header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.yumal-lk-section__header .title_h3 {
+    margin: 0 !important;
+    font-size: 17px !important;
+}
+
+/* Кнопка «Добавить адрес» */
+.yumal-btn-add-address {
+    white-space: nowrap;
+    align-self: flex-start;
+    font-size: 14px !important;
+    padding: 8px 18px !important;
+    line-height: 1.4 !important;
+}
+
+/* ----------------------------------------------------------
+   АДРЕСА: сетка карточек
+   ---------------------------------------------------------- */
+.yumal-addresses-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+@media (min-width: 576px) {
+    .yumal-addresses-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 992px) {
+    .yumal-addresses-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.yumal-address-card {
+    border: 1px solid #DDE3DE;
+    border-radius: 8px;
+    padding: 14px 16px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.yumal-address-card:hover {
+    border-color: #E6F2EA;
+    box-shadow: 0 4px 16px rgba(46,125,79,0.10);
+}
+
+.yumal-address-badge {
+    display: inline-block;
+    background: #2E7D4F;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    width: fit-content;
+}
+
+.yumal-address-card__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #202624;
+    line-height: 1.45;
+    margin-bottom: 5px;
+}
+
+.yumal-address-card__meta {
+    font-size: 13px;
+    color: #66706A;
+    margin-bottom: 4px;
+}
+
+.yumal-address-card__recipient {
+    font-size: 13px;
+    color: #66706A;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.yumal-address-card__actions {
+    display: flex;
+    gap: 14px;
+    font-size: 13px;
+    border-top: 1px solid #EEF1ED;
+    padding-top: 10px;
+}
+
+/* ----------------------------------------------------------
+   ФИНАНСЫ: статкарточки
+   ---------------------------------------------------------- */
+.yumal-finance-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 576px) {
+    .yumal-finance-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.yumal-finance-stat {
+    background: #F6F7F5;
+    border-radius: 8px;
+    padding: 16px;
+    border-left: 4px solid #DDE3DE;
+}
+
+.yumal-finance-stat--danger { border-left-color: #D9902F; }
+.yumal-finance-stat--danger .yumal-finance-stat__value { color: #D9902F !important; }
+.yumal-finance-stat--primary { border-left-color: #2E7D4F; }
+
+.yumal-finance-stat__label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #66706A;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.yumal-finance-stat__value {
+    font-size: 22px;
+    font-weight: 800;
+    color: #2E7D4F;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.yumal-finance-stat__note {
+    font-size: 12px;
+    color: #66706A;
+}
+
+/* ----------------------------------------------------------
+   ФИНАНСЫ: таблица графика платежей
+   ---------------------------------------------------------- */
+.yumal-schedule-title {
+    margin: 0 0 14px !important;
+    color: #202624 !important;
+    font-size: 15px !important;
+}
+
+.yumal-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 6px;
+    border: 1px solid #DDE3DE;
+}
+
+.yumal-payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #202624;
+    min-width: 520px;
+}
+
+.yumal-payment-table thead tr { background: #2E7D4F; }
+
+.yumal-payment-table thead th {
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    border: none;
+    white-space: nowrap;
+}
+
+.yumal-payment-table tbody tr {
+    border-bottom: 1px solid #EEF1ED;
+    background: #fff;
+    transition: background .15s;
+}
+
+.yumal-payment-table tbody tr:last-child { border-bottom: none; }
+.yumal-payment-table tbody tr:hover { background: #F6F7F5; }
+.yumal-payment-table tbody tr.yumal-row--overdue { background: #FFF8F0; }
+.yumal-payment-table tbody tr.yumal-row--overdue:hover { background: #FFF2DA; }
+
+.yumal-payment-table tbody td {
+    padding: 10px 14px;
+    border: none;
+    vertical-align: middle;
+}
+
+/* Статусные чипы */
+.yumal-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.yumal-status--paid    { background: #D1FAE5; color: #065F46; }
+.yumal-status--pending { background: #FEF3C7; color: #92400E; }
+.yumal-status--overdue { background: #FFF2DA; color: #7A4A00; }
+
+/* Mobile (<576px): карточечный вид таблицы */
+@media (max-width: 575px) {
+    .yumal-table-wrap { border: none; overflow-x: visible; }
+    .yumal-payment-table { min-width: unset; display: block; }
+    .yumal-payment-table thead { display: none; }
+    .yumal-payment-table tbody { display: block; }
+    .yumal-payment-table tbody tr {
+        display: block;
+        border: 1px solid #DDE3DE;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        padding: 10px 14px;
+        background: #fff;
+    }
+    .yumal-payment-table tbody tr.yumal-row--overdue { background: #FFF8F0; }
+    .yumal-payment-table tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 0;
+        border-bottom: 1px solid #EEF1ED;
+        font-size: 13px;
+    }
+    .yumal-payment-table tbody td:last-child { border-bottom: none; padding-bottom: 0; }
+    .yumal-payment-table tbody td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #66706A;
+        font-size: 12px;
+        flex-shrink: 0;
+        margin-right: 8px;
+    }
+    .yumal-finance-grid { grid-template-columns: 1fr; }
+}
+
+/* Модал добавления адреса */
+#yumal_modal_add_address .modal-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #202624;
+}
+
+/* ============================================================
+   ПРОФИЛЬ — убираем избыточное пространство
+   Причина: main.profile/style.css задаёт min-height:570px
+   и padding-top:40px, из-за чего под полями профиля остаётся
+   большое пустое место.
+   ============================================================ */
+.personal_area_page__user_content .user_content__left {
+    min-height: unset !important;
+    padding: 24px !important;
+}
+.user_content__info {
+    padding-top: 16px !important;
+}
+.user_content__info__item {
+    margin-bottom: 14px !important;
+}
+
+/* ============================================================
+   КНОПКИ — иконка внутри btn_site_border наследует цвет текста
+   ============================================================ */
+.btn_site.btn_site_border span,
+.btn_site.btn_site_border span:before {
+    color: #2E7D4F !important;
+}
+.btn_site.btn_site_border:hover span,
+.btn_site.btn_site_border:hover span:before {
+    color: #FFFFFF !important;
+}
+
+/* ============================================================
+   ЮМАЛ АВТО — Search Bar Redesign
+   ============================================================ */
+.yumal-header-search-patch .main_search {
+    width: 100% !important; /* fill space */
+    max-width: 750px !important; /* restrict max length */
+}
+.yumal-header-search-patch .form_main_search {
+    display: flex !important;
+    align-items: stretch !important;
+    position: relative !important;
+}
+.yumal-header-search-patch .form_main_search .site_field {
+    width: 100% !important;
+    flex: 1 1 auto !important;
+    margin-bottom: 0 !important;
+}
+.yumal-header-search-patch .form_main_search .site_field input {
+    width: 100% !important;
+    padding-left: 15px !important; /* remove padding left for select */
+    padding-right: 15px !important; /* reset from 230px/60px absolute padding */
+    border-radius: 6px 0 0 6px !important;
+    border-right: none !important; /* remove blue border at button junction */
+    outline: none !important;
+    margin: 0 !important;
+}
+.yumal-header-search-patch .btn_search {
+    position: static !important; /* override absolute positioning */
+    width: auto !important;
+    height: auto !important; /* flex stretch handles height */
+    padding: 0 20px !important;
+    background: #2E7D4F !important; /* red default */
+    border-color: #2E7D4F !important;
+    color: #FFFFFF !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    border-radius: 0 6px 6px 0 !important;
+    transition: background 0.2s, border-color 0.2s, color 0.2s !important;
+}
+.yumal-header-search-patch .btn_search:hover {
+    background: #2E7D4F !important; /* blue on hover */
+    border-color: #2E7D4F !important;
+}
+.yumal-header-search-patch .btn_search .btn_search__ico {
+    font-size: 20px !important;
+    color: #FFFFFF !important;
+}
+.yumal-header-search-patch .btn_search .btn_search__ico:before {
+    color: #FFFFFF !important;
+}
+.yumal-header-search-patch .yumal-search-text {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    color: #FFFFFF !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .yumal-header-search-patch .form_main_search {
+        display: none !important;
+    }
+    .yumal-header-search-patch .link_modal_mob_header_search {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 34px !important;
+        height: 34px !important;
+        padding: 4px !important;
+        background: #2E7D4F !important; /* restore red background */
+        border: none !important;
+        border-radius: 4px !important;
+        transition: background 0.2s !important;
+    }
+    .yumal-header-search-patch .link_modal_mob_header_search:hover,
+    .yumal-header-search-patch .link_modal_mob_header_search:active {
+        background: #2E7D4F !important; /* blue on hover/click */
+    }
+    .yumal-header-search-patch .link_modal_mob_header_search .btn_search__ico {
+        color: #FFFFFF !important;
+    }
+    .yumal-header-search-patch .link_modal_mob_header_search .btn_search__ico:before {
+        font-size: 26px !important; /* match burger menu */
+        color: #FFFFFF !important;
+    }
+    .yumal-header-search-patch .form_main_search .site_field input {
+        border-radius: 6px !important;
+    }
+    
+    /* Fix inline SVG icon scaling in 'Запчасти в наличии' */
+    .main_categories__content .main_categories__item.mci__stock .main_categories__item__img svg {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+        margin: auto !important;
+    }
+
+    .yumal-header-search-patch .btn_search {
+        width: 44px !important;
+        padding: 0 !important;
+        border-radius: 4px !important;
+        background: transparent !important;
+        border-color: transparent !important;
+        position: absolute !important; /* revert to absolute for mobile overlay */
+        top: 0 !important;
+        right: 0 !important;
+        height: 100% !important;
+    }
+    .yumal-header-search-patch .btn_search .yumal-search-text {
+        display: none !important;
+    }
+    .yumal-header-search-patch .btn_search .btn_search__ico {
+        color: #202624 !important;
+    }
+    .yumal-header-search-patch .btn_search .btn_search__ico:before {
+        color: #202624 !important;
+    }
+    .yumal-header-search-patch .btn_search:hover {
+        background: #F0F0F0 !important;
+        border-color: #F0F0F0 !important;
+    }
+    .yumal-header-search-patch .btn_search:hover .btn_search__ico {
+        color: #2E7D4F !important;
+    }
+    .yumal-header-search-patch .btn_search:hover .btn_search__ico:before {
+        color: #2E7D4F !important;
+    }
+}
+
+/* ============================================================
+   MOTEXS RU — Финальная полировка v5 (зелёная палитра)
+   ============================================================ */
+
+/* ── Общий фон страницы ── */
+body {
+    background-color: #F6F7F5 !important;
+}
+
+/* ── Шапка: белая нижняя полоса + граница ── */
+.site_header__down {
+    background: #FFFFFF !important;
+    border-bottom: 1px solid #DDE3DE !important;
+}
+
+/* ── Логотип в шапке: корректные размеры и отступы ── */
+.link_logo img {
+    height: 52px !important;
+    max-width: 220px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+/* Логотип в футере: белый (invert) */
+.footer_logo img {
+    height: 48px !important;
+    max-width: 200px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    filter: brightness(0) invert(1) !important;
+    opacity: 0.90 !important;
+}
+
+/* ── Страница регистрации/логина: логотип ── */
+.header_login_reg_page .header_login_reg_page__logo img {
+    height: 56px !important;
+    max-width: 220px !important;
+    object-fit: contain !important;
+}
+
+/* ── Футер: тёмно-нейтральный, не синий ── */
+.wrap_main_footer {
+    background: #111816 !important;
+}
+.wrap_main_footer .main_footer__item .footer_title_soc {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+}
+.wrap_main_footer .main_footer .main_footer__item ul li a,
+.wrap_main_footer .main_footer .main_footer__item ul li a:focus,
+.wrap_main_footer .main_footer__item .link_footer,
+.wrap_main_footer .main_footer .ul_footer_contact .link_footer {
+    color: #A7C4B0 !important;
+}
+.wrap_main_footer .main_footer .main_footer__item ul li a:hover,
+.wrap_main_footer .main_footer__item .link_footer:hover,
+.wrap_main_footer .main_footer .ul_footer_contact .link_footer:hover {
+    color: #FFFFFF !important;
+}
+.wrap_main_footer .main_footer__copyright {
+    border-color: #1C2522 !important;
+    color: #66706A !important;
+}
+.wrap_main_footer .main_footer__copyright .site_link,
+.wrap_main_footer .main_footer__copyright span {
+    color: #66706A !important;
+}
+.wrap_main_footer .main_footer__copyright .site_link:hover {
+    color: #FFFFFF !important;
+}
+.wrap_main_footer .ico_footer_soc:before,
+.wrap_main_footer .footer_ico_contact:before {
+    color: #A7C4B0 !important;
+}
+.wrap_main_footer a:hover .ico_footer_soc:before {
+    color: #FFFFFF !important;
+}
+.wrap_main_footer .main_footer .main_footer__item.footer__item_four .ul_reset_style {
+    border-color: #1C2522 !important;
+}
+
+/* ── Hero / Advantage block: тёмно-нейтральный ── */
+.wrap_advantage_main_item {
+    background: linear-gradient(135deg, #111816 0%, #1C2522 55%, #253328 100%) !important;
+}
+
+/* ── Help block: тёмно-нейтральный ── */
+.wrap_main_help_block .main_help_block {
+    background: linear-gradient(135deg, #111816 0%, #1C2522 50%, #253328 100%) !important;
+}
+
+/* ── Карточки товаров: белые с нейтральным бордером ── */
+.site_view_result__item {
+    background: #FFFFFF !important;
+    border-color: #DDE3DE !important;
+}
+.site_view_result__item:hover {
+    border-color: #E6F2EA !important;
+    box-shadow: 0 4px 16px rgba(46,125,79,0.10) !important;
+}
+
+/* ── Таблица товаров: чередование строк ── */
+.site_table tbody tr:hover td {
+    background: #F6F7F5 !important;
+}
+
+/* ── Фильтр сайдбар: нейтральный фон ── */
+.wrap_filter_forma,
+.for_mob_sidebar_search {
+    background: #FFFFFF !important;
+    border-color: #DDE3DE !important;
+}
+
+/* ── Инпуты: нейтральный бордер, зелёный focus ── */
+.site_field input,
+.site_field textarea,
+.site_field select {
+    border-color: #DDE3DE !important;
+    background: #FFFFFF !important;
+    color: #202624 !important;
+}
+.site_field input:focus,
+.site_field input.active,
+.site_field textarea:focus,
+.site_field textarea.active {
+    border-color: #2E7D4F !important;
+    box-shadow: 0 0 0 3px rgba(46,125,79,0.12) !important;
+}
+
+/* ── Поиск в шапке: кнопка зелёная ── */
+.yumal-header-search-patch .btn_search {
+    background: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+}
+.yumal-header-search-patch .btn_search:hover {
+    background: #23643F !important;
+    border-color: #23643F !important;
+}
+
+/* ── Кнопки: primary зелёная ── */
+.btn_site {
+    transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease !important;
+}
+
+/* ── Каталог кнопка: зелёная ── */
+.wrap_main_menu .main_menu_btn {
+    background: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.wrap_main_menu .main_menu_btn:hover,
+.wrap_main_menu .dropdown.open > .main_menu_btn {
+    background: #23643F !important;
+    border-color: #23643F !important;
+}
+
+/* ── Мобильный поиск: зелёный ── */
+@media only screen and (max-width: 767px) {
+    .yumal-header-search-patch .link_modal_mob_header_search {
+        background: #2E7D4F !important;
+    }
+    .yumal-header-search-patch .link_modal_mob_header_search:hover {
+        background: #23643F !important;
+    }
+    .btn_site.btn_site_two {
+        background: #2E7D4F !important;
+    }
+    .btn_site.btn_site_two:hover {
+        background: #23643F !important;
+    }
+    /* Логотип мобильный */
+    .link_logo img {
+        height: 38px !important;
+        max-width: 150px !important;
+    }
+    .footer_logo img {
+        height: 36px !important;
+        max-width: 150px !important;
+    }
+}
+
+/* ── Breadcrumbs: нейтральные ── */
+.breadcrumbs__item a,
+.breadcrumbs__item .breadcrumbs__item__text {
+    color: #66706A !important;
+}
+.breadcrumbs__item.breadcrumbs__item__disabled .breadcrumbs__item__text {
+    color: #202624 !important;
+}
+.breadcrumbs__item__sep:before {
+    color: #DDE3DE !important;
+}
+
+/* ── Пагинация ── */
+.pagination_block .pagination_list ul li a {
+    border-color: #DDE3DE !important;
+    color: #202624 !important;
+}
+.pagination_block .pagination_list ul li a:hover {
+    background: #E6F2EA !important;
+    border-color: #2E7D4F !important;
+    color: #2E7D4F !important;
+}
+.pagination_block .pagination_list ul li.active a {
+    background: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+/* ── Dropdown меню (nav): чистый белый ── */
+.site_dopdown_btn .dropdown-menu {
+    background: #FFFFFF !important;
+    border: 1px solid #DDE3DE !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10) !important;
+}
+.site_dopdown_btn .dropdown-menu a,
+.site_dopdown_btn .dropdown-menu li > a {
+    color: #202624 !important;
+}
+.site_dopdown_btn .dropdown-menu a:hover,
+.site_dopdown_btn .dropdown-menu li > a:hover {
+    background: #E6F2EA !important;
+    color: #2E7D4F !important;
+}
+
+/* ── Табы: зелёный active ── */
+.recl-tabs li a:hover {
+    background: #E6F2EA !important;
+    color: #2E7D4F !important;
+}
+.recl-tabs li.active a {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+/* ── ЛК: адресные карточки hover ── */
+.yumal-address-card:hover {
+    border-color: #E6F2EA !important;
+    box-shadow: 0 4px 16px rgba(46,125,79,0.10) !important;
+}
+.yumal-address-badge {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+/* ── Финансы: stat primary ── */
+.yumal-finance-stat--primary {
+    border-left-color: #2E7D4F !important;
+}
+.yumal-finance-stat__value {
+    color: #2E7D4F !important;
+}
+
+/* ── Таблица платежей: header зелёный ── */
+.yumal-payment-table thead tr {
+    background: #2E7D4F !important;
+}
+.yumal-payment-table tbody tr:hover {
+    background: #F6F7F5 !important;
+}
+
+/* ── Catalog selected model: зелёный ── */
+.catalog_selected_model__item .catalog_selected_model__col {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.catalog_selected_model__item .catalog_selected_model__col.collapsed {
+    background: #F6F7F5 !important;
+    color: #66706A !important;
+}
+.catalog_selected_model__item .catalog_selected_model__col.collapsed:hover {
+    border-color: #2E7D4F !important;
+}
+
+/* ── VIN/request title: зелёный ── */
+.wrap_part_baner_title .part_baner_title__request_vin,
+.text_title .text_title__item,
+.light_content__col .title_link_collapse {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+/* ── section headings: зелёная полоска ── */
+.title_h2,
+.title_h3 {
+    border-left-color: #2E7D4F !important;
+}
+
+/* ── Sale badge (label_stock): amber ── */
+.label_product_tag__item.label_stock {
+    background: #D9902F !important;
+    color: #FFFFFF !important;
+}
+/* New badge: зелёный */
+.label_product_tag__item.label_new {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+/* ── Partner banner: нейтральный тёмный ── */
+.yumal-partner-banner {
+    background: linear-gradient(135deg, #111816 0%, #1C2522 60%, #253328 100%) !important;
+}
+.yumal-partner-banner__eyebrow {
+    background: rgba(217,144,47,0.92) !important;
+}
+.yumal-partner-banner__cta {
+    background: #2E7D4F !important;
+}
+.yumal-partner-banner__cta:hover {
+    background: #23643F !important;
+}
+
+/* ── Notification badges: зелёный ── */
+.basket_number_product,
+.garage_number_auto {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+/* ── Контакт-страница help: зелёный ── */
+.contact_page_help {
+    background: #2E7D4F !important;
+}
+.contact_page_help__item .contact_page_help_link {
+    background: #FFFFFF !important;
+    color: #2E7D4F !important;
+}
+.contact_page_help__item .contact_page_help_link:hover {
+    background: #E6F2EA !important;
+}
+.contact_page_help_link .help_link_ico:before {
+    color: #2E7D4F !important;
+}
+
+/* ── OWL carousel nav ── */
+.slider_site.owl-carousel .owl-nav > button:hover {
+    background: #2E7D4F !important;
+}
+.slider_site .owl-dots .owl-dot.active span {
+    background: #2E7D4F !important;
+}
+
+/* ── Таблица: нейтральный фон, зелёные ссылки ── */
+.site_table thead tr {
+    background: #EEF1ED !important;
+}
+.site_table thead th {
+    color: #202624 !important;
+    border-color: #DDE3DE !important;
+}
+.site_table tbody td {
+    border-color: #EEF1ED !important;
+}
+
+/* ── «Все категории» плитка: зелёный градиент ── */
+.main_categories__content a.main_categories__item.mci__all_link_catalog {
+    background: linear-gradient(135deg, #23643F 0%, #2E7D4F 55%, #3A9D63 100%) !important;
+    border-color: #2E7D4F !important;
+}
+
+/* ── Адаптив: tablet ── */
+@media only screen and (max-width: 999px) {
+    .link_logo img {
+        height: 44px !important;
+        max-width: 180px !important;
+    }
+    .footer_logo img {
+        height: 40px !important;
+        max-width: 170px !important;
+    }
+}
+
+/* ============================================================
+   MOTEXS RU — Patch v6: base template color overrides
+   Перекрываем цвета из минифицированного option.css шаблона
+   ============================================================ */
+
+/* ── Кнопки «В корзину» (gradient_top) → зелёные ── */
+.btn_site.gradient_top,
+.btn_site.gradient_top:focus,
+a.btn_site.gradient_top,
+a.btn_site.gradient_top:focus {
+    background: #2E7D4F !important;
+    background-image: none !important;
+    border-color: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.btn_site.gradient_top:hover,
+a.btn_site.gradient_top:hover {
+    background: #23643F !important;
+    border-color: #23643F !important;
+    color: #FFFFFF !important;
+}
+.btn_site.gradient_top span,
+.btn_site.gradient_top span:before,
+.btn_site.gradient_top .icon-ion-cart,
+.btn_site.gradient_top .icon-ion-cart:before {
+    color: #FFFFFF !important;
+}
+
+/* ── Primary btn_site (общий) → зелёный ── */
+.btn_site:not(.btn_site_border):not(.btn_site_white):not(.btn_site_two):not(.link_service),
+a.btn_site:not(.btn_site_border):not(.btn_site_white):not(.btn_site_two):not(.link_service) {
+    background: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.btn_site:not(.btn_site_border):not(.btn_site_white):not(.btn_site_two):not(.link_service):hover {
+    background: #23643F !important;
+    border-color: #23643F !important;
+}
+
+/* ── Корзина в шапке: иконка и счётчик ── */
+.link_header_basket .site_header__up__ico:before,
+.wrap_link_header_basket .site_header__up__ico:before {
+    color: #202624 !important;
+}
+.site_header__down .link_header_basket .site_header__up__ico:before {
+    color: #202624 !important;
+}
+
+/* ── Иконка пользователя в ЛК-боковой панели ── */
+.my_profile__user_tab_link:hover {
+    border-color: #E6F2EA !important;
+}
+.my_profile__user_ava,
+.my_profile__user_ava_img {
+    border-color: #DDE3DE !important;
+}
+
+/* ── base template: svg_line_color / svg_line_border → зелёный ── */
+.light_content__col.hov .text_title .light_line #light_line_svg .svg_line_color,
+.text_title.hov .light_line #light_line_svg .svg_line_color {
+    fill: #2E7D4F !important;
+}
+.light_content__col.hov .text_title .light_line #light_line_svg .svg_line_border,
+.text_title.hov .light_line #light_line_svg .svg_line_border {
+    stroke: #2E7D4F !important;
+}
+
+/* ── base template: catalog_to__content__title → зелёный ── */
+.catalog_to__content_item .catalog_to__content__title {
+    background: #2E7D4F !important;
+}
+
+/* ── base template: catalog_selected_model → зелёный ── */
+.catalog_selected_model__item .catalog_selected_model__col {
+    background: #2E7D4F !important;
+}
+.catalog_selected_model__item .catalog_selected_model__col.collapsed:hover {
+    border-color: #2E7D4F !important;
+}
+
+/* ── base template: mci__origin_c (Запчасти в наличии блок) → зелёный ── */
+.main_categories__item.mci__origin_c .mci__origin_c_link_in {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+.main_categories__item.mci__origin_c .mci__origin_c_link_in:hover {
+    background: #23643F !important;
+}
+
+/* ── base template: mobile menu icon hover → зелёный ── */
+.site_header__down .site_dopdown_btn.main_menu:hover .main_menu_btn .main_menu_btn_ico:before,
+.site_header__down .site_dopdown_btn.main_menu .open .main_menu_btn .main_menu_btn_ico:before {
+    color: #2E7D4F !important;
+}
+
+/* ── base template: mobile btn_site_two → зелёный ── */
+.btn_site.btn_site_two {
+    background: #2E7D4F !important;
+}
+.btn_site.btn_site_two:hover {
+    background: #23643F !important;
+}
+
+/* ── base template: brand_list_parts hover → зелёный ── */
+.brand_list_parts__item .brand_list_parts__title:hover,
+.brand_list_parts__item .brand_list_parts__ul > li > a:hover {
+    color: #2E7D4F !important;
+}
+
+/* ── base template: mobile search → зелёный ── */
+.btn_site.link_modal_mob_header_search {
+    background: #2E7D4F !important;
+}
+.btn_site.link_modal_mob_header_search:hover {
+    background: #23643F !important;
+}
+.btn_site.link_modal_mob_header_search .btn_search__ico:before,
+.btn_site.link_modal_mob_header_search:hover .btn_search__ico:before {
+    color: #FFFFFF !important;
+}
+
+/* ── base template: filter slider → зелёный ── */
+.wrap_filter_forma .ui-widget-header,
+.wrap_filter_forma .ui-slider .ui-slider-handle,
+.for_mob_sidebar_search .bx-filter .bx-ui-slider-pricebar-v,
+.for_mob_sidebar_search .bx-filter .bx-ui-slider-pricebar-vn,
+.for_mob_sidebar_search .bx-filter .bx-ui-slider-handle {
+    background: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+}
+
+/* ── base template: light_content hov → зелёный ── */
+.light_content__col.hov .text_title .text_title__item,
+.text_title.hov .text_title__item {
+    background: #2E7D4F !important;
+}
+
+/* ── base template: tabs active → зелёный ── */
+.tabs_site .nav-tabs > li.active > a,
+.tabs_site .nav-tabs > li.active > a:focus,
+.tabs_site .nav-tabs > li.active > a:hover {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+    border-color: #2E7D4F !important;
+}
+
+/* ── base template: card hover borders ── */
+.collapse_model__content .selected_model .selected_model__item:hover {
+    border-color: #E6F2EA !important;
+}
+
+/* ── Иконка аватара пользователя в ЛК: нейтральный цвет ── */
+.personal_area_page__user .user_ava_ico:before,
+.my_profile__user_ava .user_ava_ico:before {
+    color: #66706A !important;
+}
+
+/* ── Корзина: иконка и счётчик на мобиле ── */
+@media only screen and (max-width: 767px) {
+    .header_basket_garage_btn .link_header_basket {
+        color: #202624 !important;
+    }
+    .header_basket_garage_btn .link_header_basket .site_header__up__ico {
+        font-size: 24px !important;
+        color: #202624 !important;
+    }
+    .header_basket_garage_btn .link_header_basket .site_header__up__ico:before {
+        color: #202624 !important;
+    }
+}
+
+/* ── Нейтральный фон для секций между карточками ── */
+.sec_main,
+.wrap_sec_main {
+    background-color: #F6F7F5 !important;
+}
+.sec_main.bg_white,
+.wrap_sec_main.bg_white {
+    background-color: #FFFFFF !important;
+}
+
+/* ── Модальные окна: белые, нейтральный бордер ── */
+.modal_site .modal-dialog .modal-content {
+    background: #FFFFFF !important;
+    border: 1px solid #DDE3DE !important;
+}
+.modal_site .modal-dialog .modal-content .modal-header {
+    border-color: #DDE3DE !important;
+}
+.modal_site .modal-dialog .modal-content .modal-footer {
+    border-color: #DDE3DE !important;
+}
+
+/* ── Tooltip / popover: нейтральный ── */
+.tooltip .tooltip-inner {
+    background: #202624 !important;
+    color: #FFFFFF !important;
+}
+.tooltip.top .tooltip-arrow { border-top-color: #202624 !important; }
+.tooltip.bottom .tooltip-arrow { border-bottom-color: #202624 !important; }
+
+/* ── Селекты bootstrap-select: зелёный focus ── */
+.wrap_selectpicker_site .bootstrap-select > button.dropdown-toggle:focus,
+.wrap_selectpicker_site .open.bootstrap-select > button.dropdown-toggle {
+    border-color: #2E7D4F !important;
+    box-shadow: 0 0 0 3px rgba(46,125,79,0.12) !important;
+    outline: none !important;
+}
+.wrap_selectpicker_site .bootstrap-select .dropdown-menu .selected a span.check-mark {
+    color: #2E7D4F !important;
+}
+
+/* ── Чекбоксы и радио: зелёный ── */
+.checkbox input[type="checkbox"]:checked + label:before,
+.wrap_selectpicker_site.multi_check .bootstrap-select.show-tick
+    .dropdown-menu .selected span.check-mark {
+    background-color: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+}
+.radio input[type="radio"]:checked + label .radio_btn:before {
+    background-color: #2E7D4F !important;
+    border-color: #2E7D4F !important;
+}
+
+/* ── SMS/Code отправка: зелёный ── */
+.send_code .send_code_link,
+.resend_code,
+.resend_code:focus {
+    border-color: #2E7D4F !important;
+    color: #2E7D4F !important;
+}
+.send_code .send_code_link:hover,
+.resend_code:hover {
+    border-color: #23643F !important;
+    color: #23643F !important;
+}
+
+/* ── ЛК: Кнопка-иконка в btn_site_border → зелёная иконка ── */
+.btn_site.btn_site_border span,
+.btn_site.btn_site_border span:before {
+    color: #2E7D4F !important;
+}
+.btn_site.btn_site_border:hover span,
+.btn_site.btn_site_border:hover span:before {
+    color: #FFFFFF !important;
+}
+
+/* ── Карточки категорий: зелёный hover ── */
+.main_categories__content a.main_categories__item:hover {
+    border-color: #E6F2EA !important;
+    box-shadow: 0 4px 20px rgba(46,125,79,0.12) !important;
+}
+
+/* ── Навигация: зелёный hover ── */
+.main_menu__item .title_main_menu:hover,
+.main_menu__item .title_main_menu:focus,
+.main_menu__item .title_main_menu:hover .title_main_menu_ico:before,
+.main_menu__item .title_main_menu:focus .title_main_menu_ico:before {
+    color: #2E7D4F !important;
+}
+.site_dopdown_btn.main_menu .dropdown-menu ul.main_menu__collapse_ul li > a:hover {
+    color: #2E7D4F !important;
+}
+
+/* ── ЛК dropdown menu: exit → amber ── */
+.header_login_user .dropdown-menu .site_personalarea .personalarea_exit a {
+    color: #D9902F !important;
+    background: #FFF2DA !important;
+}
+.header_login_user .dropdown-menu .site_personalarea .personalarea_exit a:hover {
+    background: #D9902F !important;
+    color: #FFFFFF !important;
+}
+
+/* ── Hover на ЛК dropdown items → зелёный ── */
+.header_login_user .dropdown-menu .site_personalarea .site_personalarea__item a:hover {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+
+/* ============================================================
+   MOTEXS RU — Dark Gradient Theme v7
+   Глубокий тёмно-зелёный градиент для всех тёмных поверхностей
+   ============================================================ */
+
+/* ── Шапка верхняя полоса ── */
+.site_header .site_header__up {
+    background: linear-gradient(90deg,
+        #0B1810 0%, #122219 35%, #1A3326 65%, #2A6A47 100%
+    ) !important;
+    border-bottom: 1px solid rgba(46,125,79,0.30) !important;
+}
+.site_header .site_header__up a,
+.site_header .site_header__up a:focus,
+.site_header .site_header__up .site_link,
+.site_header .site_header__up .site_link:focus,
+.wrap_header_tel .header_tel,
+.site_header .site_header__up .site_header__up_link,
+.site_header__up .site_header__up_link_ico:before,
+.wrap_header_tel.site_header__up_link .site_header__up_link_ico:before,
+.site_header .site_header__up .color_ico:before,
+.site_header .site_header__up .site_header__up__ico:before,
+.site_header .site_header__up .header_login_user.site_dopdown_btn .login_user_btn:before { color: #E8F5EE !important; }
+.site_header .site_header__up a:hover,
+.site_header .site_header__up .site_link:hover { color: #A7D9BC !important; }
+.site_header .site_header__up .header_login .open button.dropdown-toggle,
+.site_header .site_header__up .header_login_user .open button.dropdown-toggle { color: #A7D9BC !important; }
+
+/* ── Hero / Advantage ── */
+.wrap_advantage_main_item {
+    background: linear-gradient(135deg,
+        #060E0A 0%, #0B1810 25%, #111816 50%, #162B1E 75%, #1E3D28 100%
+    ) !important;
+}
+
+/* ── Help block ── */
+.wrap_main_help_block .main_help_block {
+    background: linear-gradient(135deg,
+        #060E0A 0%, #0B1810 30%, #111816 55%, #1A3326 80%, #1E3D28 100%
+    ) !important;
+}
+
+/* ── Partner banner ── */
+.yumal-partner-banner {
+    background: linear-gradient(135deg,
+        #060E0A 0%, #0B1810 30%, #111816 55%, #1A3326 80%, #204533 100%
+    ) !important;
+}
+
+/* ── Footer ── */
+.wrap_main_footer {
+    background: linear-gradient(180deg,
+        #0B1810 0%, #0E1C14 40%, #111816 70%, #0A1510 100%
+    ) !important;
+}
+.wrap_main_footer .main_footer__copyright { border-color: rgba(46,125,79,0.20) !important; }
+.wrap_main_footer .main_footer .main_footer__item.footer__item_four .ul_reset_style { border-color: rgba(46,125,79,0.20) !important; }
+
+/* ── «Все категории» плитка ── */
+.main_categories__content a.main_categories__item.mci__all_link_catalog {
+    background: linear-gradient(135deg, #0B1810 0%, #152A1C 40%, #2E7D4F 100%) !important;
+}
+
+/* ── catalog_to__content__title ── */
+.catalog_to__content_item .catalog_to__content__title {
+    background: linear-gradient(90deg, #0B1810 0%, #1A3326 50%, #2E7D4F 100%) !important;
+}
+
+/* ── catalog_selected_model active col ── */
+.catalog_selected_model__item .catalog_selected_model__col:not(.collapsed) {
+    background: linear-gradient(90deg, #0B1810 0%, #1A3326 50%, #2A6A47 100%) !important;
+}
+
+/* ── VIN / request title ── */
+.wrap_part_baner_title .part_baner_title__request_vin,
+.text_title .text_title__item,
+.light_content__col .title_link_collapse {
+    background: linear-gradient(90deg, #0B1810 0%, #1A3326 50%, #2A6A47 100%) !important;
+}
+
+/* ── Tabs active ── */
+.tabs_site .nav-tabs > li.active > a,
+.tabs_site .nav-tabs > li.active > a:focus,
+.tabs_site .nav-tabs > li.active > a:hover,
+.profile_tabs_slider .item.active a,
+.profile_tabs_slider .item.active a:focus,
+.profile_tabs_slider .item.active a:hover,
+.slider_tabs .owl-item .item.active a,
+.slider_tabs .owl-item .item.active a:focus,
+.slider_tabs .owl-item .item.active a:hover {
+    background: linear-gradient(90deg, #111816 0%, #1A3326 50%, #2A6A47 100%) !important;
+    color: #FFFFFF !important;
+}
+
+/* ── Filter tabs active ── */
+.filter_right_block .wrap_app-brand-item .nav-tabs > li.active > a,
+.filter_right_block .wrap_app-brand-item .nav-tabs > li.active > a:focus,
+.filter_right_block .wrap_app-brand-item .nav-tabs > li.active > a:hover {
+    background: linear-gradient(90deg, #111816 0%, #1A3326 50%, #2A6A47 100%) !important;
+    color: #FFFFFF !important;
+}
+
+/* ── Pagination active ── */
+.pagination_block .pagination_list ul li.active a {
+    background: linear-gradient(135deg, #1A3326 0%, #2E7D4F 100%) !important;
+    border-color: #2E7D4F !important;
+    color: #FFFFFF !important;
+}
+
+/* ── Primary buttons: лёгкий градиент ── */
+.btn_site.gradient_top,
+.btn_site.gradient_top:focus,
+a.btn_site.gradient_top {
+    background: linear-gradient(135deg, #23643F 0%, #2E7D4F 60%, #3A9060 100%) !important;
+    background-image: linear-gradient(135deg, #23643F 0%, #2E7D4F 60%, #3A9060 100%) !important;
+}
+.btn_site.gradient_top:hover,
+a.btn_site.gradient_top:hover {
+    background: linear-gradient(135deg, #1A4D30 0%, #23643F 60%, #2E7D4F 100%) !important;
+    background-image: linear-gradient(135deg, #1A4D30 0%, #23643F 60%, #2E7D4F 100%) !important;
+}
+
+/* ── Каталог кнопка ── */
+.wrap_main_menu .main_menu_btn {
+    background: linear-gradient(135deg, #1A3326 0%, #2E7D4F 60%, #3A9060 100%) !important;
+}
+.wrap_main_menu .main_menu_btn:hover,
+.wrap_main_menu .dropdown.open > .main_menu_btn {
+    background: linear-gradient(135deg, #111816 0%, #1A3326 50%, #2E7D4F 100%) !important;
+}
+
+/* ── Поиск кнопка ── */
+.yumal-header-search-patch .btn_search {
+    background: linear-gradient(135deg, #1A3326 0%, #2E7D4F 60%, #3A9060 100%) !important;
+    border-color: #2E7D4F !important;
+}
+.yumal-header-search-patch .btn_search:hover {
+    background: linear-gradient(135deg, #111816 0%, #1A3326 50%, #2E7D4F 100%) !important;
+}
+
+/* ── Partner banner CTA ── */
+.yumal-partner-banner__cta {
+    background: linear-gradient(135deg, #1A3326 0%, #2E7D4F 60%, #3A9060 100%) !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+}
+.yumal-partner-banner__cta:hover {
+    background: linear-gradient(135deg, #111816 0%, #1A3326 50%, #2E7D4F 100%) !important;
+}
+
+/* ── Contact help ── */
+.contact_page_help {
+    background: linear-gradient(135deg, #0B1810 0%, #1A3326 50%, #2E7D4F 100%) !important;
+}
+
+/* ── mci__origin_c ── */
+.main_categories__item.mci__origin_c .mci__origin_c_link_in {
+    background: linear-gradient(90deg, #0B1810 0%, #1A3326 50%, #2E7D4F 100%) !important;
+}
+.main_categories__item.mci__origin_c .mci__origin_c_link_in:hover {
+    background: linear-gradient(90deg, #060E0A 0%, #111816 50%, #1A3326 100%) !important;
+}
+
+/* ── Таблица платежей header ── */
+.yumal-payment-table thead tr {
+    background: linear-gradient(90deg, #0B1810 0%, #1A3326 50%, #2E7D4F 100%) !important;
+}
+
+/* ── Адресный бейдж ── */
+.yumal-address-badge {
+    background: linear-gradient(90deg, #1A3326, #2E7D4F) !important;
+}
+
+/* ── Mobile ── */
+@media only screen and (max-width: 767px) {
+    .yumal-header-search-patch .link_modal_mob_header_search {
+        background: linear-gradient(135deg, #1A3326 0%, #2E7D4F 100%) !important;
+    }
+    .btn_site.btn_site_two {
+        background: linear-gradient(135deg, #1A3326 0%, #2E7D4F 100%) !important;
+    }
+}
+
+/* ============================================================
+   MOTEXS RU — Patch v8: Blue → Green fixes
+   ============================================================ */
+
+/* 2. Header dropdown: иконки перед пунктами → зелёные */
+.header_login_user .dropdown-menu .site_personalarea .site_personalarea__item a:before {
+    color: #2E7D4F !important;
+}
+.header_login_user .dropdown-menu .site_personalarea .site_personalarea__item a:hover:before {
+    color: #FFFFFF !important;
+}
+.header_login_user .dropdown-menu .site_personalarea .personalarea_exit a:before {
+    color: #D9902F !important;
+}
+.header_login_user .dropdown-menu .site_personalarea .personalarea_exit a:hover:before {
+    color: #FFFFFF !important;
+}
+
+/* 3. Попап выбора филиала: иконки → зелёные */
+.adress_popup_main__ico:before,
+.adress_popup_first .site_header__up_link_ico:before,
+.header_adress_popup .adress_popup_main__ico:before,
+.wrap_adress_popup_first .adress_popup_main__ico:before {
+    color: #2E7D4F !important;
+}
+/* Карта на главной: иконка локации в шапке */
+.site_header__up .site_header__up_link_ico:before {
+    color: #FFFFFF !important;
+}
+.site_header__adress_popup .site_header__up_link_ico:before,
+.item_with_adress_popup .site_header__up_link_ico:before {
+    color: #FFFFFF !important;
+}
+
+/* 5. «Перейти в каталог»: убрать подчёркивание-рамку, текст зелёный */
+a.site_link.mci__origin_c_link_in,
+a.site_link.mci__origin_c_link_in:focus,
+.mci__origin_c_link_in.site_link_with_borderb {
+    color: #2E7D4F !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+a.site_link.mci__origin_c_link_in:hover {
+    color: #23643F !important;
+    border-bottom: none !important;
+}
+
+/* 6. Карточка товара: фон блока «В наличии» → прозрачный (как фон сайта) */
+.card_offers__item {
+    background: transparent !important;
+}
+
+/* 7. Карточка товара: синие акценты → зелёные */
+.link_other_offers {
+    color: #2E7D4F !important;
+    border-bottom-color: #2E7D4F !important;
+}
+.link_other_offers:hover {
+    color: #23643F !important;
+    border-bottom-color: transparent !important;
+}
+.wrap_card_tab .slider_tabs.nav-tabs > li.active > a,
+.wrap_card_tab .slider_tabs.nav-tabs > li.active > a:hover,
+.wrap_card_tab .slider_tabs.nav-tabs > li.active > a:focus {
+    background: #2E7D4F !important;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+.btn_go_analog {
+    background: #2E7D4F !important;
+}
+.btn_go_analog:hover {
+    background: #23643F !important;
+}
+
+/* ============================================================
+   MOTEXS RU — Patch v9: точечные цветовые фиксы
+   ============================================================ */
+
+/* 1. «Перейти в каталог» в блоке «Оригинальный каталог»:
+      убрать градиентный фон, текст зелёный */
+.main_categories__item.mci__origin_c .mci__origin_c_link_in,
+.main_categories__item.mci__origin_c .mci__origin_c_link_in:hover,
+.main_categories__item.mci__origin_c .mci__origin_c_link_in:focus {
+    background: none !important;
+    background-image: none !important;
+    border: none !important;
+    padding: 0 !important;
+    color: #2E7D4F !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+/* 2. Попап филиала: ссылки «Выбрать другой магазин» и «Все магазины»
+      Перебиваем белый цвет от header через более специфичный селектор */
+.site_header .site_header__up .header_adress_popup .site_link_two,
+.site_header .site_header__up .header_adress_popup a.site_link_two {
+    color: #2E7D4F !important;
+}
+.site_header .site_header__up .header_adress_popup .site_link,
+.site_header .site_header__up .header_adress_popup a.site_link {
+    color: #2E7D4F !important;
+}
+.site_header .site_header__up .header_adress_popup .site_link span:before,
+.site_header .site_header__up .header_adress_popup a.site_link span:before,
+.site_header .site_header__up .header_adress_popup .site_link_two span:before {
+    color: #2E7D4F !important;
+}
+
+/* 3. Карта на главной: иконки у контактов филиала */
+.mcs__ci__ico:before {
+    color: #2E7D4F !important;
+}
+.main_chain_stores__contact__item .site_link,
+.main_chain_stores__contact__item .site_link_two,
+.main_chain_stores__contact__item a.site_link,
+.main_chain_stores__contact__item a.site_link_two {
+    color: #2E7D4F !important;
+}
+.main_chain_stores__contact__item .site_link span:before,
+.main_chain_stores__contact__item .site_link_two span:before {
+    color: #2E7D4F !important;
+}
+
+/* 4. Профиль /personal/: color_ico и ico_color_dark → зелёные */
+.color_ico:before {
+    color: #2E7D4F !important;
+}
+.ico_color_dark:before {
+    color: #2E7D4F !important;
+}
+/* ico_hover тоже синий в шаблоне — делаем зелёным */
+.ico_hover:before {
+    color: #2E7D4F !important;
+}
+.ico_hover:hover:before {
+    color: #23643F !important;
+}
+
+/* Исключения: иконки в шапке остаются белыми */
+.site_header .site_header__up .color_ico:before,
+.site_header__up .color_ico:before {
+    color: #FFFFFF !important;
+}
+
+/* ============================================================
+   ЮМАЛ АВТО — Patch v6: Garage UI fixes
+   ============================================================ */
+
+/* ── 1. Garage + basket: один ряд, flex ── */
+.site_header__down .header_basket_garage_btn {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 14px !important;
+    flex-shrink: 0 !important;
+}
+.site_header__down .wrap_garage.site_dopdown_btn {
+    flex-shrink: 0 !important;
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+.site_header__down .for_fixed__garage_help {
+    flex-shrink: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+/* ── 2. Кнопка гаража — идентично кнопке корзины ── */
+.site_header__down .wrap_garage .dropdown {
+    text-align: left !important;
+}
+.site_header__down .wrap_garage .btn_garage {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    height: auto !important;
+    max-width: none !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    color: inherit !important;
+    text-overflow: unset !important;
+    outline: none !important;
+}
+.site_header__down .wrap_garage .btn_garage:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+/* Убираем шеврон после кнопки */
+.site_header__down .wrap_garage .btn_garage:after {
+    display: none !important;
+}
+/* Иконка — как у корзины */
+.site_header__down .wrap_garage .btn_garage .site_header__up__ico {
+    position: static !important;
+    transform: none !important;
+    display: inline-block !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+    flex-shrink: 0 !important;
+}
+.site_header__down .wrap_garage .btn_garage .site_header__up__ico:before {
+    font-size: 24px !important;
+    margin-right: 0 !important;
+    color: inherit !important;
+}
+/* Текст «Мой гараж» — тот же цвет, что у «Корзина» */
+.site_header__down .wrap_garage .btn_garage .btn_garage__text {
+    font-size: 14px !important;
+    color: inherit !important;
+}
+
+/* ── 3. Dropdown гаража — аккуратный компактный блок ── */
+.wrap_garage.site_dopdown_btn .dropdown-menu.select_garage {
+    width: 290px !important;
+    right: 0 !important;
+    left: auto !important;
+    padding: 16px 20px 20px !important;
+    border-radius: 10px !important;
+    border: 1px solid #E6E6E6 !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.13) !important;
+}
+.wrap_garage.site_dopdown_btn .dropdown-menu.select_garage:before {
+    right: 18px !important;
+    left: auto !important;
+}
+.wrap_garage .garage_none_auto {
+    padding: 4px 0 0 !important;
+    text-align: left !important;
+}
+.wrap_garage .garage_none_auto .garage_none_auto__title,
+.wrap_garage .garage_none_auto .garage_none_auto__text,
+.wrap_garage .garage_none_auto .btn_add_auto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: none !important;
+}
+/* Убираем зелёную полосу от .title_h3 */
+.wrap_garage .garage_none_auto .title_h3,
+.wrap_garage .garage_none_auto .garage_none_auto__title {
+    border-left: none !important;
+    padding-left: 0 !important;
+    font-size: 15px !important;
+    margin-bottom: 8px !important;
+    line-height: 1.3 !important;
+}
+.wrap_garage .garage_none_auto .garage_none_auto__text {
+    margin-bottom: 14px !important;
+    color: #66706A !important;
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+}
+.wrap_garage .garage_none_auto .btn_add_auto {
+    width: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
+
+/* ── 4. Модалка выбора авто: убираем белую обводку ── */
+.add_auto_modal .modal-dialog .modal-content {
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 12px 48px rgba(0,0,0,0.24) !important;
+    overflow: hidden !important;
+    outline: none !important;
+}
+.add_auto_modal .modal-dialog {
+    outline: none !important;
+}
+.add_auto_modal .modal-dialog .modal-header {
+    background: #111816 !important;
+    border-bottom: none !important;
+    padding: 14px 20px !important;
+}
+.add_auto_modal .modal-dialog .modal-header .close {
+    color: #fff !important;
+    opacity: 0.65 !important;
+    text-shadow: none !important;
+    float: right !important;
+}
+.add_auto_modal .modal-dialog .modal-header .close:hover { opacity: 1 !important; }
+.add_auto_modal .modal-dialog .modal-header .close:focus { outline: none !important; box-shadow: none !important; }
+.add_auto_modal .modal-body {
+    padding: 24px 24px 20px !important;
+}
+.add_auto_modal .modal-body .selection_auto__title {
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    color: #111816 !important;
+    margin-bottom: 18px !important;
+    border-left: 3px solid #2E7D4F !important;
+    padding-left: 10px !important;
+}
+.add_auto_modal .btn_select_auto {
+    background: linear-gradient(135deg, #2E7D4F 0%, #23643F 100%) !important;
+    border-color: #2E7D4F !important;
+    color: #fff !important;
+}
+.add_auto_modal .btn_select_auto:disabled,
+.add_auto_modal .btn_select_auto[disabled] {
+    opacity: 0.45 !important;
+}
+.add_auto_modal .appliance_garage_apply {
+    background: linear-gradient(135deg, #2E7D4F 0%, #23643F 100%) !important;
+    border-color: #2E7D4F !important;
+    color: #fff !important;
+}
+
+/* ── 5. Виджет «Подбор по авто» — стиль mci__origin_c ── */
+.yumal-car-widget {
+    background: linear-gradient(135deg, #111816 0%, #1C2522 55%, #253328 100%) !important;
+    border: 1px solid #2E7D4F !important;
+    border-radius: 12px !important;
+    padding: 18px 24px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    margin: 16px 0 4px !important;
+    flex-wrap: wrap !important;
+}
+.yumal-cw-icon {
+    color: rgba(255,255,255,0.45) !important;
+    font-size: 38px !important;
+}
+.yumal-cw-title {
+    color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 0.97rem !important;
+}
+.yumal-cw-sub {
+    color: rgba(255,255,255,0.65) !important;
+    font-size: 0.82rem !important;
+}
+.yumal-cw-car-name {
+    color: rgba(255,255,255,0.92) !important;
+}
+.yumal-cw-btn-catalog {
+    background: rgba(255,255,255,0.10) !important;
+    border: 1px solid rgba(255,255,255,0.30) !important;
+    color: #fff !important;
+}
+.yumal-cw-btn-catalog:hover {
+    background: rgba(255,255,255,0.20) !important;
+    color: #fff !important;
+}
+
+/* ── 6. Убираем горизонтальный скролл ── */
+html {
+    overflow-x: hidden !important;
+}
+body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+}
+/* Dropdown гаража не вылезает за viewport */
+.wrap_garage.site_dopdown_btn .dropdown-menu {
+    max-width: calc(100vw - 20px) !important;
+}
+
+/* ── Мобиле: гараж compact как корзина ── */
+@media only screen and (max-width: 999px) {
+    .site_header__down .header_basket_garage_btn {
+        gap: 8px !important;
+    }
+    .site_header__down .wrap_garage .btn_garage {
+        font-size: 0 !important;
+        gap: 0 !important;
+    }
+    .site_header__down .wrap_garage .btn_garage .btn_garage__text {
+        display: none !important;
+    }
+    .site_header__down .wrap_garage .btn_garage .site_header__up__ico {
+        font-size: 24px !important;
+        color: #FFFFFF !important;
+    }
+    .site_header__down .wrap_garage .btn_garage .site_header__up__ico:before {
+        color: #FFFFFF !important;
+    }
+    .wrap_garage.site_dopdown_btn .dropdown-menu.select_garage {
+        right: -10px !important;
+        width: calc(100vw - 24px) !important;
+        max-width: 320px !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .site_header__down .wrap_garage .btn_garage .site_header__up__ico:before {
+        color: #202624 !important;
+    }
+}
+
+/* ============================================================
+   ЮМАЛ АВТО — Patch v7: UI harmony fixes
+   ============================================================ */
+
+/* ── Корзина: текст тёмный ── */
+.site_header__down .link_header_basket,
+.site_header__down .link_header_basket:focus,
+.site_header__down .link_header_basket:visited {
+    color: #202624 !important;
+    font-weight: 600 !important;
+}
+
+/* ── Гараж: точно как корзина ── */
+.site_header__down .wrap_garage .btn_garage {
+    color: #202624 !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    padding: 0 !important;
+    width: auto !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    height: auto !important;
+    max-width: none !important;
+    line-height: normal !important;
+    overflow: visible !important;
+    vertical-align: middle !important;
+}
+.site_header__down .wrap_garage .btn_garage:focus,
+.site_header__down .wrap_garage .btn_garage:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+.site_header__down .wrap_garage .btn_garage:after { display: none !important; }
+.site_header__down .wrap_garage .btn_garage .site_header__up__ico {
+    position: static !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+    display: inline-block !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+    vertical-align: middle !important;
+    flex-shrink: 0 !important;
+}
+.site_header__down .wrap_garage .btn_garage .site_header__up__ico:before {
+    font-size: 24px !important;
+    margin-right: 0 !important;
+    vertical-align: middle !important;
+}
+.site_header__down .wrap_garage .btn_garage .btn_garage__text {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #202624 !important;
+    vertical-align: middle !important;
+}
+.site_header__down .wrap_garage .dropdown { text-align: left !important; }
+
+/* ── Виджет авто: белый как блок «Оригинальный каталог» ── */
+.yumal-car-widget {
+    background: #ffffff !important;
+    border: 2px solid #2E7D4F !important;
+    border-radius: 10px !important;
+}
+.yumal-car-widget .yumal-cw-body {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+}
+.yumal-car-widget .yumal-cw-actions {
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+}
+.yumal-car-widget .yumal-cw-icon { color: #2E7D4F !important; }
+.yumal-car-widget .yumal-cw-title { color: #111816 !important; }
+.yumal-car-widget .yumal-cw-sub { color: #5C6360 !important; }
+.yumal-car-widget .yumal-cw-car-name { color: #111816 !important; font-weight: 700 !important; }
+.yumal-car-widget .yumal-cw-btn-catalog {
+    border: 1px solid #2E7D4F !important;
+    color: #2E7D4F !important;
+    background: transparent !important;
+}
+.yumal-car-widget .yumal-cw-btn-catalog:hover {
+    background: #E8F4EC !important;
+    color: #2E7D4F !important;
+}
+
+/* ── Модалка выбора авто: чистая, без чёрной полосы и синей обводки ── */
+.add_auto_modal .modal-dialog .modal-content {
+    border: 1px solid #DDE3DE !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.16) !important;
+    overflow: hidden !important;
+    outline: none !important;
+    background: #fff !important;
+}
+.add_auto_modal .modal-dialog { outline: none !important; }
+.add_auto_modal .modal-dialog .modal-header {
+    background: #fff !important;
+    border-bottom: 1px solid #E8EDEA !important;
+    padding: 14px 20px !important;
+}
+.add_auto_modal .modal-dialog .modal-header .close {
+    color: #202624 !important;
+    opacity: 0.6 !important;
+    text-shadow: none !important;
+    float: right !important;
+    font-size: 20px !important;
+}
+.add_auto_modal .modal-dialog .modal-header .close:hover { opacity: 1 !important; }
+.add_auto_modal .modal-dialog .modal-header .close:focus { outline: none !important; box-shadow: none !important; }
+.add_auto_modal .modal-body {
+    padding: 20px 24px 22px !important;
+    background: #fff !important;
+}
+/* Убираем синий/чужой фон с внутренних контейнеров */
+.add_auto_modal .wrap_select_sa,
+.add_auto_modal .block_select,
+.add_auto_modal .selection_auto__select {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.add_auto_modal .selection_auto__title {
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    color: #111816 !important;
+    margin-bottom: 16px !important;
+    border-left: 3px solid #2E7D4F !important;
+    padding-left: 10px !important;
+    display: block !important;
+}
+/* Кнопка «Найти» / «Добавить» — зелёная, хорошо видимая */
+.add_auto_modal .btn_select_auto,
+.add_auto_modal .appliance_garage_apply {
+    background: linear-gradient(135deg, #2E7D4F 0%, #23643F 100%) !important;
+    border-color: #2E7D4F !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    margin-top: 16px !important;
+}
+.add_auto_modal .btn_select_auto[disabled],
+.add_auto_modal .btn_select_auto:disabled {
+    opacity: 0.55 !important;
+}
+
+/* ── Мобиле: гараж — только иконка ── */
+@media only screen and (max-width: 999px) {
+    .site_header__down .wrap_garage .btn_garage {
+        font-size: 0 !important;
+        gap: 0 !important;
+    }
+    .site_header__down .wrap_garage .btn_garage .site_header__up__ico {
+        font-size: 24px !important;
+        color: #FFFFFF !important;
+    }
+    .site_header__down .wrap_garage .btn_garage .site_header__up__ico:before {
+        font-size: 24px !important;
+        color: #FFFFFF !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .yumal-car-widget .yumal-cw-actions {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* ============================================================
+   ЮМАЛ АВТО — Patch v9: garage alignment + modal + mobile icons
+   ============================================================ */
+
+/* ── 1. Гараж: убираем лишний отступ и ширину от ws.garage ── */
+/* ws.garage/style.css: width:140px (desktop), margin-right:24px (≤1359px) */
+.site_header__down .wrap_garage.site_dopdown_btn {
+    width: auto !important;
+    margin-right: 0 !important;
+}
+
+/* ── 2. Модалка: убираем полоску хедера, крестик — абсолютный ── */
+/* overflow:hidden возвращаем — иначе углы border-radius не клипятся */
+.add_auto_modal .modal-dialog .modal-content {
+    position: relative !important;
+    overflow: hidden !important;
+}
+/* modal-header: нулевая высота + position:relative → позиционирующий контекст для крестика.
+   Кнопка top:12px позиционируется вниз от header (=от верха modal-content),
+   что ВНУТРИ области overflow:hidden → не срезается углами. */
+.add_auto_modal .modal-dialog .modal-header {
+    position: relative !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    overflow: visible !important;
+}
+/* Крестик поверх контента, в правом верхнем углу */
+.add_auto_modal .modal-dialog .modal-header .close {
+    position: absolute !important;
+    top: 12px !important;
+    right: 14px !important;
+    z-index: 20 !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 4px !important;
+    width: 28px !important;
+    height: 28px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #202624 !important;
+    opacity: 0.6 !important;
+    background: transparent !important;
+    border-radius: 50% !important;
+    transition: opacity 0.15s !important;
+    text-shadow: none !important;
+}
+.add_auto_modal .modal-dialog .modal-header .close:hover { opacity: 1 !important; }
+.add_auto_modal .modal-dialog .modal-header .close:focus { outline: none !important; box-shadow: none !important; }
+/* icon-ion-close:before: option.css окрашивает в #F5F7FA — делаем тёмным */
+.add_auto_modal .modal-dialog .modal-header .close .icon-ion-close:before {
+    color: #202624 !important;
+    font-size: 18px !important;
+}
+
+/* ── 3. Модалка: убираем двойной padding (modal-body уже 24px) ── */
+/* ws.garage: .selection_auto { padding: 15px 30px } → добавляет пустоту справа */
+.add_auto_modal .selection_auto {
+    padding: 0 !important;
+    min-height: 0 !important;
+    width: 100% !important;
+}
+
+/* ── 4. Форма: растягиваем поля на всю ширину ── */
+.add_auto_modal .selection_auto__wrap_select {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    align-items: flex-end !important;
+    padding: 0 !important;
+}
+.add_auto_modal .selection_auto__select {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    width: auto !important;
+}
+.add_auto_modal .selection_auto .wrap_selectpicker_site {
+    flex: 1 1 130px !important;
+    width: auto !important;
+    min-width: 130px !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+}
+.add_auto_modal .selection_auto__wrap_select .btn_select_auto {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    min-width: 120px !important;
+    margin-top: 0 !important;
+}
+/* Mobile: полная ширина, стопка */
+@media only screen and (max-width: 767px) {
+    .add_auto_modal .selection_auto .wrap_selectpicker_site {
+        flex: 1 1 100% !important;
+        width: 100% !important;
+    }
+    .add_auto_modal .selection_auto__wrap_select .btn_select_auto {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+    }
+}
+
+/* ── 5. Мобайл (≤767px): тёмная шапка + белые иконки ── */
+@media only screen and (max-width: 767px) {
+    /* Тёмный зелёный фон шапки */
+    .site_header__down {
+        background: #1C3A2A !important;
+        border-bottom: 1px solid #2E7D4F !important;
+    }
+    /* Бургер-иконка */
+    .site_header__down .main_menu_btn_ico:before {
+        color: #ffffff !important;
+    }
+    /* Иконка поиска */
+    .site_header__down .link_modal_mob_header_search .btn_search__ico:before,
+    .site_header__down .link_modal_mob_header_search .icon-ion-search:before {
+        color: #ffffff !important;
+    }
+    /* Иконка корзины — белая */
+    .site_header__down .header_basket_garage_btn .link_header_basket,
+    .site_header__down .header_basket_garage_btn .link_header_basket .site_header__up__ico {
+        color: #ffffff !important;
+    }
+    .site_header__down .header_basket_garage_btn .link_header_basket .site_header__up__ico:before {
+        color: #ffffff !important;
+    }
+    /* Иконка гаража — белая (исправляем v7 ошибку #202624) */
+    .site_header__down .wrap_garage .btn_garage,
+    .site_header__down .wrap_garage .btn_garage .site_header__up__ico {
+        color: #ffffff !important;
+    }
+    .site_header__down .wrap_garage .btn_garage .site_header__up__ico:before {
+        color: #ffffff !important;
+    }
+}
+
+/* ============================================================
+   ЮМАЛ АВТО — Patch v8: fix blue selection_auto container
+   ============================================================ */
+
+/* option.css sets .selection_auto { background: #072C6B } — kill it */
+.add_auto_modal .selection_auto {
+    background: #ffffff !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+}
+.add_auto_modal .selection_auto__title {
+    color: #111816 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border-left: 3px solid #2E7D4F !important;
+    padding-left: 10px !important;
+    margin-bottom: 14px !important;
+}
+/* Round all selectpicker buttons uniformly */
+.add_auto_modal .selection_auto__select .wrap_selectpicker_site .bootstrap-select > button.dropdown-toggle {
+    border-radius: 8px !important;
+    height: 44px !important;
+    font-size: 14px !important;
+}
+/* "Найти" button height */
+.add_auto_modal .selection_auto__wrap_select .btn_select_auto {
+    height: 44px !important;
+}

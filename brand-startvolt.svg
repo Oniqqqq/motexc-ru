@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 70">
+  <rect width="180" height="70" rx="5" fill="#1F2937"/>
+  <text x="90" y="29" text-anchor="middle" font-family="Arial Black,Impact,sans-serif" font-size="19" font-weight="900" fill="#F59E0B" letter-spacing="2">СТАРТ</text>
+  <text x="90" y="55" text-anchor="middle" font-family="Arial Black,Impact,sans-serif" font-size="19" font-weight="900" fill="#FFFFFF" letter-spacing="2">ВОЛЬТ</text>
+</svg>

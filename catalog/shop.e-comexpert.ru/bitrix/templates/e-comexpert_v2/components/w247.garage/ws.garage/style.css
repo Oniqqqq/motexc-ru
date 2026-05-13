@@ -1,0 +1,621 @@
+/*garage*/
+	.for_fixed__garage_help {
+		display: flex;
+		align-items: center;
+	}
+	.for_fixed__garage_help .header_link_help {
+		order: -1;
+	}
+	.wrap_garage.site_dopdown_btn {
+		width: 140px;
+	}
+	.site_header__down.header_fixed .wrap_garage.site_dopdown_btn {
+		width: auto;
+		margin-right: 24px;
+	}
+	.wrap_garage.site_dopdown_btn.modal_label__wrap_garage {
+		/*width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 25px;*/
+	}
+	.wrap_garage.site_dopdown_btn.modal_label__wrap_garage .wrap_garage__label {
+		/*width: 150px;
+		margin-right: 20px;*/
+	}
+	.wrap_garage.site_dopdown_btn.modal_label__wrap_garage .wrap_garage__label_descr {
+		/*width: calc(100% - 170px);
+		max-width: 360px;*/
+	}
+	.wrap_garage .custom_dropdown {
+		/*position: relative;*/
+	}
+	.wrap_garage .custom_dropdown .dropdown_content {
+		/*background: #fff;
+		border: none;
+		display: none;
+		width: 100%;
+		margin-top: 4px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		padding: 0 15px 20px;
+		border-radius: 2px;
+		z-index: 995;
+		box-shadow: 0px 3px 10px rgba(208, 208, 208, 0.3);*/
+	}
+	.wrap_garage .custom_dropdown .dropdown_content .dropdown-menu {
+		/*padding: 5px 0;*/
+	}
+	.wrap_garage .custom_dropdown .dropdown_content .dropdown-menu .bs-searchbox {
+		/*display: none;*/
+	}
+	.wrap_garage .custom_dropdown .dropdown_content.show {
+		/*display: none;*/
+	}
+	.wrap_garage .custom_dropdown .dropdown_content .wrap_selectpicker_site.search_drop .bootstrap-select > div.dropdown-menu {
+		/*top: 100%;*/
+	} 
+	.wrap_garage.site_dopdown_btn .dropdown {
+		text-align: right;
+	}
+	.wrap_garage.site_dopdown_btn .btn_garage {
+		position: relative;
+		padding-right: 20px;
+		padding-left: 38px;
+		max-width: 140px;
+		width: auto;
+		height: 30px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.site_header__down.header_fixed .wrap_garage.site_dopdown_btn .btn_garage {
+		width: 0;
+		font-size: 0;
+		padding-right: 0;
+		padding-left: 28px;
+	}
+	.wrap_garage.site_dopdown_btn.modal_label__wrap_garage .btn_garage {
+		/*background: #fff;
+		max-width: none;
+		width: 100%;
+		text-align: left;
+		padding-left: 15px;
+		padding-right: 35px;*/
+	}
+	.wrap_garage.site_dopdown_btn .btn_garage .btn_garage_ico {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		max-width: 28px;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.wrap_garage.site_dopdown_btn .btn_garage .btn_garage_ico:before {
+		font-size: 24px;
+		margin-right: 7px;
+	}
+	.wrap_garage.site_dopdown_btn .btn_garage:after {
+		content: "\e922";
+		font-family: 'iconewwssync' !important;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.site_header__down.header_fixed .wrap_garage.site_dopdown_btn .btn_garage:after {
+		display: none;
+	}
+	.wrap_garage.site_dopdown_btn.modal_label__wrap_garage .btn_garage:after {
+		/*font-size: 18px;
+		right: 13px;*/
+	}
+	.wrap_garage.site_dopdown_btn .open .btn_garage:after {
+		content: "\e925";
+	}
+	.garage_number_auto {
+		display: none;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		font-size: 9px;
+		position: absolute;
+		top: 0px;
+		left: 14px;
+		min-width: 14px;
+		width: auto;
+		height: 14px;
+		line-height: normal;
+	}
+	.wrap_garage.site_dopdown_btn .btn_garage.auto_in_garage .garage_number_auto {
+		display: flex;
+	}
+
+	.wrap_garage.site_dopdown_btn .dropdown-menu {
+		background: #fff;
+		border: none;
+		display: block;
+		visibility: hidden;
+		opacity: 0;
+		width: 650px;
+		left: auto;
+		right: -120px;
+		margin-top: 10px;
+		padding: 0 30px 20px;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	}
+	.wrap_garage.site_dopdown_btn .open .dropdown-menu {
+		visibility: visible;
+		opacity: 1;
+	}
+	.wrap_garage.site_dopdown_btn .dropdown-menu:before {
+		content: "";
+		position: absolute;
+		top: -9px;
+		right: 120px;
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid #fff;
+	}
+	.header_fixed .wrap_garage.site_dopdown_btn .dropdown-menu {
+		right: -52px;
+	}
+	.header_fixed .wrap_garage.site_dopdown_btn .dropdown-menu:before {
+		right: 58px;
+	}
+	.wrap_garage.site_dopdown_btn.modal_label__wrap_garage .dropdown-menu {
+		/*width: 100%;
+		margin-top: 4px;*/
+	}
+
+	.wrap_garage .garage_none_auto {
+		padding: 30px 0 15px;
+		text-align: center;
+	}
+	.wrap_garage .garage_none_auto .garage_none_auto__title,
+	.wrap_garage .garage_none_auto .garage_none_auto__text {
+		max-width: 390px;
+	}
+	.wrap_garage .garage_none_auto .garage_none_auto__title,
+	.wrap_garage .garage_none_auto .garage_none_auto__text,
+	.wrap_garage .garage_none_auto .btn_add_auto {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.wrap_garage .garage_none_auto .garage_none_auto__title {
+		margin-bottom: 15px;
+	}
+	.wrap_garage .garage_none_auto .garage_none_auto__text {
+		margin-bottom: 35px;
+	}
+	.wrap_garage .garage_none_auto .btn_add_auto {
+		justify-content: flex-start;
+		padding: 0 15px;
+		width: 180px;
+	}
+	.wrap_garage .garage_none_auto .ico_btn_add_auto:before {
+		font-size: 18px;
+		margin-right: 5px;
+	}
+
+
+	.wrap_garage.site_dopdown_btn .dropdown-menu .title_garage,
+	.wrap_garage .custom_dropdown .dropdown_content .title_garage {
+		padding: 20px 0 15px 0;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main {
+		overflow-y: auto;
+		max-height: 400px;
+		padding: 0 15px;
+		margin: 30px -15px;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main .garage_main__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main .garage_block_auto_info .comment textarea {
+		height: 60px;
+	}
+	.garage_main__item__title_auto_link {
+		font-size: 16px;
+		left: -26px;
+		position: relative;
+		padding-left: 26px;
+		width: 390px;
+		height: 21px;
+		line-height: 21px;
+		white-space: nowrap;
+		padding-right: 5px;
+		margin-right: auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		cursor: pointer;
+		border: none;
+	}
+	.none_selected_vin {
+		display: flex;
+		align-items: center;
+		width: 490px;
+		min-height: 40px;
+		margin: 10px 0 0 26px;
+		padding: 10px;
+	}
+	.none_selected_vin .none_selected_vin__ico:before {
+		font-size: 16px;
+		margin-right: 7px;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main .level-0 {
+		margin-bottom: 30px;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main .garage_main__item:last-child,
+	.wrap_garage.site_dopdown_btn .garage_main .level-0 .garage_main__item,
+	.wrap_garage.site_dopdown_btn .garage_main .level-0:last-child,
+	.wrap_garage.site_dopdown_btn .garage_main .level-0:last-child .garage_block_auto_info .gbai_wrap_btn {
+		margin-bottom: 0;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main .level-0 .selected_vin {
+		margin: 5px 0 0 26px;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main .level-0 .selected_vin .selected_vin_item {
+		display: flex;
+		align-items: center;
+	}
+	.garage_main .level-0 .selected_vin .selected_vin_item .selected_vin_item__text {
+		margin-right: 20px;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main .level-0 .settings-form .garage_block_auto_info .box-edit-car:first-child {
+		margin-top: 20px;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main .garage_block_auto_info .double_edit {
+		display: flex;
+		margin: 0 -10px;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main .garage_block_auto_info .double_edit .site_field {
+		width: 50%;
+		margin: 0 10px 25px;
+	}
+	.gbai_wrap_btn.box-edit-car .garage_save_car {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 180px;
+		margin-right: 30px;
+	}
+	.garage_block_auto_info .gbai_wrap_btn {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+	.wrap_garage.site_dopdown_btn .garage_main .garage_main__item .garage_main__item__title_auto {
+		font-size: 16px;
+		width: 480px;
+		height: 21px;
+		line-height: 21px;
+		white-space: nowrap;
+		padding-right: 5px;
+		margin-right: auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		cursor: pointer;
+	}
+	.wrap_garage.site_dopdown_btn .dropdown-menu .garage_main__item__edit_close .link_ico_none_text,
+	.wrap_garage .custom_dropdown .dropdown_content .garage_main__item__edit_close .link_ico_none_text {
+		display: inline-block;
+	}
+	.wrap_garage.site_dopdown_btn .dropdown-menu .garage_main__item__edit_close .link_ico_none_text:first-child,
+	.wrap_garage .custom_dropdown .dropdown_content .garage_main__item__edit_close .link_ico_none_text:first-child {
+		margin-right: 20px;
+	}
+	.wrap_garage.site_dopdown_btn .dropdown-menu .garage_main__item__edit_close .link_ico_none_text span:before,
+	.wrap_garage .custom_dropdown .dropdown_content .garage_main__item__edit_close .link_ico_none_text span:before {
+		font-size: 16px;
+	}
+
+	.wrap_garage.site_dopdown_btn .dropdown-menu .footer_garage,
+	.wrap_garage .custom_dropdown .dropdown_content .footer_garage {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 20px;
+	}
+	.wrap_garage.site_dopdown_btn .dropdown-menu .footer_garage .footer_garage__ico_add,
+	.wrap_garage .custom_dropdown .dropdown_content .footer_garage .footer_garage__ico_add {
+		display: flex;
+		align-items: center;
+	}
+	.wrap_garage.site_dopdown_btn .dropdown-menu .footer_garage .footer_garage__ico_add span,
+	.wrap_garage .custom_dropdown .dropdown_content .footer_garage .footer_garage__ico_add span {
+		margin-right: 7px;
+	}
+	.wrap_garage.site_dopdown_btn .dropdown-menu .footer_garage .footer_garage__ico_add span:before,
+	.wrap_garage .custom_dropdown .dropdown_content .footer_garage .footer_garage__ico_add span:before {
+		font-size: 16px;
+	}
+
+	/**/
+	body.modal-open .modal_site.add_auto_modal.in {
+		display: flex !important;
+		height: 100%;
+	}
+	body.modal-open .modal_site.add_auto_modal.in .modal-dialog {
+		margin: auto;
+	}
+	.modal_site.add_auto_modal .modal-dialog {
+		max-width: 1160px;
+		margin-top: 0;
+	}
+	.modal_site.add_auto_modal .modal-dialog .modal-content {
+		background: transparent;
+		border: none;
+		border-radius: 0;
+		padding: 0;
+	}
+	.modal_site.add_auto_modal .modal-dialog .modal-content button.close {
+		top: 12px;
+		right: 12px;
+		z-index: 1;
+	}
+	.add_auto_modal .selection_auto {
+		max-width: 1160px;
+		width: 100%;
+		min-height: 154px;
+		padding: 15px 30px;
+	}
+	.add_auto_modal .selection_auto__title {
+		font-size: 18px;
+		margin-bottom: 12px;
+	}
+	.add_auto_modal .selection_auto .selection_auto__wrap_select {
+		display: flex;
+		padding: 5px 0;
+	}
+	.add_auto_modal .selection_auto .selection_auto__select {
+		display: flex;
+	}
+	.add_auto_modal .selection_auto .wrap_selectpicker_site {
+		width: 220px;
+		margin-right: 10px;
+	}
+	.add_auto_modal .selection_auto__wrap_select .btn_select_auto {
+		width: 180px;
+		min-width: 180px;
+		text-transform: uppercase;
+	}
+	.add_auto_modal .selection_auto__select .wrap_selectpicker_site .bootstrap-select > button.dropdown-toggle {
+		font-size: 16px;
+	}
+	.add_auto_modal .selection_auto__garage {
+		margin-top: 15px;
+	}
+	.add_auto_modal .selection_auto__garage .selection_auto__garage__link {
+		display: inline-flex;
+		align-items: center;
+	}
+	.add_auto_modal .selection_auto__garage .selection_auto__garage__link_ico:before {
+		font-size: 20px;
+		margin-right: 7px;
+	}
+
+	
+	.garage__add_auto.selection_auto {
+		/*background: transparent;
+		border-radius: 0;
+		max-width: none;
+		min-height: 0;
+		padding: 0;
+		margin-top: 10px;*/
+	}
+	.garage__add_auto.selection_auto .selection_auto__wrap_select,
+	.garage__add_auto.selection_auto .selection_auto__select {
+		/*flex-wrap: wrap;*/
+	}
+	.garage__add_auto.selection_auto .wrap_selectpicker_site {
+		/*width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;*/
+	}
+	.garage__add_auto .selection_auto__wrap_select .btn_select_auto {
+		/*width: 100%;*/
+	}
+	.garage__add_auto .wrap_back_select_auto {
+		/*text-align: center;
+		margin-top: 7px;*/
+	}
+	.garage__add_auto .back_select_auto {
+		/*position: relative;
+		display: inline-block;
+		margin-left: 21px;*/
+	}
+	.garage__add_auto .back_select_auto .back_select_auto__ico {
+		/*position: absolute;
+		top: 2px;
+		left: -21px;*/
+	}
+	.garage__add_auto .back_select_auto .back_select_auto__ico:before {
+		/*font-size: 16px;*/
+	}
+
+	.mob_fon_main_garage {
+		width: 100%;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 0.2s linear;
+	}
+	.close_garage {
+		display: none;
+	}
+	.close_garage span:before {
+		font-size: 24px;
+	}
+/*END garage*/
+
+@media only screen and (max-width : 1359px) {
+	/*garage*/
+		.wrap_garage.site_dopdown_btn {
+			width: auto;
+			margin-right: 24px;
+		}
+		.wrap_garage.site_dopdown_btn .btn_garage {
+			width: 0;
+			font-size: 0;
+			padding-right: 0;
+			padding-left: 28px;
+		}
+		.wrap_garage.site_dopdown_btn .btn_garage:after {
+			display: none;
+		}
+		.wrap_garage.site_dopdown_btn .dropdown-menu {
+			right: -52px;
+		}
+		.wrap_garage.site_dopdown_btn .dropdown-menu:before {
+			right: 58px;
+		}
+
+		.modal_site.add_auto_modal .modal-dialog {
+			padding: 0 15px;
+		}
+		.add_auto_modal .selection_auto .selection_auto__select {
+			width: calc(100% - 150px);
+		}
+		.add_auto_modal .selection_auto .wrap_selectpicker_site {
+			width: calc(25% - 10px);
+		}
+		.add_auto_modal .selection_auto__wrap_select .btn_select_auto {
+			width: 140px;
+			min-width: 0;
+		}
+
+	/*END garage*/
+}
+@media only screen and (max-width : 999px) {
+	/*garage*/
+		.add_auto_modal .selection_auto {
+			padding: 15px;
+		}
+		.add_auto_modal .selection_auto .selection_auto__select {
+			width: calc(100% - 90px);
+		}
+		.add_auto_modal .selection_auto__wrap_select .btn_select_auto {
+			width: 90px;
+			margin-left: 0;
+		}
+	/*END garage*/
+}
+@media only screen and (max-width : 767px) {
+	/*garage*/
+		.wrap_garage.site_dopdown_btn .dropdown-menu::-webkit-scrollbar {
+			display: none;
+		}
+		.wrap_garage.site_dopdown_btn .dropdown-menu {
+			position: fixed;
+			top: 0;
+			left: 15px;
+			width: calc(100vw - 30px);
+			max-height: calc(100vh - 70px);
+			height: auto;
+			margin: 54px 0 0;
+			padding: 13px 15px 0;
+			overflow-y: auto;
+			z-index: 1020;
+		}
+
+		.close_garage.active {
+			position: fixed;
+			display: block;
+			right: 15px;
+			top: 15px;
+			cursor: pointer;
+			z-index: 1020;
+		}
+		.wrap_garage .mob_fon_main_garage.active {
+			background: rgba(0,0,0, 0.65);
+			visibility: visible;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 1;
+			z-index: 1015;
+		}
+
+		.wrap_garage.site_dopdown_btn .dropdown-menu .title_garage {
+			font-size: 18px;
+			padding-top: 0;
+		}
+		.wrap_garage.site_dopdown_btn .garage_main {
+			max-height: none;
+		}
+		.wrap_garage.site_dopdown_btn .dropdown-menu .footer_garage {
+			padding-bottom: 20px;
+		}
+		.none_selected_vin {
+			width: 100%;
+			margin-left: 0;
+		}
+		.wrap_garage.site_dopdown_btn .garage_main .level-0 .selected_vin {
+			width: calc(100% - 26px);
+		}
+		.none_selected_vin .none_selected_vin__text,
+		.selected_vin .selected_vin_item__link {
+			font-size: 13px;
+		}
+		.wrap_garage.site_dopdown_btn .garage_main .garage_main__item .radio {
+			width: 26px;
+		}
+		.wrap_garage.site_dopdown_btn .garage_main .garage_main__item .garage_main__item__edit_close {
+			display: flex;
+			width: 58px;
+		}
+		.wrap_garage.site_dopdown_btn .garage_main .garage_main__item .garage_main__item__title_auto {
+			width: calc(100% - 84px);
+			padding-right: 10px;
+		}
+		.wrap_garage.site_dopdown_btn .dropdown-menu .garage_main__item__edit_close .link_ico_none_text:first-child {
+			margin-right: 26px;
+		}
+		.garage_main__item__title_auto_link,
+		.wrap_garage.site_dopdown_btn .garage_main .garage_main__item .garage_main__item__title_auto {
+			font-size: 14px;
+		}
+		.garage_main .level-0 .selected_vin .selected_vin_item .selected_vin_item__text {
+			display: none;
+		}
+		.gbai_wrap_btn.box-edit-car .garage_save_car {
+			width: 140px;
+		}
+
+
+		body.modal-open .modal_site.add_auto_modal.in .modal-dialog {
+			margin-top: 48px;
+			max-width: 540px;
+		}
+		.modal_site.add_auto_modal .modal-dialog .modal-content button.close {
+			top: -36px;
+			right: 0;
+		}
+		.add_auto_modal .selection_auto .selection_auto__select,
+		.add_auto_modal .selection_auto .selection_auto__wrap_select {
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		.add_auto_modal .selection_auto .wrap_selectpicker_site,
+		.add_auto_modal .selection_auto__wrap_select .btn_select_auto {
+			width: 100%;
+		}
+		.add_auto_modal .selection_auto .wrap_selectpicker_site {
+			margin-right: 0;
+			margin-bottom: 12px;
+		}
+	/*END garage*/
+}

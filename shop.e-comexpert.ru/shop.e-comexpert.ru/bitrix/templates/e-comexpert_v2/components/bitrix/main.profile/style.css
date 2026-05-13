@@ -1,0 +1,319 @@
+.personal_area_page__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.personal_area_page__items .my_profile__user_tab_link {
+    max-width: 420px;
+    margin: 0 10px 20px;
+}
+
+/*personal_area_page__user*/
+    .personal_area_page__user {
+        display: flex;
+        border: 1px solid;
+        height: 115px;
+        padding: 30px;
+        box-shadow: 0px 4px 10px rgba(201, 190, 190, 0.3);
+    }
+    .personal_area_page__user .user_img {
+        background: url('mini/images/ion-personmy.svg');
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        min-width: 55px;
+        height: 55px;
+        margin-right: 25px;
+    }
+    .personal_area_page__user .user_img .user_img__ico:before {
+        /*font-size: 55px;*/
+    }
+    .personal_area_page__user .user_descr {
+        width: calc(100% - 80px);
+    }
+    .personal_area_page__user .user_descr .title_h4 {
+        margin-bottom: 5px;
+    }
+
+    .personal_area_page__user_content {
+        display: flex;
+        padding-top: 30px;
+    }
+    .personal_area_page__user_content .user_content__left {
+        border: 1px solid;
+        width: calc(100% - 410px);
+        min-height: 570px;
+        padding: 30px 30px 35px;
+        box-shadow: 0px 4px 10px rgba(201, 190, 190, 0.3);
+    }
+    .user_content__title_double {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .user_content__title_double .edit_profile {
+        display: flex;
+        align-items: center;
+    }
+    .user_content__title_double .edit_profile_ico:before {
+        font-size: 16px;
+        margin-right: 7px;
+    }
+    .user_content__filled__saved p {
+        position: relative;
+        display: flex;
+        align-items: center;
+        max-width: 400px;
+        width: 100%;
+        min-height: 33px;
+        font-size: 13px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding: 0 10px;
+    }
+    .user_content__filled__saved p:before {
+        content: "\e905";
+        font-family: 'iconewwssync' !important;
+        font-size: 16px;
+        color: #27874C;
+        margin-top: -1px;
+        margin-right: 7px;
+    }
+    .user_content__info {
+        padding-top: 40px
+    }
+    .user_content__info__item {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .user_content__info__item:last-child {
+        margin-bottom: 0;
+    }
+    .user_content__info__item .user_info__title {
+        width: 160px;
+        margin-right: 30px;
+    }
+    .user_content__info__item .user_info__descr {
+        width: calc(100% - 190px);
+    }
+    .user_info__descr .edit_user_password {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+    .edit_user_password .edit_user_password_ico:before {
+        font-size: 16px;
+        margin-right: 7px;
+    }
+    .personal_area_page__user_content .user_content__right {
+        width: 380px;
+        margin-left: 30px;
+    }
+    .my_profile__user_tab_link {
+        border: 2px solid;
+        display: flex;
+        padding: 20px;
+        margin-bottom: 15px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    }
+    .my_profile__user_tab_link:hover {
+        box-shadow: 0px 4px 25px rgba(201, 190, 190, 0.85);
+    }
+    .my_profile__user_tab_link .my_profile__user_tab_link__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        margin-right: 22px;
+    }
+    .my_profile__user_tab_link .my_profile__user_tab_link__img .user_tab_link__img_ico {
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .my_profile__user_tab_link .my_profile__user_tab_link__img .bg_myprofile {
+        background-image: url('mini/images/personal_area/color-profile.svg');
+    }
+    .my_profile__user_tab_link .my_profile__user_tab_link__img .bg_myorders {
+        background-image: url('mini/images/personal_area/color-shopping-cart.svg');    
+    }
+    .my_profile__user_tab_link .my_profile__user_tab_link__img .bg_mygarage {
+        background-image: url('mini/images/personal_area/color-garage.svg');    
+    }
+    .my_profile__user_tab_link .my_profile__user_tab_link__img .bh_myshop {
+        background-image: url('mini/images/personal_area/color-shop.svg');    
+    }
+    .my_profile__user_tab_link .my_profile__user_tab_link__img .user_tab_link__img_ico:before {
+        font-size: 40px;
+    }
+    .my_profile__user_tab_link .my_profile__user_tab_link__descr {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc(100% - 72px);
+    }
+    .my_profile__user_tab_link .my_profile__user_tab_link__descr span {
+        width: 100%;
+    }
+    /*.my_profile__user_tab_link:last-child {
+        margin-bottom: 0;
+    }*/
+    .my_profile__user_tab_link__descr .title_h5 {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+    .my_profile__user_tab_link__descr .title_h5,
+    .my_profile__user_tab_link__descr .user_tab_link__text {
+        line-height: normal;
+    }
+    .my_profile__user_tab_link__descr .user_tab_link__text {
+        font-size: 13px;
+        line-height: 130%;
+    }
+
+
+    .user_content__edit,
+    .personal_area_page__user_content .user_content__left.active .user_content__filled,
+    .user_content__edit__edit_password,
+    .user_content__edit_info.active .user_content__edit__edit_password__link {
+        display: none;
+    }
+    .personal_area_page__user_content .user_content__left.active .user_content__edit,
+    .user_content__edit_info.active .user_content__edit__edit_password {
+        display: block;
+    }
+
+    .user_content__edit_info {
+        padding-top: 40px;
+    }
+    .user_content__edit__edit_password {
+        position: relative;
+        padding-top: 25px;
+    }
+    .user_content__edit__edit_password:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 530px;
+        height: 1px;
+    }
+    .user_content__edit__edit_password__link {
+        padding-top: 5px;
+        margin-bottom: 25px;
+    }
+    .user_content__edit_info .site_field_btn {
+        max-width: 360px;
+        margin-left: 190px;
+    }
+/*END personal_area_page__user*/
+
+@media only screen and (max-width : 1359px) {
+    /*personal_area_page__user*/
+        .personal_area_page__user_content {
+            flex-wrap: wrap;
+        }
+        .personal_area_page__user_content .user_content__left {
+            width: 100%;
+        }
+        .personal_area_page__user_content .user_content__left {
+            height: auto;
+            min-height: 0;
+        }
+        .personal_area_page__user_content .user_content__right {
+            display: flex;
+            flex-wrap: wrap;
+            width: calc(100% + 20px);
+            margin-top: 40px;
+            margin: 40px -10px 0;
+        }
+        .my_profile__user_tab_link {
+            width: calc(50% - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    /*END personal_area_page__user*/
+}
+@media only screen and (max-width : 767px) {
+    /*personal_area_page__user*/
+        .personal_area_page__user {
+            position: relative;
+            height: auto;
+            padding: 20px 15px;
+        }
+        .personal_area_page__user .user_img {
+            margin-right: 8px;
+        }
+        .personal_area_page__user .user_descr {
+            width: calc(100% - 63px);
+        }
+        .personal_area_page__user .user_descr .title_h4 {
+            margin-bottom: 10px;
+        }
+
+        .personal_area_page__user_content .user_content__left {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .user_content__title_double .title_h5 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .user_content__info__item {
+            flex-wrap: wrap;
+        }
+        .user_content__info__item .user_info__title,
+        .user_content__info__item .user_info__descr {
+            width: 100%;
+        }
+        .user_content__info__item .user_info__title {
+            font-size: 13px;
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+        .my_profile__user_tab_link {
+            width: 100%;
+            align-items: center;
+            padding: 22px 15px;
+        }
+        .my_profile__user_tab_link:last-child {
+            margin-bottom: 0;
+        }
+        .my_profile__user_tab_link .my_profile__user_tab_link__img {
+            width: 42px;
+            min-width: 42px;
+            height: 42px;
+            margin-right: 15px;
+        }
+        .my_profile__user_tab_link .my_profile__user_tab_link__descr {
+            width: calc(100% - 57px);
+        }
+        /*.my_profile__user_tab_link .my_profile__user_tab_link__img .user_tab_link__img_ico:before {
+            font-size: 42px;
+        }*/
+        .user_content__title_double .title_h5,
+        .user_content__edit .title_h5,
+        .my_profile__user_tab_link__descr .title_h5 {
+            font-size: 16px;
+        }
+        .user_content__title_double .edit_profile {
+            font-size: 13px;
+        }
+        .user_info__descr .edit_user_password {
+            font-size: 13px;
+        }
+        .user_content__edit__edit_password:after {
+            max-width: 360px;
+            width: 100%;
+        }
+        .user_content__edit_info .site_field_btn {
+            margin-left: 0;
+        }
+        .user_content__edit__edit_password {
+            padding-top: 20px;
+        }
+    /*END personal_area_page__user*/
+}

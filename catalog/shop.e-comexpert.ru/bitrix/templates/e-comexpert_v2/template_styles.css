@@ -1,0 +1,905 @@
+.grecaptcha-badge { opacity:0;}
+.w247-catalog-tab-loader .w247-loader-inner, .w247-catalog-loader .w247-loader-inner {
+    background-image: url(img/preloader.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-posirion: center center;
+    background-color: transparent;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+}
+.w247-catalog-tab-loader {
+    display: block;
+}
+.w247-catalog-tab-loader, .w247-catalog-loader {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*login_page*/
+    .header_login_reg_page .header_login_reg_page__item {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+    }
+    .header_login_reg_page .header_login_reg_page__item .header_login_reg_page__logo {
+        display: flex;
+        align-items: center;
+    }
+    .header_login_reg_page .header_login_reg_page__item .header_login_reg_page__logo img {
+        max-width: 230px;
+    }
+    .header_login_reg_page .site_header__up_link.header_link_help {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    .site_wrap_content.wrap_content__login_reg_page {
+        min-height: calc(100vh - 292px);
+        margin: 0;
+    }
+    .wrap_content__login_reg_page {
+        background-color: rgba(244,245,246,0.75);
+    }
+    .login_reg_page {
+        background-image: url('./img/background_reg.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 1300 auto;
+        min-height: 990px;
+    }
+    .login_fon_none .login_reg_page {
+        background-color: transparent;
+    }
+    .login_reg_page__block {
+        max-width: 500px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin: 0 auto;
+    }
+    .login_reg_page__block__item {
+        width: 100%;
+        text-align: center;
+    }
+    .login_reg_page__block__item .login_reg_page_wrap_form {
+        background: #fff;
+        padding: 50px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    }
+    .login_reg_page__block .title_h1 {
+        padding-bottom: 50px;
+        margin: 0;
+    }
+    .login_reg_page__block .title_h5 {
+        padding-bottom: 15px;
+        text-align: left;
+    }
+    .login_reg_page__block .descr_text {
+        text-align: left;
+        margin-bottom: 25px;
+        line-height: 20px;
+    }
+    .login_reg_page__block .forgotpassw .descr_text {
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .login_reg_page__block .forgotpassw .input_email {
+        margin-bottom: 10px;
+    }
+    .login_reg_page .site_field.site_field_error {
+        margin-bottom: 10px;
+    }
+    .login_reg_page .site_field {
+        margin-bottom: 20px;
+    }
+    .login_reg_page .wrap_site_field.site_field_bottom_text {
+        margin-bottom: 10px;
+    }
+    .login_reg_page .link_forget_password {
+        font-size: 13px;
+        display: inline-block;
+    }
+    .login_reg_page .not_created_accaunt {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    .login_reg_page .site_field_btn {
+        padding-top: 20px;
+    }
+    .login_reg_page .not_created_accaunt span {
+        margin-right: 10px;
+    }
+    .login_reg_page .site_field_btn .btn_site_border {
+        background: #fff;
+        margin-top: 20px;
+    }
+    .login_reg_page .checkbox {
+        margin-top: 10px;
+    }
+    .login_reg_page .checkbox,
+    .login_reg_page .checkbox label {
+        text-align: left;
+    }
+    .login_reg_page .checkbox + .checkbox {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    /*autoriz*/
+
+    /*END autoriz*/
+
+    @media only screen and (max-width : 1379px) {
+        /*login_page*/
+        /*.login_reg_page__bg_right {
+            display: none;
+        }
+        .login_reg_page__block {
+            width: 644px;
+            margin: 0 auto;
+            padding-bottom: 100px;
+            min-height: calc(100vh - 350px);
+        }*/
+        /*END login_page*/
+    }
+
+    @media only screen and (max-width : 767px) {
+        /*login_page*/
+            .header_login_reg_page .header_login_reg_page__item .header_login_reg_page__logo img {
+                max-width: 138px;
+            }
+            .header_login_reg_page .site_header__up_link.header_link_help {
+                display: flex;
+            }
+            .login_reg_page {
+                background-image: none;
+                min-height: 0;
+            }
+            .login_reg_page__block {
+                padding-top: 40px;
+                padding-bottom: 100px;
+            }
+            .login_reg_page__block .title_h1 {
+                font-size: 26px;
+                padding-bottom: 35px;
+            }
+            .login_reg_page__block__item .login_reg_page_wrap_form {
+                padding: 50px 20px;
+            }
+            .login_reg_page .site_field_btn .btn_site {
+                padding: 0 10px;
+            }
+            .not_created_accaunt.authorize__not_created {
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .not_created_accaunt.authorize__not_created span,
+            .not_created_accaunt.authorize__not_created a {
+                margin-bottom: 5px;
+            }
+        /*END login_page*/
+    }
+/*END login_page*/
+
+/*login registration sms*/
+    .registration .reg_wrap_notification {
+        border-bottom: 1px solid;
+        padding-bottom: 30px;
+        margin-bottom: 10px; 
+    }
+    .notification {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 21px;
+        margin-bottom: 19px;
+    }
+    .reg_wrap_notification .warning_block.notification_wholesale {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .registration .reg_item {
+        padding-bottom: 20px;
+    }
+    .login_pass_label {
+        display: flex;
+        justify-content: space-between;
+    }
+    .login_pass_label .recovery_pass_link {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 6px;
+    }
+    .reg_item .checkbox_site {
+        margin-bottom: 20px;
+    }
+    .wrap_field_more {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    .wrap_field_more .site_field {
+        max-width: 280px;
+        width: 100%;
+        margin: 0 15px 20px;
+    }
+    .site_field input:disabled {
+        cursor: not-allowed;
+    }
+    .wrap_field_more .enter_code .site_field {
+        max-width: 200px;
+    }
+    .wrap_field_more .site_field.field_small {
+        max-width: 180px;
+    }
+    .wrap_field_more .site_field.field_full {
+        max-width: 590px;
+    }
+    .wrap_field_more .site_field.enter_code input {
+        width: 200px;
+        margin-right: 20px;
+    }
+    .wrap_field_more .checkbox_site {
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .site_field .error_site_field,
+    .site_field label.error {
+        font-size: 12px;
+        line-height: 17px;
+        margin-top: 4px;
+    }
+    .site_field .error_site_field {
+        display: none;
+    }
+    .site_field .error_site_field.active {
+        display: block;
+    }
+    .wrap_field_more .wrap_selectpicker_site {
+        width: 180px;
+        margin: 0 15px 20px;
+    }
+
+    .block_code,
+    .enter_code,
+    .for_entity,
+    .add_password {
+        display: none;
+    }
+
+    .block_code.active {
+        display: flex;
+        padding-top: 24px;
+    }
+    .wrap_reg_btn {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 -15px;
+    }
+    .wrap_reg_btn .reg_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        font-size: 15px;
+        line-height: 22px;
+        margin: 0 15px 15px;
+    }
+    .wrap_reg_btn .agreement {
+        /* max-width: 220px; */
+        font-size: 12px;
+        line-height: 17px;
+        margin: 0 15px 15px;
+    }
+    .login_site .wrap_reg_btn .checkbox_site {
+        margin: 0 15px 12px;
+    }
+
+    .send_code {
+        display: none;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .send_code.active {
+        display: flex;
+    }
+    .send_code.not_active {
+        display: none;
+    }
+    .send_code .send_code_link {
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        font-size: 14px;
+        line-height: 21px;
+        margin: 0 20px 0 15px;
+    }
+    .send_code .send_code_text {
+        max-width: 243px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .enter_code.active {
+        display: flex;
+    }
+    .enter_code .timer {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .acception_code {
+        display: none;
+        font-size: 14px;
+        line-height: 18px;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .acception_code img {
+        width: 16px;
+        height: 16px;
+    }
+    .acception_code span {
+        margin-left: 5px;
+    }
+    .acception_code.active {
+        display: flex;
+    }
+    .resend_code {
+        display: none;
+        border: 1px solid;
+        width: 220px;
+        font-size: 14px;
+        line-height: 21px;
+        margin: 0 15px;
+    }
+    .resend_code img {
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+    .resend_code.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrap_radio .radio_item {
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .wrap_radio .radio {
+        margin: 0 0 0 40px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .wrap_radio .radio:first-child {
+        margin-left: 0;
+    }
+    .wrap_radio .site_field_label {
+        margin-bottom: 15px;
+    }
+    .wrap_radio .radio_item .radio_btn {
+        top: 2px;
+    }
+    .reg_item .checkbox_site.checkbox {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    /*login*/
+        .form_login_sms,
+        .login_site_sms .form_login_pass {
+            display: none;
+        }
+        .form_login_pass,
+        .login_site_sms .form_login_sms {
+            display: block;
+        }
+        .login_footer {
+            padding-top: 17px;
+        }
+        .login_footer__link {
+            display: inline-flex;
+            align-items: center;
+            font-size: 12px;
+            line-height: 17px;
+        }
+        .login_footer__link span {
+            margin-left: 2px;
+        }
+        .login_footer__link:after {
+            content: "\e924";
+            font-family: 'iconewwssync' !important;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        .login_footer__link .login_footer__pass,
+        .login_footer__link.active .login_footer__sms {
+            display: none;
+        }
+        .login_footer__sms,
+        .login_footer__link.active .login_footer__pass {
+            display: inline-block;
+        }
+        .login__registration {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid;
+            margin-top: 15px;
+            padding-top: 15px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+        .login__registration .login__registration__text {
+            margin-right: 5px;
+        }
+        .login__registration__link {
+            display: flex;
+            align-items: center;
+        }
+        .login__registration__link:before {
+            content: "\e92d";
+            font-family: 'iconewwssync' !important;
+            font-size: 16px;
+            font-weight: normal;
+            margin-right: 5px;
+        }
+
+        .form_login_sms .send_code {
+            margin-bottom: 0;
+        }
+        .form_login_sms .send_code .send_code_link {
+            width: 280px;
+            margin: 0 15px 20px;
+        }
+        .form_login_sms .login_code_sms {
+            display: flex;
+            max-width: none;
+            width: auto;
+            padding-top: 24px;
+            margin-bottom: 0;
+        }
+        .form_login_sms .acception_code {
+            margin-left: -10px;
+        }
+        .form_login_sms .enter_code .site_field {
+            margin-left: 0;
+        }
+        .login_code_sms .resend_code {
+            margin-right: 0;
+        }
+    /*END login*/
+
+    @media (max-width: 999px) {
+        .wrap_field_more .site_field,
+        .wrap_reg_btn .reg_btn,
+        .form_login_sms .send_code .send_code_link {
+            max-width: 258px;
+        }
+        .wrap_field_more .enter_code .site_field {
+            max-width: 145px;
+        }
+        .form_login_sms .login_code_sms {
+            max-width: none;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .wrap_field_more .site_field,
+        .wrap_reg_btn .reg_btn,
+        .form_login_sms .send_code .send_code_link {
+            max-width: 240px;
+        }
+        .wrap_field_more .enter_code .site_field {
+            max-width: 200px;
+        }
+        .block_code {
+            max-width: none;
+            width: 100%;
+        }
+        .block_code.active {
+            padding-top: 0;
+        }
+        .acception_code {
+            margin-left: 15px;
+        }
+        .acception_code.active {
+            align-items: flex-start;
+        }
+        .resend_code {
+            margin-bottom: 20px;
+        }
+        .send_code .send_code_text {
+            margin: 4px 15px 0;
+        }
+
+        .form_login_sms .login_code_sms {
+            padding-top: 0;
+            margin-bottom: 0;
+        }
+        .form_login_sms .send_code {
+            width: 100%;
+        }
+        .form_login_sms .acception_code  {
+            margin-left: 0;
+        }
+        .form_login_sms .login_code_sms {
+            max-width: none;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .notification {
+            font-size: 13px;
+            line-height: 19px;
+            padding: 15px;
+        }
+        .wrap_field_more .site_field,
+        .wrap_field_more .enter_code .site_field {
+            max-width: none;
+        }
+        .wrap_reg_btn .reg_btn,
+        .form_login_sms .send_code .send_code_link {
+            max-width: none;
+            width: 100%;
+        }
+        .block_code {
+            flex-wrap: wrap;
+        }
+        .enter_code {
+            width: 100%;
+        }
+        .wrap_field_more .enter_code .site_field {
+            width: calc(100% - 85px);
+        }
+        .wrap_field_more .login_code_sms .enter_code .site_field {
+            width: calc(100% - 60px);
+        }
+        .enter_code .timer {
+            width: 40px;
+        }
+        .form_login_sms .resend_code {
+            margin-left: 0;
+        }
+        .form_login_sms .login_code_sms {
+            flex-wrap: wrap;
+        }
+        .login_site .wrap_reg_btn .checkbox_site {
+            margin-bottom: 23px;
+        }
+    }
+/*END login registration sms*/
+
+/*profile_tabs*/
+    .profile_tabs_slider {
+        margin-top: 40px;
+    }
+    .profile_tabs_slider.owl-carousel .owl-stage {
+        display: flex;
+    }
+    .profile_tabs_slider .owl-item:last-child a {
+        margin-right: 0;
+    }
+    .profile_tabs_slider .item a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 180px;
+        height: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /*.profile_tabs_slider .profile_tabs_ico:before {
+        font-size: 20px;
+        margin-right: 5px;
+    }*/
+    .profile_tabs_slider .profile_tabs_name {
+        white-space: nowrap;
+    }
+    .profile_tabs__content {
+        border: 1px solid;
+        min-height: 500px;
+        padding: 40px 30px;
+        margin-top: 20px;
+        box-shadow: 0px 4px 10px rgba(201, 190, 190, 0.3);
+    }
+    .profile_tabs__content .profile_tabs__content__item {
+        margin-top: 30px;
+    }
+    .site_page .profile_tabs__content .profile_tabs__content__item .page_descr p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+
+    @media only screen and (max-width : 767px) {
+        /*profile_tabs*/
+            .profile_tabs__content {
+                min-height: 0;
+                padding: 30px 15px 30px;
+            }
+            .profile_tabs__content__item .wrap_garage_none_auto {
+                min-height: 0;
+                padding: 35px 0;
+            }
+            .profile_tabs__content__item .garage_none_auto__title {
+                font-size: 16px;
+            }
+        /*END profile_tabs*/
+    }
+/*END profile_tabs*/
+
+/*contacts.css*/
+    .wrap_contact_title_page {
+        background: url('img/contacts/fon_title_contact.png');
+        display: flex;
+        align-items: center;
+        height: 250px;
+        padding: 15px 90px;
+        margin-bottom: 30px;
+    }
+    .contact_page__contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact_page__contact {
+        margin: 0 -10px;
+    }
+    .contact_page__contact .contact_page__contact__item {
+        width: calc(33.33333333% - 20px);
+        height: 163px;
+        margin: 10px;
+        padding: 30px 25px;
+    }
+    .contact_page__contact .contact__item__body {
+        margin-top: 20px;
+    }
+    .contact_page__contact .contact__item__body .contact__item__body_item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 18px;
+    }
+    .contact__item__body_item .contact__item__phone {
+        width: calc(100% - 170px);
+    }
+    .contact__item__body_item .site_link {
+        display: inline-flex;
+    }
+    .contact_page__contact .contact__item__body .contact__item__body_item .contact_phone {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .contact_page__contact .contact__item__body .contact__item__body_item .contact_phone:last-child,
+    .contact_page__contact .contact__item__body .contact__item__body_item:last-of-type {
+        margin-bottom: 0;
+    }
+    .contact_page__contact .contact__item__body .contact__item__body_item .ci__bi__ico:before {
+        font-size: 16px;
+        margin-right: 7px;
+    }
+    .contact_page__contact .request_call {
+        display: inline-flex;
+        align-self: flex-end;
+        width: 150px;
+        margin-left: 20px;
+    }
+    .main_chain_stores.contact__main_chain_stores {
+        padding-top: 0;
+    }
+    .contact_page_help {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 10px 0;
+        padding: 30px 20px;
+        width: 100%;
+        min-height: 104px;
+    }
+    .contact_page_help .contact_page_help__item {
+        display: flex;
+        align-items: center;
+        width: 950px;
+    }
+    .contact_page_help__item .contact_page_help__text {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 240px);
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .contact_page_help__item .contact_page_help__text:before {
+        content: '';
+        background: url('img/contacts/contact_page_help.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        width: 44px;
+        min-width: 44px;
+        height: 44px;
+        margin-right: 15px;
+    }
+    .contact_page_help__item .contact_page_help_link {
+        width: 220px;
+        padding: 0 15px;
+        margin-left: 20px;
+    }
+    .contact_page_help_link .help_link_ico:before {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    @media only screen and (max-width : 1359px) {
+        .contact_page__contact .contact_page__contact__item {
+            width: calc(50% - 20px);
+        }
+        .contact_page__contact .contact_page__contact__item.item_phone {
+            width: 100%;
+            height: 130px;
+        }
+        .contact_page__contact .contact__item__body .contact__item__body_item .contact_phone {
+            margin-right: 40px;
+            margin-bottom: 0;
+        }
+        .contact__item__body_item .contact__item__phone {
+            width: auto;
+        }
+        .contact_page__contact .request_call {
+            margin-top: -18px;
+            margin-left: 10px;
+        }
+        .contact_page_help .contact_page_help__item {
+            width: 100%;
+        }
+
+    }
+
+    @media only screen and (max-width : 999px) {
+        .wrap_contact_title_page {
+            padding: 15px 50px;
+        }
+        .contact_page_help__item .contact_page_help__text {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    @media only screen and (max-width : 767px) {
+        .wrap_contact_title_page {
+            background: transparent;
+            height: auto;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+        .wrap_contact_title_page .title_page {
+            padding-bottom: 0;
+        }
+
+        .contact_page__contact {
+            padding-top: 10px;
+        }
+        .contact_page__contact {
+            flex-wrap: wrap;
+        }
+        .contact_page__contact .contact_page__contact__item {
+            width: calc(100% - 20px);
+            height: auto;
+            padding: 25px;
+        }
+        .contact_page__contact .contact_page__contact__item.item_phone {
+            height: auto;
+        }
+        .contact_page__contact .contact_page__contact__item.item_phone .contact__item__body_item {
+            flex-wrap: wrap;
+            max-width: 350px;
+        }
+        .contact_page__contact .contact__item__body .contact__item__body_item .contact_phone {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .contact_page__contact .contact__item__body .contact__item__body_item  {
+            margin-bottom: 10px;
+        }
+        .contact__item__body_item .contact__item__phone {
+            width: 100%;
+        }
+        .contact_page__contact .request_call {
+            width: 189px;
+            margin-top: 20px;
+            margin-left: 0;
+        }
+        .contact_page__contact .contact__item__body {
+            margin-top: 15px;
+        }
+
+        .contact_page_help .contact_page_help__item {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .contact_page_help__item .contact_page_help__text {
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact_page_help__item .contact_page_help__text:before {
+            display: none;
+        }
+        .contact_page_help__item .contact_page_help_link {
+            margin-left: 0;
+        }
+    }
+/*END contacts.css*/
+
+/*warning_block*/
+    .warning_block {
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        min-height: 64px;
+    }
+    .warning_block .warning_block__ico:before {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .warning_block__text {
+        line-height: 20px;
+    }
+
+    @media only screen and (max-width : 767px) {
+        .warning_block {
+            padding: 12px 15px;
+        }
+        .warning_block .warning_block__ico {
+            display: none;
+        }
+    }
+/*END warning_block*/
+
+.mci__origin_c__search__item .not-vin {
+    font-size: 11px;
+    position: absolute;
+    bottom: -18px;
+    width: auto;
+    display: block;
+}
+#findByFrame, #findByVIN {
+    position: relative;
+}
+@media (max-width: 768px) {
+    .mci__origin_c__search__item .not-vin {
+        bottom: 44px;
+    }
+}
+
+/*sale.order.ajax*/
+.sale_order_full_table {
+    font-size: 16px;
+}
+.sale_order_full_table .ps_logo .pay_name {
+    font-weight: bold;
+}
+.change_version{
+    width: 75px;
+}
+.change_version .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: 100%;
+}

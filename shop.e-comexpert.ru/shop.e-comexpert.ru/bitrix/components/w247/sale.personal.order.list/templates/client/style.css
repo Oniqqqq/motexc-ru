@@ -1,0 +1,550 @@
+/*my_orders*/
+  .my_orders__content {
+    padding-top: 40px;
+  }
+  .my_orders__filter form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .my_orders__filter__left,
+  .my_orders__filter__right {
+    display: flex;
+  }
+  .my_orders__filter__left {
+    align-self: flex-end;
+  }
+  .my_orders__filter__right {
+    margin-left: 20px;
+  }
+  .my_orders__content .wrap_selectpicker_site__with_label.vertical_view .wrap_selectpicker_site {
+    margin-bottom: 0;
+  }
+  .my_orders__content .filter_time {
+    width: 158px;
+    align-self: flex-end;
+    margin-right: 12px;
+  }
+  .my_orders__content .my_orders__filter__status {
+    width: 180px;
+    margin-right: 40px;
+  }
+  .my_orders__content .my_orders__filter__auto {
+    width: 260px;
+  }
+
+
+
+  .my_orders__table {
+    margin-bottom: 40px;
+  }
+  .my_orders_table__content .panel {
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  .my_orders_table__content .site_table__tr {
+    cursor: pointer;
+  }
+  .my_orders__table .my_orders_td_col1 {
+    width: 38px;
+    padding-left: 15px;
+    padding-right: 7px;
+  }
+  .my_orders__table .my_orders_td_col2 {
+    width: 103px;
+    padding-left: 7px;
+    padding-right: 15px;
+  }
+  .my_orders__table .my_orders_td_col3 {
+    width: 144px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .my_orders__table .my_orders_td_col4 {
+    /*width: calc(100% - 759px); если есть столбец auto*/
+    width: calc(100% - 555px);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .my_orders__table .my_orders_td_col5 {
+    width: 115px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .my_orders__table .my_orders_td_col6 {
+    width: 155px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .my_orders__table .my_orders_td_col7 {
+    width: 204px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .my_orders_table__info_content {
+    padding: 0 30px 20px;
+  }
+  .my_orders_table__info_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .my_orders_table__info__title {
+    font-size: 16px;
+  }
+  .my_orders_table__info__title span {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .my_orders_table__info_btn {
+    display: flex;
+    align-items: center;
+  }
+  .my_orders_table__info_btn .cancel_order_btn {
+    margin-right: 30px;
+  }
+  .my_orders_table__info_btn .pay_order_btn {
+    position: relative;
+    margin-right: 20px;
+  }
+  .my_orders_table__info_btn .pay_order_btn:before {
+    content: "\e924";
+    font-family: 'iconewwssync' !important;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    padding-left: 5px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .my_orders_table__info__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .my_orders_table__info__items .my_orders_table__info__item {
+    display: flex;
+    margin: 5px 40px 5px 0;
+  }
+  .my_orders_table__info__items .my_orders_table__info__item.recipient {
+    width: 100%;
+    margin-right: 0;
+  }
+  .my_orders_table__info__items .my_orders_table__info__item .info__item__text {
+    margin-left: 5px;
+  }
+
+  .my_orders_table__info_table {
+    border-left: none;
+    border-right: none;
+    margin-bottom: 15px;
+  }
+  .site_table.my_orders_table__info_table {
+    box-shadow: none;
+  }
+  .my_orders_table__info_table .site_table__tr {
+    cursor: default;
+  }
+  .my_orders_table__info_table .body_tr {
+    min-height: 90px;
+  }
+  .my_orders_table__info_table .site_table__td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .my_orders_table__info_table .my_orders_table__info_td_col1 {
+    width: 36px;
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+  .my_orders_table__info_table .my_orders_table__info_td_col2 {
+    width: calc(100% - 386px);
+    padding-left: 5px;
+    padding-right: 30px;
+  }
+  .my_orders_table__info_table .my_orders_table__info_td_col3 {
+    width: 130px;
+    padding-left: 30px;
+    padding-right: 15px;
+  }
+  .my_orders_table__info_table .my_orders_table__info_td_col4 {
+    width: 105px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .my_orders_table__info_table .my_orders_table__info_td_col5 {
+    width: 115px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .my_orders_table__info_table .my_orders_table__info_td_col6 {
+    width: 165px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .my_orders_table__info_table .info_table__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 65px;
+  }
+  .my_orders_table__info_table .info_table__img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto
+  }
+  .info_table__product {
+    width: calc(100% - 100px);
+    padding-left: 20px;
+  }
+  .info_table__product .product_name {
+    max-height: 34px;
+    overflow: hidden;
+    margin-bottom: 3px;
+  }
+  .info_table__product__vendor_code .vendor_code__name {
+    margin-left: 5px;
+  }
+  .close__tr_collapse__content {
+    padding: 15px 20px 0;
+    text-align: right;
+  }
+  .close__tr_collapse__content .site_link {
+    position: relative;
+    font-size: 13px;
+    margin-right: 20px;
+  }
+  .close__tr_collapse__content .site_link:before {
+    content: "\e925";
+    font-family: 'iconewwssync' !important;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    padding-left: 7px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .my_orders__content .pagination_block {
+    margin-bottom: 0;
+  }
+  .my_orders__content .my_orders__filter__status {
+    margin-right: 0 !important;
+  }
+/*END my_orders*/
+
+/*filter_double_date*/
+  .filter_double_date {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+  }
+  .filter_double_date .filter_double_date__label {
+    display: none;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 7px;
+  }
+  .filter_double_date .wrap_double_date__item {
+    position: relative;
+    display: flex;
+  }
+  .filter_double_date .wrap_double_date__item:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 1px;
+    transform: translateX(-50%);
+  }
+  .filter_double_date .double_date__item {
+    width: 50%;
+    margin-right: 13px;
+  }
+  .filter_double_date .double_date__item:last-child {
+    margin-right: 0;
+  }
+  .filter_double_date .double_date__item .datetimepicker_site {
+    margin-bottom: 0;
+  }
+  .filter_double_date .double_date__item input {
+    width: 100%;
+    padding-left: 36px;
+    padding-right: 10px;
+  }
+  .filter_double_date .double_date__item .input-group-addon {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+  }
+  .filter_double_date .double_date__item .input-group-addon:before {
+    content: "\e915";
+    font-family: 'iconewwssync' !important;
+    font-size: 16px;
+  }
+  .datetimepicker_site table,
+  .datetimepicker_site table tr td {
+    border: none;
+  }
+  .datetimepicker_site table tr th {
+    background: transparent;
+    border-radius: 0;
+  }
+/*END filter_double_date*/
+
+/**/
+  .my_orders__content .manager-loader-inner {
+    background-image: url(images/preloader.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-posirion: center center;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, .0);
+  }
+  .my_orders__content {
+    position: relative;
+  }
+  .my_orders__content .manager-overload {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(239, 239, 239, .6);
+    top: 0px;
+    left: 0px;
+    z-index: 650;
+  }
+  .my_orders__content .manager-loader-container {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    left: 0px;
+    right: 0px;
+    top: 75px;
+  }
+/*END */
+
+@media only screen and (max-width : 1359px) {
+  /*my_orders*/
+    .my_orders__content .filter_time {
+        display: none;
+    }
+    .my_orders__content .my_orders__filter__status {
+        margin-right: 20px;
+    }
+    .my_orders__content .my_orders__filter__auto {
+        width: 218px;
+    }
+
+    .my_orders_table__info_table .my_orders_table__info_td_col1 {
+        width: 36px;
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+    .my_orders_table__info_table .my_orders_table__info_td_col2 {
+        width: calc(100% - 346px);
+        padding-right: 10px;
+    }
+    .my_orders_table__info_table .my_orders_table__info_td_col3 {
+        width: 115px;
+        padding-left: 10px;
+    }
+    .my_orders_table__info_table .my_orders_table__info_td_col4 {
+        width: 80px;
+    }
+    .my_orders_table__info_table .info_table__img {
+        display: none;
+    }
+    .info_table__product {
+        width: 100%;
+        padding-left: 0;
+    }
+  /*END my_orders*/
+}
+
+@media only screen and (min-width : 1000px) {
+    .info__item__text.comment {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media only screen and (max-width : 999px) {
+  /*my_orders*/
+    .my_orders__table .my_orders_td_col4,
+    .my_orders__table .my_orders_td_col7 {
+        display: none;
+    }
+    .my_orders__table .site_table__tr.site_table__header,
+    .my_orders_table__content .site_table__tr.tr_collapse {
+        justify-content: space-between;
+    }
+    .my_orders_table__info_table .my_orders_table__info_td_col2 {
+        /*width: calc(100% - 456px);если есть колонка статус -my_orders_table__info_td_col6*/
+    }
+    .my_orders_table__info_table .my_orders_table__info_td_col6 {
+        width: 110px;
+    }
+  /*END my_orders*/
+}
+
+@media only screen and (max-width : 767px) {
+  /*my_orders*/
+    .wrap_profile_tabs__content__item .title_h5 {
+      font-size: 18px;
+    }
+    .filter_double_date .filter_double_date__label {
+      display: block;
+    }
+    .my_orders__filter form {
+        flex-wrap: wrap;
+    }
+    .my_orders__filter__left .filter_double_date {
+        max-width: 260px;
+        width: 100%;
+    }
+    .my_orders__filter__right {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    .my_orders__content .my_orders__filter__auto,
+    .my_orders__content .my_orders__filter__status {
+        width: 100%;
+    }
+    .my_orders__filter__right .wrap_selectpicker_site__with_label {
+        max-width: 360px;
+    }
+    .my_orders__content .my_orders__filter__status {
+        order: 1;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .my_orders__table .site_table__tr.site_table__header,
+    .my_orders_table__content .site_table__tr.tr_collapse {
+        justify-content: flex-start;
+    }
+    .my_orders__table .my_orders_td_col2:before {
+        display: none;
+    }
+    .my_orders_table__content .tr_collapse .site_table__td.my_orders_td_col1 {
+        width: 0;
+        padding: 0;
+        visibility: hidden;
+    }
+    .my_orders__table .my_orders_td_col2 {
+        padding-left: 15px;
+    }
+    .my_orders__table .my_orders_td_col2,
+    .my_orders__table .my_orders_td_col3 {
+        padding-bottom: 5px;
+    }
+    .my_orders__table .my_orders_td_col5,
+    .my_orders__table .my_orders_td_col6 {
+        padding-top: 5px;
+    }
+    .my_orders__table .my_orders_td_col3,
+    .my_orders__table .my_orders_td_col6 {
+        width: 155px;
+        font-size: 13px;
+        justify-content: flex-end;
+        padding-left: 5px;
+    }
+    .my_orders__table .my_orders_td_col2,
+    .my_orders__table .my_orders_td_col5 {
+        width: calc(100% - 155px);
+        padding-right: 5px;
+    }
+
+    .my_orders_table__info_content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .my_orders_table__info_header {
+        flex-wrap: wrap;
+    }
+    .my_orders_table__info__title {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .my_orders_table__info__title span {
+        font-size: 16px;
+    }
+    .my_orders_table__info__items {
+        padding-top: 25px;
+    }
+    .my_orders_table__info__items .my_orders_table__info__item {
+        display: initial;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .my_orders_table__info_table .my_orders_table__info_td_col1,
+    .my_orders_table__info_table .my_orders_table__info_td_col2:before,
+    .my_orders_table__info_table .my_orders_table__info_td_col3 {
+        display: none;
+    }
+    .my_orders_table__info_table .body_tr {
+        flex-wrap: wrap;
+    }
+    .my_orders_table__info_table .site_table__tr.site_table__header .my_orders_table__info_td_col2 {
+        padding-left: 10px;
+    }
+    .my_orders_table__info_table .body_tr .site_table__td {
+        font-size: 13px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .my_orders_table__info_table .body_tr .my_orders_table__info_td_col2,
+    .my_orders_table__info_table .body_tr .my_orders_table__info_td_col3,
+    .my_orders_table__info_table .body_tr .my_orders_table__info_td_col4,
+    .my_orders_table__info_table .body_tr .my_orders_table__info_td_col5 {
+        padding-bottom: 0;
+    }
+    .my_orders_table__info_table .body_tr .my_orders_table__info_td_col4,
+    .my_orders_table__info_table .body_tr .my_orders_table__info_td_col5 {
+        width: 50%;
+    }
+    .my_orders_table__info_table .body_tr .my_orders_table__info_td_col5 {
+        font-size: 14px;
+        justify-content: flex-end;
+    }
+    .tr_collapse__content .info_table__total_result {
+        font-size: 16px;
+    }
+    .tr_collapse__content .info_table__total_result,
+    .close__tr_collapse__content {
+        padding-right: 10px;
+    }
+  /*END my_orders*/
+}

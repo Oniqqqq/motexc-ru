@@ -1,0 +1,267 @@
+/*header_adress_popup*/
+.item_with_adress_popup {
+    position: relative;
+    min-height: 25px;
+}
+.item_with_adress_popup .wrap_adress_popup_first {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 36px;
+    z-index: 100;
+}
+.item_with_adress_popup .adress_popup_first {
+    position: relative;
+    width: 440px;
+    text-align: left;
+    padding: 25px 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.item_with_adress_popup .adress_popup_first:before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 14px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+.adress_popup_first .adress_popup_first__title {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.adress_popup_first .adress_popup_first__item {
+    display: flex;
+    margin-bottom: 30px;
+}
+.adress_popup_first .adress_popup_first__close {
+    display: none;
+    position: absolute;
+    top: -36px;
+    right: 5px;
+    cursor: pointer;
+
+}
+.adress_popup_first .adress_popup_first__close span:before {
+    font-size: 24px;
+}
+.item_with_adress_popup .adress_popup_first .site_header__up_link_ico {
+    margin-top: 2px;
+}
+.item_with_adress_popup .adress_popup_first .site_header__up_link_ico:before {
+    margin-right: 7px;
+}
+.adress_popup_first__item .adress_popup_first__item_text {
+    font-size: 15px;
+    font-weight: 600;
+}
+.adress_popup_first .adress_popup_first__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.adress_popup_first .adress_popup_first__btn a {
+    width: 180px;
+}
+.adress_popup_first .other_adress {
+    display: none;
+}
+.other_adress .other_adress__title {
+    border-bottom: 1px solid;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+}
+.other_adress .ul_radio_map {
+    max-height: 360px;
+    overflow-y: auto;
+}
+.other_adress .ul_radio_map li {
+    margin-bottom: 15px;
+}
+.other_adress .ul_radio_map li:last-child {
+    margin-bottom: 0;
+}
+.other_adress .ul_radio_map .radio_btn {
+    top: 1px;
+}
+.other_adress .radio_text__title {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 18px;
+}
+
+.site_header__adress_popup__title {
+    font-weight: normal;
+    max-width: 310px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.site_header__adress_popup {
+    position: relative;
+    cursor: pointer;
+}
+.site_header__adress_popup .btn_adress_popup {
+    display: flex;
+    align-items: center;
+}
+.site_header__adress_popup .header_adress_popup {
+    border: none;
+    display: none;
+    min-width: 440px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: left;
+    margin-top: 13px;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+.site_header__adress_popup .header_adress_popup:before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 14px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+.adress_popup_main .adress_popup_main__item {
+    display: flex;
+    align-items: center;
+}
+.adress_popup_main__item .adress_popup_main__map {
+    width: 340px;
+    height: 240px;
+    overflow: hidden;
+}
+.adress_popup_main__item .adress_popup_main__body {
+    width: 385px;
+    padding-left: 25px;
+}
+.adress_popup_main__body .adress_popup_main__body__title {
+    margin-bottom: 20px;
+}
+.adress_popup_main__body .adress_popup_main__body__address,
+.adress_popup_main__body .adress_popup_main__body__phone {
+    margin-bottom: 12px;
+}
+.adress_popup_main__body .adress_popup_main__body__phone > a {
+    display: inline-flex;
+}
+.adress_popup_main__body .adress_popup_main__body__address,
+.adress_popup_main__body .adress_popup_main__body__time {
+    display: flex;
+    font-weight: normal;
+}
+.adress_popup_main__body .adress_popup_main__body__phone {
+    font-size: 15px;
+    font-weight: 700;
+}
+.adress_popup_main__body .adress_popup_main__ico:before {
+    font-size: 16px;
+    margin-right: 7px;
+}
+.adress_popup_main__body .adress_popup_main__body__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.adress_popup_main .other_adress {
+    display: none;
+}
+/*END header_adress_popup*/
+
+@media only screen and (max-width : 1359px) {
+    /*header_adress_popup*/
+        .site_header__adress_popup__title {
+            font-size: 13px;
+            max-width: 290px;
+        }
+    /*END header_adress_popup*/
+}
+
+@media only screen and (max-width : 999px) {
+    /*header_adress_popup*/
+        .site_header__adress_popup__title {
+            max-width: 234px;
+        }
+        .adress_popup_main__item .adress_popup_main__body {
+            width: 358px;
+        }
+    /*END header_adress_popup*/
+}
+
+@media only screen and (max-width : 767px) {
+    /*header_adress_popup*/
+        body.mob_fon_popup_map {
+            position: fixed;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+        }
+        .item_with_adress_popup .wrap_adress_popup_first {
+            background: rgba(0,0,0,0.65);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            overflow-y: auto;
+            padding: 0;
+            z-index: 1050;
+        }
+        .item_with_adress_popup .adress_popup_first {
+            max-width: 440px;
+            width: 100%;
+            margin: 48px auto auto;
+            padding: 35px 15px 25px;
+        }
+        .item_with_adress_popup .adress_popup_first:before {
+            display: none;
+        }
+        .adress_popup_first .adress_popup_first__close {
+            display: block;
+        }
+        .adress_popup_first .adress_popup_first__title,
+        .other_adress .other_adress__title,
+        .adress_popup_first__item .adress_popup_first__item_text {
+            font-size: 14px;
+        }
+        .adress_popup_first .adress_popup_first__btn {
+            margin: 0 -10px;
+        }
+        .adress_popup_first .adress_popup_first__btn > form,
+        .adress_popup_first .adress_popup_first__btn .adress_link_other {
+            width: calc(50% - 20px);
+            margin: 0 10px;
+        }
+        .adress_popup_first .adress_popup_first__btn a {
+            width: 100%;
+        }
+        .adress_popup_first .adress_popup_first__btn a:first-child {
+            margin-right: 20px;
+        }
+        .adress_popup_first .adress_popup_first__btn a:last-child {
+            margin-left: auto;
+        }
+        .other_adress .ul_radio_map {
+            overflow: visible;
+            max-height: none;
+        }
+    /*END header_adress_popup*/
+}

@@ -1,0 +1,55 @@
+.box-edit-car{
+	display: none;
+}
+
+.box-edit-car span {
+	display: block;
+	margin-top: 5px;
+}
+.box-edit-car input {
+	width: 100%;
+}
+
+/*garage_vin*/ 
+    .select_garage .site_table.table_select_modification .table_select_modification__header,
+    .select_garage .columns-filter-wrapper.controls-wrapper .checkbox-container-toggler {
+        display: none;
+    }
+    .select_garage .wrap_garage_vin .select-modification {
+    	display: inline-block;
+    	font-size: 14px;
+    	margin-top: 10px;
+    	padding-top: 0;
+    }
+    .select_garage .columns-filter-wrapper.controls-wrapper {
+        margin-top: 0;
+    }
+    .select_garage .garage_vin__table_select_modification {
+        max-height: 180px;
+        overflow: auto;
+    }
+    .select_garage .select_modif .site_table.table_select_modification {
+        border: none;
+    }
+    .select_garage .table_select_modification{
+        border: none;
+    }
+    .select_garage .site_table.table_select_modification tbody tr {
+        display: flex;
+        border: none;
+        flex-wrap: wrap;
+        padding: 5px 0;
+        min-height: 40px;
+    }
+    .select_garage .site_table.table_select_modification td {
+        border: none;
+        display: flex;
+        align-items: center;
+        height: auto;
+        padding: 0;
+    }
+    .select_garage .site_table.table_select_modification td .comma_td {
+        display: inline-block;
+        padding-right: 10px;
+    }
+/*END garage_vin*/

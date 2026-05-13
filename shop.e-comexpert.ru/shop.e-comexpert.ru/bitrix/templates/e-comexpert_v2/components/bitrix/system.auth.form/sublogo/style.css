@@ -1,0 +1,70 @@
+.head_reg {
+    position: relative;
+}
+.wrap_login_collapse {
+    background: #fff;
+    position: absolute;
+    top: 25px;
+    z-index: 100;
+}
+.login_collapse {
+    padding: 10px;
+    text-align: center;
+}
+.login_collapse div.title {
+    margin-bottom: 10px;
+}
+.login_collapse .forgot_password {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.login_collapse input[type="text"],
+.login_collapse input[type="password"] {
+    border-radius: 0;
+    border: 1px solid #b6b6b6;
+    color: #40434e;
+    box-shadow: none;
+}
+.login_collapse input[type="text"]:focus,
+.login_collapse input[type="password"]:focus {
+    border: 1px solid #e31e24;
+}
+.header_personal_area {
+    position: relative;
+}
+.header_personal_area.mob_hpa .hpa_ul {
+    width: 165px;
+    top: 20px;
+    right: -47px;
+}
+.hpa_ul {
+    display: none;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    top: 19px;
+    right: 0;
+    z-index: 10;    
+}
+.header_personal_area:hover .hpa_ul {
+    display: block;
+}
+.hpa_ul li {
+    margin-bottom: 5px;
+}
+.head_reg .hpa_ul .wrap_link_logout a {
+    color: #fff;
+}
+.wrap_link_logout {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.error-container .red_link {
+    display: block;
+    color: #FF6230;
+    text-align: center;
+    padding-bottom: 15px;
+}

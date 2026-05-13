@@ -1,0 +1,148 @@
+/*slider__main_comments*/
+	.sec_main.main_comments{
+		padding-top: 50px;
+	}
+	.wrap_slider__main_comments {
+		position: relative;
+	}
+	.slider_counter {
+		position: absolute;
+		font-size: 15px;
+		width: 80px;
+		padding: 0 5px;
+		bottom: 10px;
+		left: 50%;
+		margin-left: -40px;
+		text-align: center;
+	}
+	.slider_site.slider__main_comments.owl-carousel .owl-stage {
+		display: flex;
+		align-items: center;
+	}
+	.slider_site.slider__main_comments.owl-carousel .owl-stage-outer:before,
+	.slider_site.slider__main_comments.owl-carousel .owl-stage-outer:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 200px;
+		height: 100%;
+		z-index: 1
+	}
+	.slider_site.slider__main_comments.owl-carousel .owl-stage-outer:before {
+		background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
+		background: -o-linear-gradient(left, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+		background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+		left: 0;
+	}
+	.slider_site.slider__main_comments.owl-carousel .owl-stage-outer:after {
+		background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#FFFFFF));
+		background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+		right: 0;
+	}
+
+	.slider_site.slider__main_comments .item {
+		display: flex;
+		align-items: center;
+		height: 250px;
+	}
+	.slider__main_comments .main_comments__item {
+		padding: 40px;
+	}
+	.slider__main_comments.owl-carousel.owl-drag .owl-item.center .item {
+		height: 290px;
+	}
+	.slider__main_comments .main_comments__item .user_rating {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+	.slider__main_comments .user_rating__user {
+		display: flex;
+		align-items: center;
+	}
+	.slider__main_comments .user_rating__user img {
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+	}
+	.slider__main_comments .user_rating__user__name span {
+		display: block;
+		font-size: 21px;
+		margin-bottom: 5px;
+	}
+	.slider__main_comments .user_rating__user__name p {
+		margin: 0;
+	}
+	.main_comments__item .user_rating .user_rating__rating {
+		display: flex;
+	}
+	.main_comments__item .user_rating .user_rating__rating .user_rating__rating__ico {
+		margin-right: 5px;
+	}
+	.main_comments__item .user_rating .user_rating__rating .user_rating__rating__ico:last-child {
+		margin-right: 0;
+	}
+	.main_comments__item .user_rating .user_rating__rating .user_rating__rating__ico:before {
+		font-size: 18px;
+	}
+
+	.slider__main_comments .user_comment {
+		font-style: italic;
+		max-height: 105px;
+		line-height: 21px;
+		overflow: hidden;
+	}
+	.slider_site.slider__main_comments.owl-carousel .owl-nav > button {
+		margin: 0 40px;
+	}
+/*END slider__main_comments*/
+
+@media only screen and (max-width : 1359px) {
+	/*slider__main_comments*/
+		.slider_site.slider__main_comments.owl-carousel .owl-stage-outer:before,
+		.slider_site.slider__main_comments.owl-carousel .owl-stage-outer:after {
+			width: 100px;
+		}
+	/*END slider__main_comments*/	
+}
+
+@media only screen and (max-width : 999px) {
+	/*slider__main_comments*/
+		.slider_site.slider__main_comments.owl-carousel .owl-stage-outer:before,
+		.slider_site.slider__main_comments.owl-carousel .owl-stage-outer:after {
+			width: 30px;
+		}
+	/*END slider__main_comments*/
+}
+
+@media only screen and (max-width : 767px) {
+	/*slider__main_comments*/
+		.slider_site.slider__main_comments.owl-carousel .owl-stage-outer:before,
+		.slider_site.slider__main_comments.owl-carousel .owl-stage-outer:after {
+			display: none;
+		}
+		.slider__main_comments .main_comments__item {
+			padding: 30px 20px;
+		}
+		.slider_site.slider__main_comments .item {
+			height: 311px;
+		}
+		.slider__main_comments .main_comments__item .user_rating {
+			flex-wrap: wrap;
+			margin-bottom: 15px;
+		}
+		.main_comments__item .user_rating .user_rating__rating {
+			width: 100%;
+			justify-content: flex-end;
+			order: -1;
+			margin-bottom: 15px;
+		}
+		.slider__main_comments .user_rating__user__name span {
+			font-size: 15px;
+		}
+		.slider__main_comments .user_rating__user__name .user_rating__user__data {
+			font-size: 13px;
+		}
+	/*END slider__main_comments*/
+}
