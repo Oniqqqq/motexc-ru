@@ -195,7 +195,7 @@ BX.setCSSList(['../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/main/core/c
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+7 (499) 288-20-15"
+    "telephone": "+7 (495) 445-90-99"
   }
 }
  </script>
@@ -280,6 +280,126 @@ select.native-select, select.age {
     .datetimepicker_site { width: 100% !important; }
     .wrap_double_date__item { flex-wrap: wrap !important; gap: 8px !important; }
     .wrap_double_date__item .datetimepicker_site { width: 100% !important; }
+}
+
+/* ── Cart action buttons ─────────────────────────────────── */
+.btn-add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    height: 28px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    color: #2E7D4F;
+    background: #fff;
+    border: 1.5px solid #2E7D4F;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    white-space: nowrap;
+    line-height: 1;
+    outline: none;
+}
+.btn-add-to-cart:hover {
+    background: #2E7D4F;
+    color: #fff;
+}
+.btn-add-to-cart.added {
+    background: #2E7D4F;
+    color: #fff;
+    border-color: #2E7D4F;
+    pointer-events: none;
+}
+.btn-add-to-cart svg { flex-shrink: 0; }
+
+.btn-repeat-order {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    height: 34px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    background: #2E7D4F;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+    outline: none;
+    margin-right: 10px;
+}
+.btn-repeat-order:hover { background: #23643F; }
+.btn-repeat-order.loading { opacity: 0.7; pointer-events: none; }
+.btn-repeat-order svg { flex-shrink: 0; }
+
+/* ── Toast notification ──────────────────────────────────── */
+#cart-toast {
+    position: fixed;
+    bottom: 28px;
+    right: 24px;
+    z-index: 9999;
+    min-width: 260px;
+    max-width: 340px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 28px rgba(0,0,0,.18);
+    padding: 14px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.25s, transform 0.25s;
+    pointer-events: none;
+}
+#cart-toast.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.cart-toast__icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: #EBF4EE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2E7D4F;
+}
+.cart-toast__body { flex: 1; min-width: 0; }
+.cart-toast__title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #111816;
+    margin-bottom: 2px;
+    font-family: 'Lato', sans-serif;
+}
+.cart-toast__msg {
+    font-size: 12px;
+    color: #6B7B74;
+    line-height: 1.4;
+    font-family: 'Lato', sans-serif;
+    word-break: break-word;
+}
+.cart-toast__link {
+    font-size: 12px;
+    color: #2E7D4F;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4px;
+}
+.cart-toast__link:hover { text-decoration: underline; }
+@media (max-width: 480px) {
+    #cart-toast { right: 12px; bottom: 16px; min-width: 0; left: 12px; max-width: none; }
 }
 </style>
 
@@ -539,7 +659,7 @@ select.native-select, select.age {
                     <div class="wrap_adress_popup_first__item">
                         <div class="adress_popup_first__item">
                             <span class="site_header__up_link_ico icon-ion-location-sharp"></span>
-                            <span class="adress_popup_first__item_text">ст.Новотитаровская ул. Широкая 52</span>
+                            <span class="adress_popup_first__item_text">Московская область, г. Одинцово, ул. Баковская, д. 9</span>
                         </div>
 
                         <div class="adress_popup_first__btn">
@@ -565,8 +685,8 @@ select.native-select, select.age {
                                             <label for="radio_popup_map1">
                                                 <span class="radio_btn"></span>
                                                 <span class="radio_text">
-                                                    <span class="radio_text__title">Юмал Авто</span>
-                                                    ст.Новотитаровская ул. Широкая 52                                                </span>
+                                                    <span class="radio_text__title">МоТехС-РУС</span>
+                                                    Московская область, г. Одинцово, ул. Баковская, д. 9                                                </span>
                                             </label>
                                         </form>
                                     </div>
@@ -580,31 +700,30 @@ select.native-select, select.age {
         <div class="btn_adress_popup">
             <span class="site_header__up_link_ico icon-ion-location-sharp"></span>
             <span class="site_link site_link_with_borderb site_header__adress_popup__title">
-                   ст.Новотитаровская ул. Широкая 52                </span>
+                   Московская область, г. Одинцово, ул. Баковская, д. 9                </span>
         </div>
         <div class="header_adress_popup" style="display: none;">
             <div class="adress_popup_main">
                 <div class="adress_popup_main__item">
                                             <div class="adress_popup_main__map">
-                                                        <img src="../shop.e-comexpert.ru/static-maps.yandex.ru/1.x/map.png" alt="Юмал Авто" />
+                                                        <img src="../shop.e-comexpert.ru/static-maps.yandex.ru/1.x/map.png" alt="МоТехС-РУС" />
                         </div>
                                         <div class="adress_popup_main__body">
-                        <div class="title_h4 adress_popup_main__body__title">Юмал Авто</div>
+                        <div class="title_h4 adress_popup_main__body__title">МоТехС-РУС</div>
                                                     <div class="adress_popup_main__body__address">
                                 <span class="adress_popup_main__ico icon-ion-location-sharp"></span>
-                                <span class="adress_popup_main__text">ст.Новотитаровская ул. Широкая 52</span>
+                                <span class="adress_popup_main__text">Московская область, г. Одинцово, ул. Баковская, д. 9</span>
                             </div>
                                                                             <div class="adress_popup_main__body__phone">
-                                <a href="tel:+79298305689" class="site_link">
+                                <a href="tel:+74954459099" class="site_link">
                                     <span class="adress_popup_main__ico icon-ion-call"></span>
-                                    <span class="adress_popup_main__text">+7 (929) 830-56-89</span>
+                                    <span class="adress_popup_main__text">+7 (495) 445-90-99</span>
                                 </a>
                             </div>
                                                                             <div class="adress_popup_main__body__time">
                                 <div class="adress_popup_main__body__time">
                                     <span class="adress_popup_main__ico icon-ion-time"></span>
-                                    <span class="adress_popup_main__text">Пн-Пт: 9-20 
-Сб, Вс: выходной</span>
+                                    <span class="adress_popup_main__text">Пн–Пт с 9:00 до 18:00, Сб–Вс — выходные</span>
                                 </div>
                             </div>
                                                 <div class="adress_popup_main__body__btn">
@@ -627,8 +746,8 @@ select.native-select, select.age {
                                             <label for="radio_popup_map12">
                                                 <span class="radio_btn"></span>
                                                 <span class="radio_text">
-                                                    <span class="radio_text__title">Юмал Авто</span>
-                                                    ст.Новотитаровская ул. Широкая 52                                                    </span>
+                                                    <span class="radio_text__title">МоТехС-РУС</span>
+                                                    Московская область, г. Одинцово, ул. Баковская, д. 9                                                    </span>
                                             </label>
                                         </form>
                                     </div>
@@ -643,21 +762,21 @@ select.native-select, select.age {
 
 <script type="text/javascript">
     $(document).ready(function () {
-                       $('.site_header').find('.header_tel.branch_tel').eq(0).html('<span class="site_header__up_link_ico icon-ion-call"></span>+7 (929) 830-56-89');
-                $('.site_header').find('.header_tel.branch_tel').eq(0).attr("href", "tel:+79298305689");
-                $('.ul_footer_contact').find('.branch_tel').eq(0).find('.footer_contact_text_tel').text('+7 (929) 830-56-89');
-                $('.ul_footer_contact').find('.branch_tel').eq(0).attr("href", "tel:+79298305689");
-                $('.contact__item__phone').find('.contact_phone').eq(0).find('.ci__bi__text').text('+7 (929) 830-56-89');
-                $('.contact__item__phone').find('.contact_phone').eq(0).attr("href", "tel:+79298305689");
-                                $('.ul_footer_contact').find('.branch_email').find('.footer_contact_text_email').text('opt@umalauto.ru');
-                $('.ul_footer_contact').find('.branch_email').eq(0).attr("href", "mailto:opt@umalauto.ru");
-                $('.contact__item__body').find('.branch_email').find('.ci__bi__text').text('opt@umalauto.ru');
-                $('.contact__item__body').find('.branch_email').eq(0).attr("href", "mailto:opt@umalauto.ru");
-                            $('.ul_footer_contact').find('.footer_contact_text.address').text('ст.Новотитаровская ул. Широкая 52');
-            $('.mob_header_menu').find('.site_header__adress_popup__title &gt; a').text('ст.Новотитаровская ул. Широкая 52');
-            $('.contact__item__body').find('.contact_adress__main').text('ст.Новотитаровская ул. Широкая 52');
-                            $('.ul_footer_contact').find('.work_time').html("Пн-Пт: 9-20 Сб, Вс: выходной");
-                                    $('.contact__item__body_item.work_time').find('.ci__bi__text').html("Пн-Пт: 9-20 Сб, Вс: выходной");
+                       $('.site_header').find('.header_tel.branch_tel').eq(0).html('<span class="site_header__up_link_ico icon-ion-call"></span>+7 (495) 445-90-99');
+                $('.site_header').find('.header_tel.branch_tel').eq(0).attr("href", "tel:+74954459099");
+                $('.ul_footer_contact').find('.branch_tel').eq(0).find('.footer_contact_text_tel').text('+7 (495) 445-90-99');
+                $('.ul_footer_contact').find('.branch_tel').eq(0).attr("href", "tel:+74954459099");
+                $('.contact__item__phone').find('.contact_phone').eq(0).find('.ci__bi__text').text('+7 (495) 445-90-99');
+                $('.contact__item__phone').find('.contact_phone').eq(0).attr("href", "tel:+74954459099");
+                                $('.ul_footer_contact').find('.branch_email').find('.footer_contact_text_email').text('office@motexc.ru');
+                $('.ul_footer_contact').find('.branch_email').eq(0).attr("href", "mailto:office@motexc.ru");
+                $('.contact__item__body').find('.branch_email').find('.ci__bi__text').text('office@motexc.ru');
+                $('.contact__item__body').find('.branch_email').eq(0).attr("href", "mailto:office@motexc.ru");
+                            $('.ul_footer_contact').find('.footer_contact_text.address').text('Московская область, г. Одинцово, ул. Баковская, д. 9');
+            $('.mob_header_menu').find('.site_header__adress_popup__title &gt; a').text('Московская область, г. Одинцово, ул. Баковская, д. 9');
+            $('.contact__item__body').find('.contact_adress__main').text('Московская область, г. Одинцово, ул. Баковская, д. 9');
+                            $('.ul_footer_contact').find('.work_time').html("Пн–Пт с 9:00 до 18:00, Сб–Вс — выходные");
+                                    $('.contact__item__body_item.work_time').find('.ci__bi__text').html("Пн–Пт с 9:00 до 18:00, Сб–Вс — выходные");
         
     });
     if (typeof window.W247BranchChangeObjects === 'undefined') {
@@ -697,13 +816,13 @@ if (BX('bxajaxid_4572e15cff9c9b48c4263556c77c8d90_8BACKi'))
 else
 	BX.addCustomEvent('onAjaxSuccess', _processform_8BACKi);
 </script><input type="hidden" name="sessid" id="sessid_3" value="dc6cd54168157ca50aa76a7b3d67830f" /><input type="hidden" name="WEB_FORM_ID" value="2" />
-                        <input type="hidden" name="form_hidden_5" value="[id:] " /><input type="hidden" name="form_hidden_6" value="[id:1] Юмал Авто" />
+                        <input type="hidden" name="form_hidden_5" value="[id:] " /><input type="hidden" name="form_hidden_6" value="[id:1] МоТехС-РУС" />
                         
                         
                                                                                     <div class="wrap_selectpicker_site__with_label vertical_view">
                                     <div class="wrap_selectpicker_site__label">Ваш магазин</div>
                                     <div class="site_field wrap_selectpicker_site">
-                                        <div class="dropdown bootstrap-select bs3"><select class="selectpicker" required="" data-msg-required="Поле должно быть заполнено" data-id="7" id="otherBranches" tabindex="-98"><option value="1">Юмал Авто (ст.Новотитаровская ул. Широкая 52)</option></select><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" data-id="otherBranches" title="Юмал Авто (ст.Новотитаровская ул. Широкая 52)"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Юмал Авто (ст.Новотитаровская ул. Широкая 52)</div></div> </div><span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu" role="combobox"><div class="inner" role="listbox" aria-expanded="false" tabindex="-1"><ul class="dropdown-menu inner "></ul></div></div></div><input type="text" style="display:none;" data-id="7" name="form_text_7" value="[id:1] Юмал Авто" size="" />                                                                            </div>
+                                        <div class="dropdown bootstrap-select bs3"><select class="selectpicker" required="" data-msg-required="Поле должно быть заполнено" data-id="7" id="otherBranches" tabindex="-98"><option value="1">МоТехС-РУС, Одинцово (Московская область, г. Одинцово, ул. Баковская, д. 9)</option><option value="2">МоТехС-РУС, Тула (г. Тула, Новомосковское шоссе, д. 58В)</option></select><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" data-id="otherBranches" title="МоТехС-РУС, Одинцово (Московская область, г. Одинцово, ул. Баковская, д. 9)"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">МоТехС-РУС, Одинцово (Московская область, г. Одинцово, ул. Баковская, д. 9)</div></div> </div><span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu" role="combobox"><div class="inner" role="listbox" aria-expanded="false" tabindex="-1"><ul class="dropdown-menu inner "></ul></div></div></div><input type="text" style="display:none;" data-id="7" name="form_text_7" value="[id:1] МоТехС-РУС, Одинцово" size="" />                                                                            </div>
                                 </div>
                                                     
                         
@@ -723,7 +842,7 @@ else
                         </div>
                     
                     <span class="site_header__up_link wrap_header_tel">
-                                                    <a href="tel:+79298305689" class="site_link header_tel branch_tel"><span class="site_header__up_link_ico icon-ion-call"></span>+7 (929) 830-56-89</a>
+                                                    <a href="tel:+74954459099" class="site_link header_tel branch_tel"><span class="site_header__up_link_ico icon-ion-call"></span>+7 (495) 445-90-99</a>
                                                 <a href="#request_call" class="site_link site_link_with_borderb link_header_request_call" data-toggle="modal">Заказать звонок</a>
                     </span>
                     <span class="for_fixed_header_help">
@@ -749,6 +868,11 @@ else
                         <li class="site_personalarea__item bg_myprofile"><a href="../personal/index.html">Мой профиль</a></li>
                         <li class="site_personalarea__item bg_myorders"><a href="../personal/history.html">Мои заказы</a></li>
                         <li class="site_personalarea__item bg_reclamations"><a href="../personal/reclamations/index.html">Рекламации</a></li>
+                        <li class="site_personalarea__item bg_documents"><a href="../personal/documents/index.html">Документы</a></li>
+                        <li class="site_personalarea__item bg_group_pricing"><a href="#" onclick="return false;">Групповая проценка</a></li>
+                        <li class="site_personalarea__item bg_garage"><a href="#" onclick="return false;">Гараж</a></li>
+                        <li class="site_personalarea__item bg_employees"><a href="#" onclick="return false;">Сотрудники</a></li>
+                        <li class="site_personalarea__item bg_bonus"><a href="#" onclick="return false;">Бонусная программа</a></li>
                         <li class="site_personalarea__item personalarea_exit"><a href="../index.html">Выйти</a></li>
                     </ul>
                 </div>
@@ -887,7 +1011,7 @@ else
                                                 <div class="site_header__up_link site_header__adress_popup">
                                                     <span class="site_header__up_link_ico icon-ion-location-sharp"></span>
                                                     <span class="site_link site_link_with_borderb site_header__adress_popup__title">
-                                                        <a href="#">ст.Новотитаровская ул. Широкая 52</a>
+                                                        <a href="#">Московская область, г. Одинцово, ул. Баковская, д. 9</a>
                                                     </span>
                                                 </div>
 
@@ -1343,6 +1467,26 @@ else
                     <a href="reclamations/index.html">
                                                 <span class="profile_tabs_name">Рекламации</span>
                     </a>
+                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
+                    <a href="documents/index.html">
+                                                <span class="profile_tabs_name">Документы</span>
+                    </a>
+                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
+                    <a href="#" onclick="return false;">
+                                                <span class="profile_tabs_name">Групповая проценка <span class="nav-soon-badge">Скоро</span></span>
+                    </a>
+                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
+                    <a href="#" onclick="return false;">
+                                                <span class="profile_tabs_name">Гараж <span class="nav-soon-badge">Скоро</span></span>
+                    </a>
+                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
+                    <a href="#" onclick="return false;">
+                                                <span class="profile_tabs_name">Сотрудники <span class="nav-soon-badge">Скоро</span></span>
+                    </a>
+                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
+                    <a href="#" onclick="return false;">
+                                                <span class="profile_tabs_name">Бонусная программа <span class="nav-soon-badge">Скоро</span></span>
+                    </a>
                 </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
 
 
@@ -1357,7 +1501,7 @@ else
                     </div>
                     <div class="modal-body">
                         <script type="text/javascript">if (window.location.hash != '' &amp;&amp; window.location.hash != '#') top.BX.ajax.history.checkRedirectStart('bxajaxid', 'f00ae9d4908bc3944de3a962d36502d8')</script><div id="comp_f00ae9d4908bc3944de3a962d36502d8">                        
-                                <p>Если Вы не правильно подобрали позиции в заказ или хотите уточнить детали, свяжитесь с нашим менеджером.</p><div class="modal_manager_phone"><a class="site_link" href="tel:+7(499)6455213"><span class="modal_manager_phone__ico icon-ion-call-outline"></span>+7 (499) 645-52-13</a> <br /><a class="site_link" href="tel:+7(499)9992319"><span class="modal_manager_phone__ico icon-ion-call-outline"></span>+7 (499) 999-23-19</a></div><p>Если Вы все равно хотите отменить заказ, укажите, пожалуйста, причину отмены.</p>                                
+                                <p>Если Вы не правильно подобрали позиции в заказ или хотите уточнить детали, свяжитесь с нашим менеджером.</p><div class="modal_manager_phone"><a class="site_link" href="tel:+74954459099"><span class="modal_manager_phone__ico icon-ion-call-outline"></span>+7 (495) 445-90-99</a> <br /><a class="site_link" href="tel:+74954459099"><span class="modal_manager_phone__ico icon-ion-call-outline"></span>+7 (495) 445-90-99</a></div><p>Если Вы все равно хотите отменить заказ, укажите, пожалуйста, причину отмены.</p>                                
 
                                 
 <form name="order_cancel" action="history.html" method="POST" enctype="multipart/form-data" novalidate="novalidate"><input type="hidden" name="bxajaxid" id="bxajaxid_f00ae9d4908bc3944de3a962d36502d8_Ar8Szp" value="f00ae9d4908bc3944de3a962d36502d8" /><input type="hidden" name="AJAX_CALL" value="Y" /><script type="text/javascript">
@@ -1524,6 +1668,7 @@ else
                                 <div class="my_orders_table__info_btn">
                                                                             
 
+                                        <button class="btn-repeat-order" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg> Повторить заказ</button>
                                         <a class="site_link site_link_with_borderb cancel_order_btn" data-phone="+7 (999) 000-00-00" data-email="anton.ivanov@example.com" data-fio="Антон Иванов" data-order="94" href="#cancel_order" data-toggle="modal">Отменить</a>
                                                                                                         </div>
                             </div>
@@ -1576,6 +1721,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">cs010702rd</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="Coolstream Антифриз готовый карбоксилатный красный Optima 5кг" data-sku="cs010702rd" data-price="1016"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 016 р.</div>
@@ -1598,6 +1744,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">cs010702rd</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="Coolstream Антифриз готовый карбоксилатный красный Optima 5кг" data-sku="cs010702rd" data-price="1016"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 016 р.</div>
@@ -1620,6 +1767,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">83212365924</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="BMW Масло моторное синтетическое M Twin Power Turbo 10W-60, 1л" data-sku="83212365924" data-price="1842"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 842 р.</div>
@@ -1665,6 +1813,7 @@ else
                                 <div class="my_orders_table__info_btn">
                                                                             
 
+                                        <button class="btn-repeat-order" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg> Повторить заказ</button>
                                         <a class="site_link site_link_with_borderb cancel_order_btn" data-phone="+7 (999) 000-00-00" data-email="anton.ivanov@example.com" data-fio="Антон Иванов" data-order="102" href="#cancel_order" data-toggle="modal">Отменить</a>
                                                                                                         </div>
                             </div>
@@ -1717,6 +1866,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">cs010702rd</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="Coolstream Антифриз готовый карбоксилатный красный Optima 5кг" data-sku="cs010702rd" data-price="1016"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 016 р.</div>
@@ -1739,6 +1889,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">cs010702rd</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="Coolstream Антифриз готовый карбоксилатный красный Optima 5кг" data-sku="cs010702rd" data-price="1016"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 016 р.</div>
@@ -1761,6 +1912,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">83212365924</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="BMW Масло моторное синтетическое M Twin Power Turbo 10W-60, 1л" data-sku="83212365924" data-price="1842"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 842 р.</div>
@@ -1806,6 +1958,7 @@ else
                                 <div class="my_orders_table__info_btn">
                                                                             
 
+                                        <button class="btn-repeat-order" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg> Повторить заказ</button>
                                         <a class="site_link site_link_with_borderb cancel_order_btn" data-phone="+7 (999) 000-00-00" data-email="anton.ivanov@example.com" data-fio="Антон Иванов" data-order="115" href="#cancel_order" data-toggle="modal">Отменить</a>
                                                                                                         </div>
                             </div>
@@ -1858,6 +2011,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">cs010702rd</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="Coolstream Антифриз готовый карбоксилатный красный Optima 5кг" data-sku="cs010702rd" data-price="1016"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 016 р.</div>
@@ -1880,6 +2034,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">cs010702rd</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="Coolstream Антифриз готовый карбоксилатный красный Optima 5кг" data-sku="cs010702rd" data-price="1016"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 016 р.</div>
@@ -1902,6 +2057,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">83212365924</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="BMW Масло моторное синтетическое M Twin Power Turbo 10W-60, 1л" data-sku="83212365924" data-price="1842"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 842 р.</div>
@@ -1947,6 +2103,7 @@ else
                                 <div class="my_orders_table__info_btn">
                                                                             
 
+                                        <button class="btn-repeat-order" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg> Повторить заказ</button>
                                         <a class="site_link site_link_with_borderb cancel_order_btn" data-phone="+7 (999) 000-00-00" data-email="anton.ivanov@example.com" data-fio="Антон Иванов" data-order="142" href="#cancel_order" data-toggle="modal">Отменить</a>
                                                                                                         </div>
                             </div>
@@ -1999,6 +2156,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">cs010702rd</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="Coolstream Антифриз готовый карбоксилатный красный Optima 5кг" data-sku="cs010702rd" data-price="1016"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 016 р.</div>
@@ -2021,6 +2179,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">cs010702rd</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="Coolstream Антифриз готовый карбоксилатный красный Optima 5кг" data-sku="cs010702rd" data-price="1016"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 016 р.</div>
@@ -2043,6 +2202,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">83212365924</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="BMW Масло моторное синтетическое M Twin Power Turbo 10W-60, 1л" data-sku="83212365924" data-price="1842"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">1 842 р.</div>
@@ -2089,6 +2249,7 @@ else
                                 <div class="my_orders_table__info_btn">
                                                                             
 
+                                        <button class="btn-repeat-order" type="button"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg> Повторить заказ</button>
                                         <a class="site_link site_link_with_borderb cancel_order_btn" data-phone="+7 (999) 000-00-00" data-email="anton.ivanov@example.com" data-fio="Антон Иванов" data-order="86" href="#cancel_order" data-toggle="modal">Отменить</a>
                                                                                                         </div>
                             </div>
@@ -2141,6 +2302,7 @@ else
                                                 <span class="vendor_code_title">Артикул:</span>
                                                 <span class="vendor_code__name">pf4033</span>
                                             </div>
+                                            <button class="btn-add-to-cart" type="button" data-name="PATRON Фильтр масляный Haval F7, Jolion 1.5, FIAT: Brava,Bravo,Marea,Multipla 1.4-1.6 1996-,Tempra,Tipo,Uno -96 /CITROEN: Jumper 96-00, C25 88-94/PEUGEOT:Boxer 94-02, J5 -94" data-sku="pf4033" data-price="199"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> В корзину</button>
                                         </div>
                                     </div>
                                     <div class="site_table__td my_orders_table__info_td_col3">199 р.</div>
@@ -2241,23 +2403,23 @@ else
                 <div class="main_footer__item footer__item_four">
                     <ul class="ul_reset_style ul_footer_contact">
                         <li class="footer_contact_tel">
-                            <a href="tel:+79298305689" class="link_footer branch_tel">
+                            <a href="tel:+74954459099" class="link_footer branch_tel">
     <span class="footer_ico_contact icon-ion-call-outline"></span>
-    <span class="footer_contact_text_tel">+7 (929) 830-56-89</span>
+    <span class="footer_contact_text_tel">+7 (495) 445-90-99</span>
 </a>                        </li>
                         <li>
                             <a href="#" class="">
     <span class="footer_ico_contact icon-ion-location-outline"></span>
-    <span class="footer_contact_text address">ст.Новотитаровская ул. Широкая 52</span>
+    <span class="footer_contact_text address">Московская область, г. Одинцово, ул. Баковская, д. 9</span>
 </a>                        </li>
                         <li>
-                            <a href="mailto:opt@umalauto.ru" class="link_footer branch_email">
+                            <a href="mailto:office@motexc.ru" class="link_footer branch_email">
     <span class="footer_ico_contact icon-ion-mail-outline"></span>
-    <span class="footer_contact_text_email">opt@umalauto.ru</span>
+    <span class="footer_contact_text_email">office@motexc.ru</span>
 </a>                        </li>
                         <li class="li_work_time">
                             <span class="footer_ico_contact icon-ion-time-outline"></span>
-                            <span class="footer_contact_text work_time">Пн-Пт: 9-20 Сб, Вс: выходной</span>
+                            <span class="footer_contact_text work_time">Пн–Пт с 9:00 до 18:00, Сб–Вс — выходные</span>
                         </li>
                     </ul>
                 </div>
@@ -2265,7 +2427,7 @@ else
 
             <div class="main_footer__copyright">
                 <div class="copyright_item">
-                    <span>© 2026 Юмал Авто</span>
+                    <span>© 2026 МоТехС-РУС</span>
                 </div>
                 <a href="https://e-comexpert.ru/" class="site_link link_company_development" target="_blank">
                     <span class="company_development__ico"></span>
@@ -2861,5 +3023,133 @@ else
     });
 </script>
 
+<!-- ── Cart toast notification ── -->
+<div id="cart-toast" role="status" aria-live="polite">
+    <div class="cart-toast__icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+    </div>
+    <div class="cart-toast__body">
+        <div class="cart-toast__title">Добавлено в корзину</div>
+        <div class="cart-toast__msg"></div>
+        <a href="../catalog/index.html" class="cart-toast__link">Перейти в корзину →</a>
+    </div>
+</div>
+
+<script>
+/* ── Repeat order & add-to-cart for history.html ────────── */
+(function ($) {
+
+    /* ─ Cart helpers ─ */
+    function getCart() {
+        try { return JSON.parse(localStorage.getItem('w247_cart') || '[]'); }
+        catch(e) { return []; }
+    }
+    function saveCart(cart) {
+        localStorage.setItem('w247_cart', JSON.stringify(cart));
+        var total = cart.reduce(function(n, i){ return n + i.qty; }, 0);
+        var $badge = $('.basket-count-update');
+        $badge.text(total);
+        total > 0 ? $badge.removeClass('hide') : $badge.addClass('hide');
+    }
+    function cartAdd(name, sku, price, qty) {
+        var cart = getCart();
+        var hit = null;
+        for (var i = 0; i < cart.length; i++) {
+            if (cart[i].sku === sku) { hit = cart[i]; break; }
+        }
+        if (hit) { hit.qty += qty; }
+        else { cart.push({ name: name, sku: sku, price: price, qty: qty }); }
+        saveCart(cart);
+    }
+
+    /* ─ Toast ─ */
+    var toastTimer;
+    function showToast(msg) {
+        var $t = $('#cart-toast');
+        $t.find('.cart-toast__msg').text(msg);
+        $t.addClass('visible');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function(){ $t.removeClass('visible'); }, 2800);
+    }
+
+    /* ─ Pluralise ─ */
+    function plural(n, one, few, many) {
+        var n10 = n % 10, n100 = n % 100;
+        if (n100 >= 11 && n100 <= 14) return many;
+        if (n10 === 1) return one;
+        if (n10 >= 2 && n10 <= 4) return few;
+        return many;
+    }
+
+    /* ─ SVGs ─ */
+    var cartSvg = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>';
+    var checkSvg = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+    var repeatSvg = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>';
+
+    $(document).ready(function () {
+
+        /* ── "В корзину" click ── */
+        $(document).on('click', '.btn-add-to-cart', function () {
+            var $btn = $(this);
+            var name  = $btn.data('name');
+            var sku   = $btn.data('sku')  + '';
+            var price = parseInt($btn.data('price'), 10);
+
+            cartAdd(name, sku, price, 1);
+
+            var label = name.length > 32 ? name.substr(0, 32) + '…' : name;
+            showToast('«' + label + '» добавлен в корзину');
+
+            $btn.html(checkSvg + '&nbsp;Добавлено').addClass('added');
+            setTimeout(function () {
+                $btn.html(cartSvg + ' В корзину').removeClass('added');
+            }, 1500);
+        });
+
+        /* ── "Повторить заказ" click ── */
+        $(document).on('click', '.btn-repeat-order', function () {
+            var $btn   = $(this);
+            var $panel = $btn.closest('.panel');
+            var items  = [];
+
+            $panel.find('.btn-add-to-cart').each(function () {
+                items.push({
+                    name:  $(this).data('name'),
+                    sku:   $(this).data('sku') + '',
+                    price: parseInt($(this).data('price'), 10),
+                    qty:   1
+                });
+            });
+
+            if (!items.length) return;
+
+            /* Batch-add: merge duplicates within the order first */
+            var cart = getCart();
+            items.forEach(function (item) {
+                var hit = null;
+                for (var i = 0; i < cart.length; i++) {
+                    if (cart[i].sku === item.sku) { hit = cart[i]; break; }
+                }
+                if (hit) { hit.qty += item.qty; }
+                else { cart.push(item); }
+            });
+            saveCart(cart);
+
+            var n = items.length;
+            showToast(n + ' ' + plural(n, 'позиция', 'позиции', 'позиций') + ' добавлено в корзину');
+
+            $btn.addClass('loading');
+            setTimeout(function () { $btn.removeClass('loading'); }, 1200);
+        });
+
+        /* ── Sync badge on load ── */
+        var total = getCart().reduce(function(n, i){ return n + i.qty; }, 0);
+        if (total > 0) { $('.basket-count-update').text(total).removeClass('hide'); }
+    });
+
+})(jQuery);
+</script>
 
 </body></html>

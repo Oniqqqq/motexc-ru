@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Каталог китайских авто — МоТехС-РУС</title>
+<meta name="description" content="Подбор запчастей для китайских автомобилей по VIN-коду или марке — МоТехС-РУС.">
+<style>body {transition: opacity ease-in 0.2s; }
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; }
+</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="google-site-verification" content="3pzDEjGXft4h5JnUBmZD2Gv6N19xpV2843vtXqj8YGY" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/main/core/css/core.css" type="text/css" rel="stylesheet" />
+
+<link href="../shop.e-comexpert.ru/maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" type="text/css" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/ui/fonts/opensans/ui.font.opensans.css" type="text/css" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/main/popup/dist/main.popup.bundle.css" type="text/css" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/w247.catalogs/appliance/main-page/style.css" type="text/css" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/news.list/news-main-page/style.css" type="text/css" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/news.list/reviews/style.css" type="text/css" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/components/w247.branchesv2/shops.list/templates/main-page/style.css" type="text/css" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/css/bootstrap-select.min.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/tooltipster/dist/css/tooltipster.bundle.min.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/lightbox/lightbox.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/fancybox/jquery.fancybox.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/bootstrap/css/bootstrap-datetimepicker.min.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/css/fonts.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/css/font_ico_style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/css/main.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/css/media.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/w247.catalogs/appliance/.default/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/components/w247.catalogs/appliance/templates/garage/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/w247.catalogs/appliance/for_check_auto/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/w247.branchesv2/shops.change/demo2/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/system.auth.form/sublogo/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/search.title/.default/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/w247.garage/ws.garage/.default/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/w247.garage/ws.garage/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/sale.basket.basket.line/.default/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/main.userconsent.request/.default/user_consent.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/components/w247/form.service.request/templates/.default/style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/panel/main/popup.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/w247/panel/scripts/autocomplete/jquery.auto-complete.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/styles.css" type="text/css" data-template-style="true" rel="stylesheet" />
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/template_styles.css" type="text/css" data-template-style="true" rel="stylesheet" />
+
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','COOKIE_PREFIX':'BITRIX_SM','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','bitrix_sessid':'dc6cd54168157ca50aa76a7b3d67830f'});</script>
+
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/main/core/core.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/main/popup/dist/main.popup.bundle.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/main/pageobject/pageobject.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/main/core/core_window.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/w247.catalogs/appliance/.default/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/components/w247.catalogs/appliance/templates/garage/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/w247.branchesv2/shops.change/demo2/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/system.auth.form/sublogo/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/components/bitrix/search.title/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/search.title/.default/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/w247.garage/ws.garage/.default/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/sale.basket.basket.line/.default/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/menu/main-menu/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/form.result.new/callback/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/js/jquery.inputmask.min.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/js/main.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/js/script.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/w247/panel/scripts/autocomplete/jquery.auto-complete.min.js"></script>
+<script type="text/javascript" src="../shop.e-comexpert.ru/shop.e-comexpert.ru/w247/panel/scripts/top_panel.js"></script>
+<script>var phoneMaskOne = "+7 (999) 999-9999"; var phoneMask = "+7 (999) 999-9999";</script>
+<script>var w247SearchSetings = {'max_delivery_time':'120','order_by1':'price','order_by2':'delivery'}, manager = 0;</script>
+
+<link href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/css/w247.recaptcha/style.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/css/less/option.css" />
+
+<style>
+* { box-sizing: border-box; }
+html, body { font-family: 'Lato', Arial, sans-serif; font-size: 14px; line-height: normal; -webkit-font-smoothing: antialiased; }
+</style>
+
+<link rel="stylesheet" href="../yumal-brand.css">
+
+<style>
+/* ============================================================
+   CHINESE CARS PAGE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;}
+
+.chinese-bg {
+    background: #F4F7F5;
+    min-height: 70vh;
+    padding-bottom: 0;
+    margin-top: 20px;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -4px 20px rgba(0,0,0,.06);
+}
+.chinese-wrap {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+}
+.chinese-page-layout {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.chinese-car-side {
+    flex: 0 0 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.chinese-car-img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    filter: drop-shadow(0 8px 24px rgba(0,0,0,.18));
+}
+
+/* ── Widget Card ── */
+.chinese-widget-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 1;
+    min-width: 0;
+    max-width: 540px;
+    box-shadow: 0 2px 16px rgba(0,0,0,.09);
+}
+
+/* Top bar */
+.chinese-widget-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.chinese-widget-topbar__text {
+    font-size: 12px;
+    color: #aaa;
+    font-family: 'Lato', Arial, sans-serif;
+}
+.chinese-widget-topbar__home {
+    width: 34px;
+    height: 34px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: background .15s;
+}
+.chinese-widget-topbar__home:hover { background: #2E7D4F; text-decoration: none; }
+.chinese-widget-topbar__home svg { display: block; }
+
+/* Sections */
+.chinese-widget-section { padding: 24px 24px 20px; }
+.chinese-widget-section__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0 0 16px;
+    font-family: 'Lato', Arial, sans-serif;
+    line-height: 1.3;
+}
+.chinese-widget-input-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.chinese-widget-input {
+    flex: 1;
+    height: 50px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #555;
+    outline: none;
+    font-family: 'Lato', Arial, sans-serif;
+    background: #fafafa;
+    transition: border-color .2s;
+}
+.chinese-widget-input:focus { border-color: #2E7D4F; background: #fff; }
+.chinese-widget-input::placeholder { color: #bbb; }
+.chinese-widget-select-wrap { flex: 1; position: relative; }
+.chinese-widget-select {
+    width: 100%;
+    height: 50px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: #555;
+    outline: none;
+    font-family: 'Lato', Arial, sans-serif;
+    background: #fafafa;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: border-color .2s;
+}
+.chinese-widget-select:focus { border-color: #2E7D4F; background: #fff; }
+.chinese-widget-pill-btn {
+    width: 50px;
+    height: 50px;
+    background: #8DC63F;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    color: #fff;
+    transition: background .15s;
+    outline: none;
+}
+.chinese-widget-pill-btn:hover { background: #7ab534; }
+.chinese-widget-pill-btn svg { display: block; }
+
+/* Divider */
+.chinese-widget-divider {
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+}
+.chinese-widget-divider::before,
+.chinese-widget-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ebebeb;
+}
+.chinese-widget-divider span {
+    display: inline-block;
+    padding: 4px 18px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #aaa;
+    margin: 0 14px;
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+/* Copyright */
+.chinese-widget-copyright {
+    margin: 14px 0 0;
+    font-size: 11px;
+    color: #2E7D4F;
+    font-family: 'Lato', Arial, sans-serif;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .chinese-page-layout { flex-direction: column; gap: 20px; }
+    .chinese-car-side { flex: none; width: 100%; max-width: 280px; margin: 0 auto; padding-top: 0; }
+    .chinese-widget-card { max-width: 100%; }
+    .chinese-widget-section { padding: 18px 16px 16px; }
+    .chinese-widget-section__title { font-size: 18px; }
+    .chinese-widget-topbar { padding: 10px 16px; }
+    .chinese-widget-divider { padding: 0 16px; }
+    .chinese-widget-input, .chinese-widget-select { height: 46px; font-size: 14px; }
+    .chinese-widget-pill-btn { width: 46px; height: 46px; }
+}
+@media (max-width: 480px) {
+    .chinese-car-side { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="site_header">
+        <div class="site_header__up">
+            <div class="site_container">
+                <div class="site_header__up__item item_with_adress_popup">
+                                            <div id="W247BranchChangeContpiilui">
+            <div class="wrap_adress_popup_first" style="display: none;">
+            <div class="adress_popup_first">
+                <div class="adress_popup_first__close">
+                    <span class="icon-ion-close"></span>
+                </div>
+                <div class="adress_popup_first__block">
+                    <div class="adress_popup_first__title">Ваш магазин для доставки находится по адресу:</div>
+
+                    <div class="wrap_adress_popup_first__item">
+                        <div class="adress_popup_first__item">
+                            <span class="site_header__up_link_ico icon-ion-location-sharp"></span>
+                            <span class="adress_popup_first__item_text">Московская область, г. Одинцово, ул. Баковская, д. 9</span>
+                        </div>
+
+                        <div class="adress_popup_first__btn">
+                            <form action="#" method="POST">
+                                <input type="hidden" value="on" name="branch_id1" />
+                                <input type="hidden" value="#" name="url" />
+                                <a href="javascript:void(0);" class="btn_site gradient_top first__btn_yes" data-id="1">
+                                    Да                                </a>
+                            </form>
+                            <a href="javascript:void(0);" class="btn_site btn_site_border btn_site_white adress_link_other">Другой</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other_adress">
+                    <div class="other_adress__title">Ваш магазин для доставки находится по адресу:</div>
+                                            <ul class="ul_reset_style ul_radio_map">
+                                                                                                                            <li>
+                                    <div class="radio">
+                                        <form action="#" method="POST">
+                                            <input class="radio_b-change" data-id="1" id="radio_popup_map1" name="branch_id1" type="radio" />
+                                            <input type="hidden" value="#" name="url" />
+                                            <label for="radio_popup_map1">
+                                                <span class="radio_btn"></span>
+                                                <span class="radio_text">
+                                                    <span class="radio_text__title">МоТехС-РУС</span>
+                                                    Московская область, г. Одинцово, ул. Баковская, д. 9                                                </span>
+                                            </label>
+                                        </form>
+                                    </div>
+                                </li>
+                                                    </ul>
+                                    </div>
+            </div>
+        </div>
+
+    <div class="site_header__up_link site_header__adress_popup">
+        <div class="btn_adress_popup">
+            <span class="site_header__up_link_ico icon-ion-location-sharp"></span>
+            <span class="site_link site_link_with_borderb site_header__adress_popup__title">
+                   Московская область, г. Одинцово, ул. Баковская, д. 9                </span>
+        </div>
+        <div class="header_adress_popup" style="display: none;">
+            <div class="adress_popup_main">
+                <div class="adress_popup_main__item">
+                                            <div class="adress_popup_main__map">
+                                                        <img src="../shop.e-comexpert.ru/static-maps.yandex.ru/1.x/map.png" alt="МоТехС-РУС" />
+                        </div>
+                                        <div class="adress_popup_main__body">
+                        <div class="title_h4 adress_popup_main__body__title">МоТехС-РУС</div>
+                                                    <div class="adress_popup_main__body__address">
+                                <span class="adress_popup_main__ico icon-ion-location-sharp"></span>
+                                <span class="adress_popup_main__text">Московская область, г. Одинцово, ул. Баковская, д. 9</span>
+                            </div>
+                                                                            <div class="adress_popup_main__body__phone">
+                                <a href="tel:+74954459099" class="site_link">
+                                    <span class="adress_popup_main__ico icon-ion-call"></span>
+                                    <span class="adress_popup_main__text">+7 (495) 445-90-99</span>
+                                </a>
+                            </div>
+                                                                            <div class="adress_popup_main__body__time">
+                                <div class="adress_popup_main__body__time">
+                                    <span class="adress_popup_main__ico icon-ion-time"></span>
+                                    <span class="adress_popup_main__text">Пн–Пт с 9:00 до 18:00, Сб–Вс — выходные</span>
+                                </div>
+                            </div>
+                                                <div class="adress_popup_main__body__btn">
+                                                            <a href="javascript:void(0);" class="site_link_two user_logout_link_list">Выбрать другой магазин</a>
+
+                            <a href="#" class="site_link site_link_arrowr">Все магазины                                <span class="icon-ion-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other_adress">
+                    <div class="other_adress__title">Ваш магазин для доставки находится по адресу:</div>
+                                            <ul class="ul_reset_style ul_radio_map">
+                                                                                                                            <li>
+                                    <div class="radio">
+                                        <form action="#" method="POST">
+                                            <input data-id="1" class="radio_b-change" id="radio_popup_map12" name="branch_id1" type="radio" />
+                                            <input type="hidden" value="#" name="url" />
+                                            <label for="radio_popup_map12">
+                                                <span class="radio_btn"></span>
+                                                <span class="radio_text">
+                                                    <span class="radio_text__title">МоТехС-РУС</span>
+                                                    Московская область, г. Одинцово, ул. Баковская, д. 9                                                    </span>
+                                            </label>
+                                        </form>
+                                    </div>
+                                </li>
+                                                    </ul>
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+                       $('.site_header').find('.header_tel.branch_tel').eq(0).html('<span class="site_header__up_link_ico icon-ion-call"></span>+7 (495) 445-90-99');
+                $('.site_header').find('.header_tel.branch_tel').eq(0).attr("href", "tel:+74954459099");
+                $('.ul_footer_contact').find('.branch_tel').eq(0).find('.footer_contact_text_tel').text('+7 (495) 445-90-99');
+                $('.ul_footer_contact').find('.branch_tel').eq(0).attr("href", "tel:+74954459099");
+                $('.ul_footer_contact').find('.branch_email').find('.footer_contact_text_email').text('office@motexc.ru');
+                $('.ul_footer_contact').find('.branch_email').eq(0).attr("href", "mailto:office@motexc.ru");
+                $('.ul_footer_contact').find('.footer_contact_text.address').text('Московская область, г. Одинцово, ул. Баковская, д. 9');
+            $('.mob_header_menu').find('.site_header__adress_popup__title > a').text('Московская область, г. Одинцово, ул. Баковская, д. 9');
+                $('.ul_footer_contact').find('.work_time').html("Пн–Пт с 9:00 до 18:00, Сб–Вс — выходные");
+    });
+    if (typeof window.W247BranchChangeObjects === 'undefined') {
+        var W247BranchChangeObjects = [];
+    }
+    W247BranchChangeObjects['piilui'] = new W247BranchChange({
+        'id': 'piilui',
+        'path' : 'shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/w247.branchesv2/shops.change/demo2'
+    });
+</script>
+                        <!-- Modal -->
+                        <div id="modal_cancellation_request" class="modal modal_site fade" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span class="icon-ion-close"></span>
+                                        </button>
+                                        <h3 class="modal-title"></h3>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="comp_4572e15cff9c9b48c4263556c77c8d90">
+                        <p></p>
+<form name="branch_change" action="#" method="POST" enctype="multipart/form-data" novalidate="novalidate"><input type="hidden" name="WEB_FORM_ID" value="2" />
+                        <input type="hidden" name="form_hidden_5" value="[id:] " /><input type="hidden" name="form_hidden_6" value="[id:1] МоТехС-РУС" />
+                                                                                    <div class="wrap_selectpicker_site__with_label vertical_view">
+                                    <div class="wrap_selectpicker_site__label">Ваш магазин</div>
+                                    <div class="site_field wrap_selectpicker_site">
+                                        <div class="dropdown bootstrap-select bs3"><select class="selectpicker" required="" data-msg-required="Поле должно быть заполнено" data-id="7" id="otherBranches" tabindex="-98"><option value="1">МоТехС-РУС, Одинцово (Московская область, г. Одинцово, ул. Баковская, д. 9)</option><option value="2">МоТехС-РУС, Тула (г. Тула, Новомосковское шоссе, д. 58В)</option></select><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" role="button" data-id="otherBranches" title="МоТехС-РУС, Одинцово (Московская область, г. Одинцово, ул. Баковская, д. 9)"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">МоТехС-РУС, Одинцово (Московская область, г. Одинцово, ул. Баковская, д. 9)</div></div> </div><span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu" role="combobox"><div class="inner" role="listbox" aria-expanded="false" tabindex="-1"><ul class="dropdown-menu inner "></ul></div></div></div><input type="text" style="display:none;" data-id="7" name="form_text_7" value="[id:1] МоТехС-РУС, Одинцово" size="" />
+                                    </div>
+                                </div>
+                        <div class="site_field_btn">
+                            <button type="submit" class="btn_site gradient_top" name="web_form_submit" value="Отправить">Отправить</button>
+                        </div>
+                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <span class="site_header__up_link wrap_header_tel">
+                                                    <a href="tel:+74954459099" class="site_link header_tel branch_tel"><span class="site_header__up_link_ico icon-ion-call"></span>+7 (495) 445-90-99</a>
+                                                <a href="#request_call" class="site_link site_link_with_borderb link_header_request_call" data-toggle="modal">Заказать звонок</a>
+                    </span>
+                    <span class="for_fixed_header_help">
+                        <a class="site_link site_header__up_link header_link_help" href="#help" data-toggle="modal">
+                            <span class="site_header__up_link_ico icon-ion-help-circle"></span>
+                            <span class="header_link_help__title">Помощь клиенту</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="site_header__up__item wrap_for_fixed_header_login_basket">
+                    <div class="for_fixed_header_login_basket">
+    <div class="wrap_header_login">
+        <div class="header_login_user site_dopdown_btn">
+            <div class="dropdown noclose">
+                <button class="btn site_link dropdown-toggle login_user_btn" style="border: 1px solid #ddd; padding: 5px 10px; border-radius: 4px;" type="button" data-toggle="dropdown">
+                    <span class="icon-ion-person color_ico" style="margin-right: 5px;"></span>Антон Иванов
+                </button>
+                <div class="dropdown-menu">
+                    <ul class="site_personalarea">
+                        <li class="site_personalarea__item bg_myprofile"><a href="../personal/index.html">Мой профиль</a></li>
+                        <li class="site_personalarea__item bg_myorders"><a href="../personal/history.html">Мои заказы</a></li>
+                        <li class="site_personalarea__item bg_reclamations"><a href="../personal/reclamations/index.html">Рекламации</a></li>
+                        <li class="site_personalarea__item bg_documents"><a href="../personal/documents/index.html">Документы</a></li>
+                        <li class="site_personalarea__item bg_group_pricing"><a href="#" onclick="return false;">Групповая проценка</a></li>
+                        <li class="site_personalarea__item bg_garage"><a href="#" onclick="return false;">Гараж</a></li>
+                        <li class="site_personalarea__item bg_employees"><a href="#" onclick="return false;">Сотрудники</a></li>
+                        <li class="site_personalarea__item bg_bonus"><a href="#" onclick="return false;">Бонусная программа</a></li>
+                        <li class="site_personalarea__item personalarea_exit"><a href="../index.html">Выйти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div></div></div>
+
+<script>
+    var authCheckpassTemplateFolder = 'shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/system.auth.form/sublogo';
+</script>
+                </div>
+            </div>
+        </div>
+
+        <div class="site_header__down">
+            <div class="site_container">
+                <div class="site_header__down__item_up">
+                    <a class="link_logo" href="../index.html">
+                        <img src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/img/logo-yumal.png" alt="Logo" />
+                    </a>
+
+                    <div class="header_search serach_selected_head yumal-header-search-patch">
+                        <div class="main_search search_selected_head">
+      <div class="wrap_selectpicker_site select_header_search"></div>
+    <div class="wrap_form_header_search hs_val_vin no_catalogs">
+        <form class="form_main_search sag_search_form" action="javascript:void(0);" onsubmit="event.preventDefault(); return false;">
+             <div class="site_field">
+                <input type="text" class="sag_search" placeholder="Поиск по артикулу, названию, VIN или госномеру">
+            </div>
+            <button type="submit" class="btn btn_site btn_search yumal-btn-search">
+                <span class="btn_search__ico icon-ion-search"></span> <span class="hidden-sm hiden-xs yumal-search-text">Поиск</span>
+            </button>
+        </form>
+    </div>
+    <a class="mob_viz btn_site link_modal_mob_header_search" href="javascript:void(0);" onclick="event.preventDefault();"><span class="btn_search__ico icon-ion-search"></span></a>
+</div>
+</div>
+                    <div class="header_basket_garage_btn">
+                        <div class="for_fixed__garage_help">
+
+<div id="bx_basketFKauiI" class="wrap_link_header_basket bx-basket bx-opener">
+	        <a href="#" class="site_link link_header_basket in_basket">
+            <span class="basket_number_product basket-count-update hide">0</span>
+            <span class="site_header__up__ico color_ico icon-ion-cart"></span>
+			Корзина        </a>
+	<div data-role="basket-item-list" class="basket-formated-update bx-basket-item-list wrap_header_basket_preview">
+            <div class="header_basket_preview ">
+                            <div class="basket_clean">
+                    <div class="basket_clean__title title_h4">
+                        <span class="basket_clean__title__text">В вашей корзине пусто</span>
+                    </div>
+                    <div class="basket_clean__descr">Перейдите в каталог и добавьте необходимые товары. Вы также можете посмотреть <a href="../personal/index.html" class="site_link site_link_with_borderb">историю заказов</a>.</div>
+                    <a href="../catalog/index.html" class="btn_site btn_site_arrowr gradient_right start_shopping_link">Начать покупки <span class="start_shopping_ico icon-ion-chevron-right"><div></div></span></a>
+                </div>
+            	    </div>
+            </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site_header__down__item_down">
+                    <div class="for_fixed__main_menu">
+                        <nav class="wrap_main_menu">
+                            <div class="main_menu site_dopdown_btn">
+                                <div class="dropdown noclose">
+                                    <button class="btn dropdown-toggle main_menu_btn" type="button" data-toggle="dropdown">
+                                        <span class="main_menu_btn_ico icon-ion-menu-outline"></span>
+                                        <span class="main_menu_btn__text">Каталог товаров</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <div class="mob_viz mob_header_menu">
+                                            <div class="mob_header_menu__item">
+                                                <div class="site_header__up_link site_header__adress_popup">
+                                                    <span class="site_header__up_link_ico icon-ion-location-sharp"></span>
+                                                    <span class="site_link site_link_with_borderb site_header__adress_popup__title">
+                                                        <a href="#">Московская область, г. Одинцово, ул. Баковская, д. 9</a>
+                                                    </span>
+                                                </div>
+                                                <span class="menu_help">
+                                                    <a class="site_link site_header__up_link header_link_help_menu" href="#help" data-toggle="modal">
+                                                        <span class="site_header__up_link_ico icon-ion-help-circle"></span>
+                                                        <span class="header_link_help__title">Помощь клиенту</span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div class="mob_title_menu">Каталог товаров</div>
+                                        </div>
+<div class="wrap_main_menu_drop">
+    <div class="planshet_inviz">
+        <div class="wrap_main_menu_drop__item">
+<div class="main_menu__item">
+    <div class="main_menu__item_block">
+        <a class="planshet_inviz link_menu title_main_menu" href="../catalog/index.html"><span class="title_main_menu_ico icon-category-brakes"></span><span class="title_main_menu_text">Запчасти для ТО</span></a>
+        <ul class="main_menu__collapse_ul">
+            <li><a href="../catalog/index.html" class="site_link link_menu">Масляный фильтр</a></li>
+            <li><a href="../catalog/index.html" class="site_link link_menu">Воздушный фильтр</a></li>
+            <li><a href="../catalog/index.html" class="site_link link_menu">Салонный фильтр</a></li>
+            <li><a href="../catalog/index.html" class="site_link link_menu">Тормозные колодки</a></li>
+            <li><a class="site_link_two site_link_with_borderb main_menu_all_link" href="../catalog/index.html">Все категории</a></li>
+        </ul>
+    </div>
+</div>
+<div class="main_menu__item">
+    <div class="main_menu__item_block">
+        <a class="planshet_inviz link_menu title_main_menu" href="../catalog/index.html"><span class="title_main_menu_ico icon-category-oil"></span><span class="title_main_menu_text">Масла и техжидкости</span></a>
+        <ul class="main_menu__collapse_ul">
+            <li><a href="../catalog/index.html" class="site_link link_menu">Моторное масло</a></li>
+            <li><a href="../catalog/index.html" class="site_link link_menu">Масло трансмисионное</a></li>
+            <li><a href="../catalog/index.html" class="site_link link_menu">Тормозная жидкость</a></li>
+            <li><a class="site_link_two site_link_with_borderb main_menu_all_link" href="../catalog/index.html">Все категории</a></li>
+        </ul>
+    </div>
+</div>
+<div class="main_menu__item">
+    <div class="main_menu__item_block">
+        <a class="planshet_inviz link_menu title_main_menu" href="../catalog/index.html"><span class="title_main_menu_ico icon-category-battery"></span><span class="title_main_menu_text">Аккумуляторы</span></a>
+    </div>
+    <div class="main_menu__item_block">
+        <a class="planshet_inviz link_menu title_main_menu" href="index.html"><span class="title_main_menu_ico icon-category-book-open"></span><span class="title_main_menu_text">Каталог китайских авто</span></a>
+    </div>
+    <div class="main_menu__item_block">
+        <a class="planshet_inviz link_menu title_main_menu" href="../stock/index.html"><span class="title_main_menu_ico icon-category-accesory"></span><span class="title_main_menu_text">Запчасти в наличии</span></a>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+<div class="mob_viz mob_footer_menu">
+    <ul class="ul_reset_style">
+        <li><a href="#" class="link_footer">О компании</a></li>
+        <li><a href="#" class="link_footer">Доставка и оплата</a></li>
+        <li><a href="../stock/index.html" class="link_footer">Запчасти в наличии</a></li>
+        <li><a href="index.html" class="link_footer">Каталог китайских авто</a></li>
+        <li><a href="#" class="link_footer">Контакты</a></li>
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                                <div class="close_menu"><span class="icon-ion-close"></span></div>
+                                <div class="mob_fon_main_menu"></div>
+                            </div>
+
+<ul class="ul_reset_style header_menu">
+    <li><a href="#" class="site_link site_link_hover_other">О компании</a></li>
+    <li><a href="#" class="site_link site_link_hover_other">Доставка и оплата</a></li>
+    <li><a href="../stock/index.html" class="site_link site_link_hover_other">Запчасти в наличии</a></li>
+    <li><a href="index.html" class="site_link site_link_hover_other site_link_active">Каталог китайских авто</a></li>
+    <li><a href="#" class="site_link site_link_hover_other">Контакты</a></li>
+</ul>
+                        </nav>
+                    </div>
+                    <a href="#" class="btn_site btn_site_border btn_site_white link_service"><span class="link_service__ico color_ico icon-ion-create-outline"></span><span>Запрос на подбор запчастей</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile search modal -->
+<div id="modal_mob_search" class="modal modal_mob_header_search fade" role="dialog" style="display:none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="mob_header_search__body serach_selected_head">
+                    <div class="wrap_selectpicker_site select_header_search"></div>
+                    <div class="wrap_form_header_search hs_val_vin">
+                        <form class="form_main_search sag_search_form" action="javascript:void(0);" onsubmit="event.preventDefault(); return false;">
+                            <div class="site_field">
+                                <input class="sag_search" type="text" maxlength="255" placeholder="Поиск по артикулу, названию, VIN или госномеру" />
+                            </div>
+                            <button type="submit" class="btn btn_site"><span class="icon-ion-search"></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</header>
+
+<!-- ========================================================
+     MAIN CONTENT
+     ======================================================== -->
+<div class="chinese-bg">
+  <div class="chinese-wrap">
+
+    <!-- Breadcrumb -->
+    <nav class="stock-bc">
+      <a href="../index.html">Главная</a>
+      <span>/</span>
+      <span>Каталог китайских авто</span>
+    </nav>
+
+    <div class="chinese-page-layout">
+
+      <!-- Car illustration -->
+      <div class="chinese-car-side">
+        <img src="../nlaw.png" alt="Китайский автомобиль" class="chinese-car-img">
+      </div>
+
+      <!-- NLA24-style widget -->
+      <div class="chinese-widget-card">
+
+        <!-- Top bar -->
+        <div class="chinese-widget-topbar">
+          <span class="chinese-widget-topbar__text">Работает на технологиях nla24.ru</span>
+          <a href="../index.html" class="chinese-widget-topbar__home" title="На главную">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <!-- VIN section -->
+        <div class="chinese-widget-section">
+          <h2 class="chinese-widget-section__title">Введите VIN код</h2>
+          <div class="chinese-widget-input-row">
+            <input type="text" class="chinese-widget-input" placeholder="введите VIN код" maxlength="17">
+            <button class="chinese-widget-pill-btn" type="button" title="Найти по VIN">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="chinese-widget-divider">
+          <span>или</span>
+        </div>
+
+        <!-- Brand selector -->
+        <div class="chinese-widget-section">
+          <h2 class="chinese-widget-section__title">Выбрать авто из списка</h2>
+          <div class="chinese-widget-input-row">
+            <div class="chinese-widget-select-wrap">
+              <select class="chinese-widget-select" id="chineseBrandSelect">
+                <option value="">Выберите марку</option>
+                <option value="geely">Geely</option>
+                <option value="haval">Haval</option>
+                <option value="chery">Chery</option>
+                <option value="byd">BYD</option>
+                <option value="lixiang">Lixiang (Li Auto)</option>
+                <option value="nio">NIO</option>
+                <option value="changan">Changan</option>
+                <option value="deepal">Deepal</option>
+                <option value="omoda">OMODA</option>
+                <option value="jaecoo">JAECOO</option>
+                <option value="jac">JAC</option>
+                <option value="tank">Tank</option>
+                <option value="wey">WEY</option>
+                <option value="exeed">EXEED</option>
+                <option value="voyah">VOYAH</option>
+                <option value="hongqi">Hongqi</option>
+              </select>
+            </div>
+            <button class="chinese-widget-pill-btn" type="button" onclick="document.getElementById('chineseBrandSelect').focus()" title="Выбрать марку">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
+          <p class="chinese-widget-copyright">Копирование данных каталога запрещено правообладателем</p>
+        </div>
+
+      </div><!-- /chinese-widget-card -->
+    </div><!-- /chinese-page-layout -->
+
+  </div>
+</div>
+
+<!-- ========================================================
+     FOOTER
+     ======================================================== -->
+<footer class="wrap_main_footer">
+        <div class="site_container">
+            <div class="main_footer">
+                <div class="main_footer__item footer__item_one">
+                    <div class="main_footer__wrap_item">
+                        <div class="footer_title_soc">Присоединяйтесь к нам</div>
+                        <div class="footer_soc">
+                            <a href="#"><span class="ico_footer_soc icon-ion-social-vk"></span></a>
+                        </div>
+                        <a href="../index.html" class="footer_logo">
+                            <img src="../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/img/logo-yumal.png" alt="Logo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="main_footer__item footer__item_two">
+<ul class="ul_reset_style">
+    <li><a href="#" class="link_footer">О компании</a></li>
+    <li><a href="#" class="link_footer">Доставка и оплата</a></li>
+    <li><a href="../index.html" class="link_footer">Пользовательское соглашение</a></li>
+    <li><a href="../catalog/index.html" class="link_footer">Каталог</a></li>
+</ul>
+                </div>
+                <div class="main_footer__item footer__item_three">
+<ul class="ul_reset_style">
+    <li><a href="../stock/index.html" class="link_footer">Запчасти в наличии</a></li>
+    <li><a href="index.html" class="link_footer">Каталог китайских авто</a></li>
+    <li><a href="#" class="link_footer">Акции</a></li>
+    <li><a href="#" class="link_footer">Контакты</a></li>
+</ul>
+                </div>
+                <div class="main_footer__item footer__item_four">
+                    <ul class="ul_reset_style ul_footer_contact">
+                        <li class="footer_contact_tel">
+                            <a href="tel:+74954459099" class="link_footer branch_tel">
+    <span class="footer_ico_contact icon-ion-call-outline"></span>
+    <span class="footer_contact_text_tel">+7 (495) 445-90-99</span>
+</a>                        </li>
+                        <li>
+                            <a href="#" class="">
+    <span class="footer_ico_contact icon-ion-location-outline"></span>
+    <span class="footer_contact_text address">Московская область, г. Одинцово, ул. Баковская, д. 9</span>
+</a>                        </li>
+                        <li>
+                            <a href="mailto:office@motexc.ru" class="link_footer branch_email">
+    <span class="footer_ico_contact icon-ion-mail-outline"></span>
+    <span class="footer_contact_text_email">office@motexc.ru</span>
+</a>                        </li>
+                        <li class="li_work_time">
+                            <span class="footer_ico_contact icon-ion-time-outline"></span>
+                            <span class="footer_contact_text work_time">Пн–Пт с 9:00 до 18:00, Сб–Вс — выходные</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main_footer__copyright">
+                <div class="copyright_item">
+                    <span>© 2026 МоТехС-РУС</span>
+                </div>
+                <a href="https://e-comexpert.ru/" class="site_link link_company_development" target="_blank">
+                    <span class="company_development__ico"></span>
+                    <span class="company_development__text">Разработка интернет-магазина — e-comEXPERT</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+<!-- Callback modal -->
+<div id="request_call" class="modal modal_site fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span class="icon-ion-close"></span></button>
+                <h3 class="modal-title">Заказать звонок</h3>
+            </div>
+            <div class="modal-body">
+                <p>Оставьте свой номер телефона, и наш менеджер перезвонит вам в ближайшее время.</p>
+<form name="callback" action="#" method="POST" enctype="multipart/form-data" novalidate="novalidate">
+    <div class="wrap_site_field">
+        <div class="site_field site_field_withico input_name">
+            <input value="" required="" type="text" name="form_text_23" placeholder="Введите ваше имя" />
+        </div>
+    </div>
+    <div class="wrap_site_field">
+        <div class="site_field site_field_withico input_phone">
+            <input class="phone-mask" value="" required="" type="text" name="form_text_22" placeholder="Введите ваш телефон" />
+        </div>
+    </div>
+    <script>if($.fn.mask){$(".phone-mask").mask("+7 (999) 999-9999");}</script>
+    <div class="site_field_btn">
+        <button type="submit" class="btn_site gradient_top" name="web_form_submit" value="Заказать звонок">Заказать звонок</button>
+    </div>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

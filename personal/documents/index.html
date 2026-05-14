@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="bx-core bx-no-touch bx-no-retina bx-chrome"><head>
+    <title>Документы — МоТехС-РУС</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/favicon/favicon-16x16.png" />
+
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/main/core/css/core.css" type="text/css" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" type="text/css" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/ui/fonts/opensans/ui.font.opensans.css" type="text/css" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/css/fonts.css" type="text/css" data-template-style="true" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/css/font_ico_style.css" type="text/css" data-template-style="true" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/css/main.css" type="text/css" data-template-style="true" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/css/media.css" type="text/css" data-template-style="true" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/styles.css" type="text/css" data-template-style="true" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/template_styles.css" type="text/css" data-template-style="true" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/main.profile/mini/style.css" type="text/css" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/templates/e-comexpert_v2/components/bitrix/main.profile/style.css" type="text/css" rel="stylesheet" />
+    <link href="../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/components/w247/sale.personal.order.list/templates/client/style.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../../shop.e-comexpert.ru/code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="../../shop.e-comexpert.ru/maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../shop.e-comexpert.ru/cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="../../yumal-brand.css" />
+<style>
+body, .personal_area_page, .title_h4, .title_h5 {
+    font-family: 'Lato', sans-serif !important;
+}
+
+/* == TABS == */
+.recl-tabs {
+    display: flex; flex-wrap: wrap; gap: 4px;
+    list-style: none; margin: 0 0 20px; padding: 0;
+}
+.recl-tabs li a {
+    display: inline-block; padding: 9px 18px; border-radius: 6px;
+    background: #f0f0f0; color: #333; font-size: 14px;
+    text-decoration: none; transition: background .15s;
+    border: none !important;
+}
+.recl-tabs li a:hover { background: #e6f2ea; color: #2E7D4F; }
+.recl-tabs li.active a { background: #2E7D4F !important; color: #fff !important; }
+
+/* == WHITE CONTENT CARD == */
+.recl-content-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+/* == PAGE HEADER == */
+.recl-page-header {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px; margin-bottom: 22px;
+}
+.recl-page-header h1 {
+    font-size: 20px; font-weight: 700; color: #1a2540;
+    margin: 0; padding-left: 12px; border-left: 3px solid #D71920;
+}
+
+/* == FILTERS == */
+.recl-filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+}
+.recl-filter-group label {
+    display: block; font-size: 11px; color: #888; font-weight: 600;
+    text-transform: uppercase; letter-spacing: .3px; margin-bottom: 4px;
+}
+.recl-filter-group input,
+.recl-filter-group select {
+    width: 100%; height: 36px; border: 1px solid #e0e0e0;
+    border-radius: 6px; padding: 0 10px; font-size: 13px;
+    color: #333; background: #fafafa; box-sizing: border-box;
+    -webkit-appearance: none; appearance: none; outline: none;
+}
+.recl-filter-group select {
+    background: #fafafa url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="%23999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat right 10px center;
+    padding-right: 28px;
+}
+.recl-filter-group input:focus,
+.recl-filter-group select:focus { border-color: #2E7D4F; background: #fff; }
+.recl-filter-btns { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+.recl-btn-apply {
+    background: #2E7D4F; color: #fff; border: none; border-radius: 6px;
+    padding: 8px 16px; font-size: 13px; font-weight: 600; cursor: pointer;
+}
+.recl-btn-apply:hover { background: #23643F; }
+.recl-btn-reset {
+    background: #f0f0f0; color: #555; border: 1px solid #e0e0e0;
+    border-radius: 6px; padding: 8px 14px; font-size: 13px; cursor: pointer;
+}
+.recl-btn-reset:hover { background: #e0e0e0; }
+
+/* == TABLE == */
+.recl-table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.recl-table {
+    width: 100%; min-width: 560px; border-collapse: collapse; font-size: 13px;
+}
+.recl-table th {
+    padding: 10px 12px; background: #f7f8fa; color: #555;
+    font-weight: 700; text-align: left; border-bottom: 2px solid #e8eaed;
+    white-space: nowrap;
+}
+.recl-table td {
+    padding: 10px 12px; border-bottom: 1px solid #f0f0f0;
+    color: #333; vertical-align: middle;
+}
+.recl-table tr:last-child td { border-bottom: none; }
+.recl-table tr:hover td { background: #f0f7f3; }
+.recl-table a { color: #2E7D4F; text-decoration: none; }
+.recl-table a:hover { text-decoration: underline; }
+
+/* == STATUS BADGES == */
+.badge-status { display: inline-block; padding: 2px 9px; border-radius: 20px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.badge-ready   { background: #ECFDF5; color: #065F46; border: 1px solid #A7F3D0; }
+.badge-pending { background: #FFFBEB; color: #B45309; border: 1px solid #FDE68A; }
+.badge-void    { background: #F3F4F6; color: #6B7280; border: 1px solid #D1D5DB; }
+
+/* == DOWNLOAD BUTTON == */
+.btn-doc-download {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px;
+    background: #2E7D4F; color: #fff; border: none;
+    border-radius: 5px; cursor: pointer; text-decoration: none;
+    transition: background .15s;
+}
+.btn-doc-download:hover { background: #23643F; color: #fff; }
+.btn-doc-download-disabled {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px;
+    background: #f0f0f0; color: #ccc; border: 1px solid #e0e0e0;
+    border-radius: 5px; cursor: not-allowed;
+}
+
+/* == INFO BLOCK == */
+.docs-info-block {
+    background: #EAF5EE; border: 1px solid #A7D3B6;
+    border-radius: 8px; padding: 14px 18px;
+    font-size: 13px; color: #2E7D4F;
+    display: flex; align-items: flex-start; gap: 10px;
+    margin-top: 18px;
+}
+.docs-info-block svg { flex-shrink: 0; margin-top: 1px; }
+.docs-info-block a { color: #2E7D4F; font-weight: 600; }
+.docs-info-block a:hover { text-decoration: underline; }
+
+/* == NO HORIZONTAL SCROLL == */
+html, body { max-width: 100%; overflow-x: hidden; }
+.site_wrap_content, .site_page, .site_container { box-sizing: border-box; max-width: 100%; }
+</style>
+</head>
+<body class="bx-no-touch bx-no-retina bx-chrome bx-responsive">
+<div class="site_wrap_page">
+    <header class="site_header">
+        <div class="site_header__up">
+            <div class="site_container">
+                <div class="site_header__up__item">
+                    <span class="site_header__up_link wrap_header_tel">
+                        <a href="tel:+74954459099" class="site_link header_tel branch_tel"><span class="site_header__up_link_ico icon-ion-call"></span>+7 (495) 445-90-99</a>
+                        <a href="#" class="site_link site_link_with_borderb link_header_request_call">Заказать звонок</a>
+                    </span>
+                    <span class="for_fixed_header_help">
+                        <a class="site_link site_header__up_link header_link_help" href="#">
+                            <span class="site_header__up_link_ico icon-ion-help-circle"></span>
+                            <span class="header_link_help__title">Помощь клиенту</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="site_header__up__item wrap_for_fixed_header_login_basket">
+                    <div class="for_fixed_header_login_basket">
+                        <div class="wrap_header_login">
+                            <div class="header_login_user site_dopdown_btn">
+                                <div class="dropdown noclose">
+                                    <button class="btn site_link dropdown-toggle login_user_btn" style="border: 1px solid #ddd; padding: 5px 10px; border-radius: 4px;" type="button" data-toggle="dropdown">
+                                        <span class="icon-ion-person color_ico" style="margin-right: 5px;"></span>Антон Иванов
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <ul class="site_personalarea">
+                                            <li class="site_personalarea__item bg_myprofile"><a href="../../personal/index.html">Мой профиль</a></li>
+                                            <li class="site_personalarea__item bg_myorders"><a href="../../personal/history.html">Мои заказы</a></li>
+                                            <li class="site_personalarea__item bg_reclamations"><a href="../../personal/reclamations/index.html">Рекламации</a></li>
+                                            <li class="site_personalarea__item bg_documents"><a href="index.html">Документы</a></li>
+                                            <li class="site_personalarea__item bg_group_pricing"><a href="#" onclick="return false;">Групповая проценка</a></li>
+                                            <li class="site_personalarea__item bg_garage"><a href="#" onclick="return false;">Гараж</a></li>
+                                            <li class="site_personalarea__item bg_employees"><a href="#" onclick="return false;">Сотрудники</a></li>
+                                            <li class="site_personalarea__item bg_bonus"><a href="#" onclick="return false;">Бонусная программа</a></li>
+                                            <li class="site_personalarea__item personalarea_exit"><a href="../../index.html">Выйти</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="site_header__down">
+            <div class="site_container">
+                <div class="site_header__down__item_up">
+                    <a class="link_logo" href="../../index.html">
+                        <img src="../../newlogo.png" alt="Logo" />
+                    </a>
+                    <div class="header_search serach_selected_head yumal-header-search-patch">
+                        <div class="main_search search_selected_head">
+                            <div class="wrap_form_header_search hs_val_vin no_catalogs">
+                                <form class="form_main_search" action="javascript:void(0);" onsubmit="return false;">
+                                    <div class="site_field">
+                                        <input type="text" class="sag_search" placeholder="Поиск по артикулу, названию, VIN или госномеру">
+                                    </div>
+                                    <button type="submit" class="btn btn_site btn_search yumal-btn-search">
+                                        <span class="btn_search__ico icon-ion-search"></span> <span class="hidden-sm hiden-xs yumal-search-text">Поиск</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="site_header__down__item_up__nav">
+                        <ul class="ul_reset_style header_menu">
+                            <li><a href="#" class="site_link site_link_hover_other">О компании</a></li>
+                            <li><a href="#" class="site_link site_link_hover_other">Доставка и оплата</a></li>
+                            <li><a href="../../stock/index.html" class="site_link site_link_hover_other">Запчасти в наличии</a></li>
+                            <li><a href="#" class="site_link site_link_hover_other">Акции</a></li>
+                            <li><a href="#" class="site_link site_link_hover_other">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="btn_site btn_site_border btn_site_white link_service"><span class="link_service__ico color_ico icon-ion-create-outline"></span><span>Запрос на подбор запчастей</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="site_wrap_content">
+        <div class="wrap_site_breadcrumbs"><div class="site_container"><div class="site_breadcrumbs">
+            <div class="bx-breadcrumb-item"><a class="site_link" href="../../index.html"><span class="breadcrumbs__main_ico color_ico icon-ion-home-outline">Главная страница</span></a></div>
+            <div class="bx-breadcrumb-item"><a class="site_link" href="../index.html">Личный кабинет</a></div>
+            <div class="bx-breadcrumb-item"><span>Документы</span></div>
+        <div style="clear:both"></div></div></div></div>
+
+        <div class="site_page personal_area_page">
+            <div class="site_container">
+                <ul class="recl-tabs">
+                    <li><a href="../index.html">Мой профиль</a></li>
+                    <li><a href="../history.html">Мои заказы</a></li>
+                    <li><a href="../reclamations/index.html">Рекламации</a></li>
+                    <li class="active"><a href="#">Документы</a></li>
+                    <li><a href="#" onclick="return false;">Групповая проценка <span class="nav-soon-badge">Скоро</span></a></li>
+                    <li><a href="#" onclick="return false;">Гараж <span class="nav-soon-badge">Скоро</span></a></li>
+                    <li><a href="#" onclick="return false;">Сотрудники <span class="nav-soon-badge">Скоро</span></a></li>
+                    <li><a href="#" onclick="return false;">Бонусная программа <span class="nav-soon-badge">Скоро</span></a></li>
+                </ul>
+
+                <div class="recl-content-card">
+                    <div class="recl-page-header">
+                        <h1>Документы</h1>
+                    </div>
+
+                    <div class="recl-filters-grid">
+                        <div class="recl-filter-group">
+                            <label>Тип документа</label>
+                            <select id="filter-type">
+                                <option value="">Все типы</option>
+                                <option value="Счет">Счет</option>
+                                <option value="УПД">УПД</option>
+                                <option value="Акт">Акт сверки</option>
+                            </select>
+                        </div>
+                        <div class="recl-filter-group">
+                            <label>Период — от</label>
+                            <input type="text" id="filter-date-from" placeholder="дд.мм.гггг" />
+                        </div>
+                        <div class="recl-filter-group">
+                            <label>Период — до</label>
+                            <input type="text" id="filter-date-to" placeholder="дд.мм.гггг" />
+                        </div>
+                        <div class="recl-filter-group">
+                            <label>Номер заказа</label>
+                            <input type="text" id="filter-order" placeholder="86, 94..." />
+                        </div>
+                        <div class="recl-filter-group">
+                            <label>Статус</label>
+                            <select id="filter-status">
+                                <option value="">Все статусы</option>
+                                <option value="ready">Готов</option>
+                                <option value="pending">Ожидается</option>
+                                <option value="void">Аннулирован</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="recl-filter-btns">
+                        <button onclick="filterDocuments()" class="recl-btn-apply">Применить</button>
+                        <button onclick="resetFilters()" class="recl-btn-reset">Сбросить</button>
+                    </div>
+
+                    <div class="recl-table-scroll" style="margin-top: 20px;">
+                        <table class="recl-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Документ</th>
+                                    <th>Дата</th>
+                                    <th>Заказ</th>
+                                    <th>Сумма</th>
+                                    <th>Статус</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="docs-tbody"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="docs-info-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                        <span>Не нашли нужный документ? Напишите на <a href="mailto:doc@motexc.ru">doc@motexc.ru</a> или позвоните <a href="tel:+74954459099">+7 (495) 445-90-99</a> — подготовим в течение одного рабочего дня.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="wrap_main_footer">
+        <div class="site_container">
+            <div class="main_footer">
+                <div class="main_footer__item footer__item_one">
+                    <div class="main_footer__wrap_item">
+                        <div class="footer_title_soc">Присоединяйтесь к нам</div>
+                        <div class="footer_soc">
+                            <a href="#"><span class="ico_footer_soc icon-ion-social-vk"></span></a>
+                        </div>
+                        <a href="../../index.html" class="footer_logo">
+                            <img src="../../newlogo.png" alt="Logo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="main_footer__item footer__item_two">
+                    <ul class="ul_reset_style">
+                        <li><a href="#" class="link_footer">О компании</a></li>
+                        <li><a href="#" class="link_footer">Доставка и оплата</a></li>
+                        <li><a href="../../index.html" class="link_footer">Пользовательское соглашение</a></li>
+                        <li><a href="../../catalog/index.html" class="link_footer">Каталог</a></li>
+                    </ul>
+                </div>
+                <div class="main_footer__item footer__item_three">
+                    <ul class="ul_reset_style">
+                        <li><a href="../../stock/index.html" class="link_footer">Запчасти в наличии</a></li>
+                        <li><a href="#" class="link_footer">Акции</a></li>
+                        <li><a href="#" class="link_footer">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="main_footer__item footer__item_four">
+                    <ul class="ul_reset_style ul_footer_contact">
+                        <li class="footer_contact_tel">
+                            <a href="tel:+74954459099" class="link_footer branch_tel">
+                                <span class="footer_ico_contact icon-ion-call-outline"></span>
+                                <span class="footer_contact_text_tel">+7 (495) 445-90-99</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <span class="footer_ico_contact icon-ion-location-outline"></span>
+                                <span class="footer_contact_text address">Московская область, г. Одинцово, ул. Баковская, д. 9</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:office@motexc.ru" class="link_footer branch_email">
+                                <span class="footer_ico_contact icon-ion-mail-outline"></span>
+                                <span class="footer_contact_text_email">office@motexc.ru</span>
+                            </a>
+                        </li>
+                        <li class="li_work_time">
+                            <span class="footer_ico_contact icon-ion-time-outline"></span>
+                            <span class="footer_contact_text work_time">Пн–Пт с 9:00 до 18:00, Сб–Вс — выходные</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_footer__copyright">
+                <div class="copyright_item">
+                    <span>© 2026 МоТехС-РУС</span>
+                </div>
+                <a href="https://e-comexpert.ru/" class="site_link link_company_development" target="_blank">
+                    <span class="company_development__ico"></span>
+                    <span class="company_development__text">Разработка интернет-магазина — e-comEXPERT</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script>
+var DOCS_DATA = [
+    {n:1, doc:'Счет №1048',   type:'Счет', date:'15.04.2025', order:'94',  sum:'47 680 р.', status:'ready'},
+    {n:2, doc:'УПД №771',     type:'УПД',  date:'10.03.2025', order:'86',  sum:'12 340 р.', status:'ready'},
+    {n:3, doc:'Акт №529',     type:'Акт',  date:'28.03.2025', order:'102', sum:'35 900 р.', status:'pending'},
+    {n:4, doc:'УПД №758',     type:'УПД',  date:'05.04.2025', order:'115', sum:'8 750 р.',  status:'ready'}
+];
+
+var STATUS_MAP = {
+    ready:   {c:'badge-ready',   l:'Готов'},
+    pending: {c:'badge-pending', l:'Ожидается'},
+    void:    {c:'badge-void',    l:'Аннулирован'}
+};
+
+var ico_download_white = '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>';
+var ico_download_gray  = '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>';
+
+function renderTable(data) {
+    var tb = document.getElementById('docs-tbody');
+    if (!tb) return;
+    if (!data.length) {
+        tb.innerHTML = '<tr><td colspan="7" style="text-align:center;padding:24px;color:#999;">Документы не найдены</td></tr>';
+        return;
+    }
+    var rows = '';
+    for (var i = 0; i < data.length; i++) {
+        var d = data[i];
+        var s = STATUS_MAP[d.status] || STATUS_MAP.pending;
+        var dlBtn = d.status === 'ready'
+            ? '<a href="#" class="btn-doc-download" title="Скачать PDF" onclick="return false;">' + ico_download_white + '</a>'
+            : '<span class="btn-doc-download-disabled" title="Ожидается">' + ico_download_gray + '</span>';
+        rows += '<tr>'
+            + '<td>' + d.n + '</td>'
+            + '<td style="font-weight:600;">' + d.doc + '</td>'
+            + '<td>' + d.date + '</td>'
+            + '<td><a href="../history.html">Заказ №' + d.order + '</a></td>'
+            + '<td>' + d.sum + '</td>'
+            + '<td><span class="badge-status ' + s.c + '">' + s.l + '</span></td>'
+            + '<td>' + dlBtn + '</td>'
+            + '</tr>';
+    }
+    tb.innerHTML = rows;
+}
+
+function filterDocuments() {
+    var tp  = document.getElementById('filter-type').value;
+    var st  = document.getElementById('filter-status').value;
+    var ord = document.getElementById('filter-order').value.trim().toLowerCase();
+    renderTable(DOCS_DATA.filter(function(d) {
+        if (tp  && d.type   !== tp)  return false;
+        if (st  && d.status !== st)  return false;
+        if (ord && d.order.toLowerCase().indexOf(ord) === -1) return false;
+        return true;
+    }));
+}
+
+function resetFilters() {
+    ['filter-type','filter-status'].forEach(function(id) {
+        var el = document.getElementById(id); if (el) el.value = '';
+    });
+    ['filter-date-from','filter-date-to','filter-order'].forEach(function(id) {
+        var el = document.getElementById(id); if (el) el.value = '';
+    });
+    renderTable(DOCS_DATA);
+}
+
+renderTable(DOCS_DATA);
+</script>
+</body></html>

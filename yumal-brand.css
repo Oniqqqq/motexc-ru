@@ -1227,6 +1227,38 @@ a.btn_site.btn_site_white:hover span:before {
 .header_login_user.site_dopdown_btn .site_personalarea .site_personalarea__item.bg_reclamations a:before {
     content: "\e905"; /* icon-ion-alert-circle */
 }
+.header_login_user.site_dopdown_btn .site_personalarea .site_personalarea__item.bg_documents a:before {
+    content: "\e932"; /* icon-ion-document-text-outline */
+}
+.header_login_user.site_dopdown_btn .site_personalarea .site_personalarea__item.bg_group_pricing a:before {
+    content: "\e987"; /* icon-ion-percentage-outline */
+}
+.header_login_user.site_dopdown_btn .site_personalarea .site_personalarea__item.bg_garage a:before {
+    content: "\e978"; /* icon-uil-garage */
+}
+.header_login_user.site_dopdown_btn .site_personalarea .site_personalarea__item.bg_employees a:before {
+    content: "\e94d"; /* icon-ion-office */
+}
+.header_login_user.site_dopdown_btn .site_personalarea .site_personalarea__item.bg_bonus a:before {
+    content: "\e964"; /* icon-ion-star-outline */
+}
+
+/* Бейдж "Скоро" во вкладках и карточках ЛК */
+.nav-soon-badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    color: #92400E;
+    background: #FEF3C7;
+    border: 1px solid #FDE68A;
+    border-radius: 3px;
+    padding: 1px 5px;
+    vertical-align: middle;
+    margin-left: 5px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
 
 /* ============================================================
    РЕКЛАМАЦИИ — вкладки профиля (scoped, не owl-carousel)
@@ -3273,4 +3305,131 @@ body {
 /* "Найти" button height */
 .add_auto_modal .selection_auto__wrap_select .btn_select_auto {
     height: 44px !important;
+}
+
+/* ── Каталог китайских авто — catalog cell ── */
+.main_categories__content a.main_categories__item.mci__chinese_cars {
+    background-color: #ffffff !important;
+    background-image: url('nlaw.png') !important;
+    background-repeat: no-repeat !important;
+    background-size: 72% auto !important;
+    background-position: center 16px !important;
+    border-color: #2E7D4F !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    padding: 10px 14px 16px !important;
+    transition: background-color 0.2s, border-color 0.2s !important;
+}
+.main_categories__content a.main_categories__item.mci__chinese_cars:hover {
+    background-color: #F4FAF6 !important;
+    border-color: #1D5234 !important;
+}
+.main_categories__content a.main_categories__item.mci__chinese_cars .main_categories__item__title {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: #111816 !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+    line-height: 1.35 !important;
+    position: relative !important;
+    z-index: 2 !important;
+    padding: 6px 4px 0 !important;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.92) 35%, #fff 100%) !important;
+}
+@media only screen and (max-width: 767px) {
+    .main_categories__content a.main_categories__item.mci__chinese_cars {
+        background-size: 55% auto !important;
+        background-position: center 12px !important;
+    }
+}
+
+/* ===== FAVORITE BUTTON ===== */
+
+/* Catalog tile: heart overlaid top-right on card */
+.tile_item { position: relative !important; }
+
+.tile-fav-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 6;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.93);
+    border: 1.5px solid #D1D5DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.10);
+    transition: background 0.18s, border-color 0.18s, transform 0.15s;
+}
+.tile-fav-btn:hover {
+    background: #fff;
+    border-color: #2E7D4F;
+    transform: scale(1.12);
+}
+.tile-fav-btn svg {
+    display: block;
+    transition: fill 0.18s, stroke 0.18s;
+}
+.tile-fav-btn.is-fav {
+    background: #EAF5EE;
+    border-color: #2E7D4F;
+}
+.tile-fav-btn.is-fav svg {
+    fill: #2E7D4F;
+    stroke: #2E7D4F;
+}
+.tile-fav-btn.fav-pop {
+    animation: yumal-fav-pop 0.24s ease forwards;
+}
+@keyframes yumal-fav-pop {
+    0%   { transform: scale(1); }
+    55%  { transform: scale(1.30); }
+    100% { transform: scale(1); }
+}
+
+/* Product page: icon-only circle heart button next to article */
+.product-fav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1.5px solid #D1D5DB;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+    transition: background 0.18s, border-color 0.18s, transform 0.15s;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.product-fav-btn:hover {
+    background: #fff;
+    border-color: #2E7D4F;
+    transform: scale(1.12);
+}
+.product-fav-btn svg {
+    display: block;
+    transition: fill 0.18s, stroke 0.18s;
+}
+.product-fav-btn.is-fav {
+    background: #EAF5EE;
+    border-color: #2E7D4F;
+}
+.product-fav-btn.is-fav svg {
+    fill: #2E7D4F;
+    stroke: #2E7D4F;
+}
+.product-fav-btn.fav-pop {
+    animation: yumal-fav-pop 0.24s ease forwards;
+}
+@media only screen and (max-width: 767px) {
+    .tile-fav-btn { width: 36px; height: 36px; top: 6px; right: 6px; }
 }
