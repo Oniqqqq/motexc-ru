@@ -183,10 +183,10 @@ BX.setCSSList(['../../shop.e-comexpert.ru/shop.e-comexpert.ru/bitrix/js/main/cor
 {
   "@context": "http://www.schema.org",
   "@type": "Organization",
-  "name": "e-comAUTOPARTS",
+  "name": "МоТехС-РУС",
   "url": "https://demo.e-comexpert.ru/",
   "logo": "/bitrix/templates/e-comexpert_v2/img/Logo.svg",
-  "description": "�������� e-comAUTOPARTS ���������������� �� ������� � ��������� ������� �������������. �� ����� ������ � ��� ��������� ����������� ��������� � �������� ���������������, ����������� ���������� ������������������ ��������� �� ������������������� �����.",
+  "description": "МоТехС-РУС — оптовые поставки автозапчастей для профессионалов.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "��. ����� ���������, 23 ���. 1� ",
@@ -838,7 +838,7 @@ else
                         <li class="site_personalarea__item bg_myprofile"><a href="../../personal/index.html">Мой профиль</a></li>
                         <li class="site_personalarea__item bg_myorders"><a href="../../personal/history.html">Мои заказы</a></li>
                         <li class="site_personalarea__item bg_reclamations"><a href="../../personal/reclamations/index.html">Рекламации</a></li>
-                        <li class="site_personalarea__item bg_documents"><a href="../documents/index.html">Документы</a></li>
+                        <li class="site_personalarea__item bg_documents"><a href="../../personal/documents/index.html">Документы</a></li>
                         <li class="site_personalarea__item bg_group_pricing"><a href="#" onclick="return false;">Групповая проценка</a></li>
                         <li class="site_personalarea__item bg_garage"><a href="#" onclick="return false;">Гараж</a></li>
                         <li class="site_personalarea__item bg_employees"><a href="#" onclick="return false;">Сотрудники</a></li>
@@ -914,6 +914,27 @@ else
     });
 </script>                    </div>
                     <div class="header_basket_garage_btn">
+                        <!-- ГАРАЖ -->
+                        <div id="w247_garage_new111" class="wrap_garage site_dopdown_btn">
+                            <div id="w247_garage_box_new111" class="dropdown noclose">
+                                <button class="btn dropdown-toggle btn_garage auto_in_garage" type="button" data-toggle="dropdown">
+                                    <span class="site_header__up__ico color_ico icon-ion-car-sport-sharp"></span>
+                                    <span class="hidden-xs btn_garage__text">Мой гараж</span>
+                                </button>
+                                <div class="dropdown-menu select_garage">
+                                    <div class="garage_none_auto">
+                                        <div class="garage_none_auto__title title_h3">У вас нет сохранённых автомобилей</div>
+                                        <div class="garage_none_auto__text">Добавьте авто в гараж для точного подбора запчастей</div>
+                                        <a class="btn_site gradient_top btn_add_auto" href="#modal_add_auto_new111" data-toggle="modal" data-dismiss="dropdown">
+                                            <span class="ico_btn_add_auto icon-ion-add"></span>Добавить авто
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="close_garage"><span class="icon-ion-close"></span></div>
+                            <div class="mob_fon_main_garage"></div>
+                        </div>
+                        <!-- /ГАРАЖ -->
                         <div class="for_fixed__garage_help">
 
                             <script>
