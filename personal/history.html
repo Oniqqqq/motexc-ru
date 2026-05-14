@@ -227,10 +227,6 @@ body, .personal_area_page, .title_h4, .title_h5, .personal_area_page__user, .use
 .user_content__filled, .user_content__edit, .my_orders_table__content .panel, .personal_area_page__user {
     border: none !important; border-radius: 8px !important; box-shadow: 0 4px 14px rgba(0,0,0,0.06) !important; background: #fff !important; margin-bottom: 20px !important;
 }
-.profile_tabs_slider .item a {
-    border: none !important; border-radius: 6px !important; background: #f0f0f0 !important; color: #333 !important; padding: 10px 20px !important; margin: 5px !important; display: inline-block; text-decoration: none;
-}
-.profile_tabs_slider .item.active a { background: #605d76 !important; color: #fff !important; }
 .user_content__right .my_profile__user_tab_link, .my_profile__user_tab_link {
     border: none !important; box-shadow: 0 4px 14px rgba(0,0,0,0.06) !important; border-radius: 8px !important; background: #fff !important; margin-bottom: 10px !important;
 }
@@ -1479,44 +1475,16 @@ else
 </div>
 
 
-            <div class="owl-carousel owl-theme profile_tabs_slider owl-loaded owl-drag">
-                                            
-                                            
-                                            
-            
-    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 700px;"><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
-                    <a href="index.html">
-                                                <span class="profile_tabs_name">Мой профиль</span>
-                    </a>
-                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item active">
-                    <a href="history.html">
-                                                <span class="profile_tabs_name">Мои заказы</span>
-                    </a>
-                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
-                    <a href="reclamations/index.html">
-                                                <span class="profile_tabs_name">Рекламации</span>
-                    </a>
-                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
-                    <a href="documents/index.html">
-                                                <span class="profile_tabs_name">Документы</span>
-                    </a>
-                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
-                    <a href="#" onclick="return false;">
-                                                <span class="profile_tabs_name">Групповая проценка <span class="nav-soon-badge">Скоро</span></span>
-                    </a>
-                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
-                    <a href="#" onclick="return false;">
-                                                <span class="profile_tabs_name">Гараж <span class="nav-soon-badge">Скоро</span></span>
-                    </a>
-                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
-                    <a href="#" onclick="return false;">
-                                                <span class="profile_tabs_name">Сотрудники <span class="nav-soon-badge">Скоро</span></span>
-                    </a>
-                </div></div><div class="owl-item active" style="width: auto; margin-right: 5px;"><div class="item ">
-                    <a href="#" onclick="return false;">
-                                                <span class="profile_tabs_name">Бонусная программа <span class="nav-soon-badge">Скоро</span></span>
-                    </a>
-                </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></div>
+            <ul class="recl-tabs">
+                <li><a href="index.html">Мой профиль</a></li>
+                <li class="active"><a href="#">Мои заказы</a></li>
+                <li><a href="reclamations/index.html">Рекламации</a></li>
+                <li><a href="documents/index.html">Документы</a></li>
+                <li><a href="#" onclick="return false;">Групповая проценка <span class="nav-soon-badge">Скоро</span></a></li>
+                <li><a href="#" onclick="return false;">Гараж <span class="nav-soon-badge">Скоро</span></a></li>
+                <li><a href="#" onclick="return false;">Сотрудники <span class="nav-soon-badge">Скоро</span></a></li>
+                <li><a href="bonus-program/index.html">Бонусная программа</a></li>
+            </ul>
 
 
 
