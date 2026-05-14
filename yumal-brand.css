@@ -798,6 +798,111 @@ a.btn_site.btn_site_white:hover span:before {
 .wrap_adress_popup_first .adress_popup_first {
     color: #202624 !important;
 }
+
+/* ----------------------------------------------------------
+   MOBILE HEADER ADJUSTMENTS: hide phone, show coins
+   ---------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+    /* Ensure the utility bar allows items to spread to edges */
+    .site_header .site_header__up .site_container {
+        display: flex !important;
+        justify-content: flex-end !important;
+        padding: 0 10px !important;
+    }
+
+    .wrap_for_fixed_header_adress_popup {
+        display: none !important;
+    }
+
+    .wrap_for_fixed_header_login_basket {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* Hide phone/request call on mobile utility bar */
+    .site_header__up .wrap_header_tel {
+        display: none !important;
+    }
+    
+    /* Push balance block to the left and user block to the right */
+    .header_bonus_balance {
+        margin-right: auto !important; 
+        padding-top: 0 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        margin-left: 0 !important;
+    }
+    
+    .header_bonus_balance .site_link {
+        font-size: 13px !important;
+        padding: 4px 8px !important;
+        background: rgba(0,0,0,0.2) !important;
+        border-radius: 4px !important;
+        color: #FFFFFF !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+    
+    .header_bonus_balance .icon-ion-star {
+        color: #FACC15 !important;
+        font-size: 14px !important;
+        margin-right: 4px !important;
+    }
+
+    /* Ensure container takes full width and distributes items */
+    .wrap_header_login {
+        display: flex !important;
+        width: 100% !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    
+    .for_fixed_header_login_basket {
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+    
+    /* Login button adjustment for mobile */
+    .header_login_user .login_user_btn {
+        padding: 4px 8px !important;
+        font-size: 12px !important;
+        background: transparent !important;
+        border: none !important;
+    }
+
+    /* Fix Home Page Categories Grid on Mobile */
+    .main_categories__content {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 12px !important;
+        padding: 0 10px !important;
+    }
+    .main_categories__content .main_categories__item {
+        width: calc(50% - 6px) !important;
+        margin: 0 !important;
+        height: auto !important;
+        min-height: 120px !important;
+        flex: 0 0 calc(50% - 6px) !important;
+    }
+    .main_categories__content .main_categories__item.mci__origin_c {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        min-height: 160px !important;
+        order: 5 !important;
+    }
+
+    /* Assign orders to ensure no gaps before/after full-width block */
+    .main_categories__content .mci__chinese_cars { order: 1 !important; }
+    .main_categories__content .mci__parts_forto  { order: 2 !important; }
+    .main_categories__content .mci__oil          { order: 3 !important; }
+    .main_categories__content .mci__auto_chemical { order: 4 !important; }
+    /* mci__origin_c is order 5 */
+    .main_categories__content .mci__batteries    { order: 6 !important; }
+    .main_categories__content .mci__tires        { order: 7 !important; }
+    .main_categories__content .mci__stock        { order: 8 !important; }
+    .main_categories__content .mci__all_link_catalog { order: 9 !important; }
+}
 .adress_popup_first__title,
 .other_adress__title,
 .adress_popup_main__body__title.title_h4 {
@@ -3432,4 +3537,191 @@ body {
 }
 @media only screen and (max-width: 767px) {
     .tile-fav-btn { width: 36px; height: 36px; top: 6px; right: 6px; }
+}
+
+/* ==========================================================
+   MARKUP SETTINGS MODAL
+   ========================================================== */
+.yumal-markup-modal-body {
+    padding: 24px;
+    font-family: 'Lato', Arial, sans-serif;
+    color: #333;
+}
+.yumal-markup-desc {
+    margin-bottom: 24px;
+    font-size: 14px;
+    color: #666;
+}
+.yumal-markup-block {
+    background: #FAFAFA;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.yumal-markup-block .title_h5 {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #111;
+}
+.yumal-markup-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.yumal-markup-row.mt-10 {
+    margin-top: 10px;
+}
+.yumal-markup-label {
+    font-size: 14px;
+    color: #333;
+}
+.yumal-markup-input {
+    width: 100px;
+    height: 36px;
+    border: 1px solid #DDD;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.yumal-markup-input:focus {
+    border-color: #2E7D4F;
+}
+.yumal-markup-hint {
+    font-size: 12px;
+    color: #888;
+    margin-top: 8px;
+}
+
+/* Switch toggle */
+.yumal-switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.yumal-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.yumal-switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .3s;
+    border-radius: 24px;
+}
+.yumal-switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .3s;
+    border-radius: 50%;
+}
+.yumal-switch input:checked + .yumal-switch-slider {
+    background-color: #2E7D4F;
+}
+.yumal-switch input:checked + .yumal-switch-slider:before {
+    transform: translateX(20px);
+}
+
+/* Tables */
+.yumal-markup-table-wrap {
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid #EEE;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+.yumal-markup-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.yumal-markup-table th, .yumal-markup-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #EEE;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.yumal-markup-table th {
+    background: #F8F8F8;
+    font-weight: 600;
+    color: #555;
+}
+.yumal-markup-table tr:last-child td {
+    border-bottom: none;
+}
+.td-action {
+    width: 60px;
+    text-align: center !important;
+}
+.yumal-btn-delete {
+    color: #999;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.yumal-btn-delete:hover {
+    color: #E53935;
+}
+.yumal-markup-input-sm {
+    width: 70px;
+    height: 32px;
+    border: 1px solid #DDD;
+    border-radius: 6px;
+    padding: 0 8px;
+    font-size: 14px;
+    outline: none;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+.yumal-markup-input-sm:focus {
+    border-color: #2E7D4F;
+}
+.yumal-btn-add-rule {
+    font-size: 13px !important;
+    padding: 6px 16px !important;
+}
+
+/* Info block */
+.yumal-markup-info {
+    background: #E8F5E9;
+    border-left: 4px solid #2E7D4F;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+.yumal-markup-info p {
+    margin: 0 0 8px;
+    color: #1B5E20;
+}
+.yumal-markup-info-list {
+    margin: 0;
+    padding-left: 16px;
+    color: #2E7D4F;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.yumal-markup-footer {
+    display: flex;
+    justify-content: flex-start;
+    border-top: 1px solid #EEE;
+    padding-top: 20px;
+}
+.ml-10 { margin-left: 10px; }
+.mt-10 { margin-top: 10px; }
+
+@media (max-width: 767px) {
+    .yumal-markup-row { flex-direction: column; align-items: flex-start; }
+    .yumal-markup-block { padding: 16px; }
 }

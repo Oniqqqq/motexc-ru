@@ -748,6 +748,12 @@ else
                                             <div class="for_fixed_header_login_basket">
                                                             
     <div class="wrap_header_login">
+        
+        <div class="header_bonus_balance" style="display:inline-block; margin-right: 15px; vertical-align: middle; padding-top: 5px;">
+            <a href="bonus-program/index.html" class="site_link" style="color: #333; text-decoration: none; font-weight: 500;">
+                <span class="icon-ion-star color_ico" style="color: #2E7D4F; margin-right: 5px; font-size: 16px; vertical-align: middle;"></span><span style="vertical-align: middle;">12 450 Коins</span>
+            </a>
+        </div>
         <div class="header_login_user site_dopdown_btn">
             <div class="dropdown noclose">
                 <button class="btn site_link dropdown-toggle login_user_btn" style="border: 1px solid #ddd; padding: 5px 10px; border-radius: 4px;" type="button" data-toggle="dropdown">
@@ -762,7 +768,7 @@ else
                         <li class="site_personalarea__item bg_group_pricing"><a href="#" onclick="return false;">Групповая проценка</a></li>
                         <li class="site_personalarea__item bg_garage"><a href="#" onclick="return false;">Гараж</a></li>
                         <li class="site_personalarea__item bg_employees"><a href="#" onclick="return false;">Сотрудники</a></li>
-                        <li class="site_personalarea__item bg_bonus"><a href="#" onclick="return false;">Бонусная программа</a></li>
+                        <li class="site_personalarea__item bg_bonus"><a href="bonus-program/index.html">Бонусная программа</a></li>
                         <li class="site_personalarea__item personalarea_exit"><a href="../index.html">Выйти</a></li>
                     </ul>
                 </div>
@@ -1189,6 +1195,7 @@ else
                                     <li><a href="../stock/index.html" class="link_footer ">Запчасти в наличии</a></li>
             
                                     <li><a href="#" class="link_footer ">Акции</a></li>
+                                    <li><a href="../personal/bonus-program/index.html" class="link_footer ">Бонусная программа</a></li>
             
                                     <li><a href="#" class="link_footer ">Контакты</a></li>
             
@@ -1211,6 +1218,7 @@ else
 			<li><a href="../stock/index.html" class="site_link site_link_hover_other ">Запчасти в наличии</a></li>
 		
 			<li><a href="#" class="site_link site_link_hover_other ">Акции</a></li>
+			<li><a href="../personal/bonus-program/index.html" class="site_link site_link_hover_other ">Бонусная программа</a></li>
 		
 			<li><a href="#" class="site_link site_link_hover_other ">Контакты</a></li>
 		
@@ -1337,7 +1345,7 @@ else
                 <li><a href="#" onclick="return false;">Групповая проценка <span class="nav-soon-badge">Скоро</span></a></li>
                 <li><a href="#" onclick="return false;">Гараж <span class="nav-soon-badge">Скоро</span></a></li>
                 <li><a href="#" onclick="return false;">Сотрудники <span class="nav-soon-badge">Скоро</span></a></li>
-                <li><a href="#" onclick="return false;">Бонусная программа <span class="nav-soon-badge">Скоро</span></a></li>
+                <li><a href="../personal/bonus-program/index.html">Бонусная программа</a></li>
             </ul>
 
 <div class="personal_area_page__user">
@@ -1400,12 +1408,139 @@ else
                     <div class="user_info__descr">
                         <a class="edit_user_password" href="javascript:void(0);">
                             <span class="edit_user_password_ico color_ico icon-ion-lock-closed"></span>
-                            <span class="site_link site_link_with_borderb">Изменить пароль</span>
-
                         </a>
                     </div>
                 </div>
             </div>
+
+            <hr style="margin: 32px 0 24px; border: 0; border-top: 1px solid #EEE;" />
+            
+            <div class="user_content__title_double" style="margin-bottom: 16px;">
+                <div class="title_h5">Настройка наценки</div>
+            </div>
+            
+            <p class="yumal-markup-desc">Здесь вы можете настроить параметры наценки для отображения розничных цен конечным клиентам.</p>
+            
+            <!-- Блок 1. Общая настройка -->
+            <div class="yumal-markup-block">
+                <div class="title_h5">Общая настройка</div>
+                <div class="yumal-markup-row">
+                    <label class="yumal-switch">
+                        <input type="checkbox" checked>
+                        <span class="yumal-switch-slider"></span>
+                    </label>
+                    <span class="yumal-markup-label">Использовать наценку для демонстрации клиентам</span>
+                </div>
+                <div class="yumal-markup-row mt-10">
+                    <span class="yumal-markup-label">Общая наценка, %:</span>
+                    <input type="number" class="yumal-markup-input" value="15" min="0">
+                </div>
+                <div class="yumal-markup-hint">Применяется как базовое правило, если для бренда или ценового диапазона не задано отдельное правило.</div>
+            </div>
+
+            <!-- Блок 2. Наценка по брендам -->
+            <div class="yumal-markup-block">
+                <div class="title_h5">Наценка по брендам</div>
+                <p class="yumal-markup-desc">Для выбранных брендов можно задать индивидуальный процент наценки.</p>
+                <div class="yumal-markup-table-wrap">
+                    <table class="yumal-markup-table">
+                        <thead>
+                            <tr>
+                                <th>Бренд</th>
+                                <th>Наценка</th>
+                                <th class="td-action">Действие</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Brembo</td>
+                                <td><input type="number" class="yumal-markup-input-sm" value="12"> %</td>
+                                <td class="td-action"><a href="javascript:void(0);" class="yumal-btn-delete"><span class="icon-ion-trash-outline"></span></a></td>
+                            </tr>
+                            <tr>
+                                <td>MANN-FILTER</td>
+                                <td><input type="number" class="yumal-markup-input-sm" value="10"> %</td>
+                                <td class="td-action"><a href="javascript:void(0);" class="yumal-btn-delete"><span class="icon-ion-trash-outline"></span></a></td>
+                            </tr>
+                            <tr>
+                                <td>Filtron</td>
+                                <td><input type="number" class="yumal-markup-input-sm" value="8"> %</td>
+                                <td class="td-action"><a href="javascript:void(0);" class="yumal-btn-delete"><span class="icon-ion-trash-outline"></span></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="btn btn_site btn_site_border yumal-btn-add-rule mt-10" onclick="alert('Будет доступно после подключения справочника брендов')">Добавить бренд</button>
+            </div>
+
+            <!-- Блок 3. Дифференцированная наценка по стоимости -->
+            <div class="yumal-markup-block">
+                <div class="title_h5">Наценка по стоимости товара</div>
+                <p class="yumal-markup-desc">Для разных диапазонов стоимости можно задать разные уровни наценки.</p>
+                <div class="yumal-markup-table-wrap">
+                    <table class="yumal-markup-table">
+                        <thead>
+                            <tr>
+                                <th>Диапазон стоимости</th>
+                                <th>Наценка</th>
+                                <th class="td-action">Действие</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>До 1 000 ₽</td>
+                                <td><input type="number" class="yumal-markup-input-sm" value="20"> %</td>
+                                <td class="td-action"><a href="javascript:void(0);" class="yumal-btn-delete"><span class="icon-ion-trash-outline"></span></a></td>
+                            </tr>
+                            <tr>
+                                <td>От 1 000 до 5 000 ₽</td>
+                                <td><input type="number" class="yumal-markup-input-sm" value="15"> %</td>
+                                <td class="td-action"><a href="javascript:void(0);" class="yumal-btn-delete"><span class="icon-ion-trash-outline"></span></a></td>
+                            </tr>
+                            <tr>
+                                <td>От 5 000 до 20 000 ₽</td>
+                                <td><input type="number" class="yumal-markup-input-sm" value="10"> %</td>
+                                <td class="td-action"><a href="javascript:void(0);" class="yumal-btn-delete"><span class="icon-ion-trash-outline"></span></a></td>
+                            </tr>
+                            <tr>
+                                <td>Свыше 20 000 ₽</td>
+                                <td><input type="number" class="yumal-markup-input-sm" value="7"> %</td>
+                                <td class="td-action"><a href="javascript:void(0);" class="yumal-btn-delete"><span class="icon-ion-trash-outline"></span></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button type="button" class="btn btn_site btn_site_border yumal-btn-add-rule mt-10" onclick="alert('Добавление диапазона будет доступно позже')">Добавить диапазон</button>
+            </div>
+
+            <!-- Блок 4. Отображение цены без наценки -->
+            <div class="yumal-markup-block">
+                <div class="title_h5">Отображение в каталоге</div>
+                <div class="yumal-markup-row">
+                    <label class="yumal-switch">
+                        <input type="checkbox" checked>
+                        <span class="yumal-switch-slider"></span>
+                    </label>
+                    <span class="yumal-markup-label">Показывать дополнительно цену без наценки в каталоге и поиске</span>
+                </div>
+            </div>
+
+            <!-- Блок 5. Правила применения -->
+            <div class="yumal-markup-info">
+                <p><strong>Важно:</strong></p>
+                <ul class="yumal-markup-info-list">
+                    <li>В каталоге и результатах поиска клиентская цена отображается с учетом настроенной наценки.</li>
+                    <li>При добавлении в корзину товары добавляются с учетом наценки.</li>
+                    <li>В заказ товары попадают без учета наценки.</li>
+                    <li>Наценка используется только для демонстрации конечным клиентам и не изменяет вашу закупочную стоимость.</li>
+                    <li>Индивидуальные настройки по брендам и ценовым диапазонам имеют приоритет над общей наценкой.</li>
+                </ul>
+            </div>
+            
+            <div class="site_field_btn mt-20" style="padding-bottom: 24px;">
+                <button type="button" class="btn btn_site gradient_top" onclick="alert('Настройки сохранены')">Сохранить настройки наценки</button>
+            </div>
+
         </div>
         
         <div class="user_content__edit" id="W247UserContentEdityFaz">
@@ -1549,12 +1684,12 @@ else
                                 <span class="user_tab_link__text">Управление доступами сотрудников компании</span>
                             </span>
             </a>
-                                <a href="#" onclick="return false;" class="my_profile__user_tab_link">
+                                <a href="bonus-program/index.html" class="my_profile__user_tab_link">
                             <span class="my_profile__user_tab_link__img">
                                 <span class="user_tab_link__img_ico ico_color_dark icon-ion-star-outline" style="font-size:32px;"></span>
                             </span>
                             <span class="my_profile__user_tab_link__descr">
-                                <span class="title_h5">Бонусная программа <span class="nav-soon-badge">Скоро</span></span>
+                                <span class="title_h5">Бонусная программа</span>
                                 <span class="user_tab_link__text">Бонусы, условия и история начислений</span>
                             </span>
             </a>
@@ -1742,6 +1877,7 @@ else
 			<li><a href="../stock/index.html" class="link_footer ">Запчасти в наличии</a></li>
 
 			<li><a href="#" class="link_footer ">Акции</a></li>
+                                    <li><a href="../personal/bonus-program/index.html" class="link_footer ">Бонусная программа</a></li>
 
 			<li><a href="#" class="link_footer ">Контакты</a></li>
 
@@ -2350,8 +2486,6 @@ else
             </div>
         </div>
     </div>
-
-
 
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
